@@ -16,6 +16,13 @@ Note: the original game cannot store more than 9.2e18 money, so a modded save wi
 more money shows wrong amounts without the mod. The mod's achievements are stored in
 their own file (bdr_achievements.json); the original achievements are not changed.
 
+EPILEPSY WARNING
+----------------
+This mod shows many bright, colourful effects that flash quickly one after another
+(rolling dice, flashes, waves, rainbow and light effects - especially on full tables).
+If you have epilepsy or are sensitive to flashing lights, do not use this mod.
+If you feel dizzy or unwell while playing, stop playing immediately and talk to a doctor.
+
 WHAT THE MOD ADDS
 -----------------
 - Performance: smooth even with thousands of dice (spatial grid, batched drawing,

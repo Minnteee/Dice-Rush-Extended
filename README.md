@@ -64,6 +64,13 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
 
 ## Install
 
+> [!WARNING]
+> **Epilepsy / photosensitivity warning**
+>
+> This mod shows a lot of bright, colourful effects that flash quickly one after another – rolling dice, flashes, waves, rainbow and light effects, especially when the table is full.
+> **If you have epilepsy or are sensitive to flashing lights, please do not download or play this mod.**
+> If you feel dizzy or unwell while playing (for example blurred vision or twitching eyes or muscles), stop playing immediately and talk to a doctor.
+
 1. Download **`Dice-Rush-Extended-1.1.1.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
 2. Extract it into your DICE RUSH game folder, the folder that contains `Dice Rush.exe`
    (Steam: right click DICE RUSH -> Manage -> Browse local files).
