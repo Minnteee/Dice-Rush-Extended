@@ -1,0 +1,18 @@
+# Files of the original game and local test setups are never part of this repository.
+work/
+backup/
+testgame/
+dist/
+publish/
+src/game/
+tools/venv/
+tools/vdesk/
+tools/gdre/
+tools/packer/*.exe
+tools/packer/*.dll
+tools/packer/steam_*
+tools/local_paths.json
+tools/art/_preview/
+__pycache__/
+*.pyc
+*.log

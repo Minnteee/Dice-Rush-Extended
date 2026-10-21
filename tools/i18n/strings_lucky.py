@@ -1,0 +1,22 @@
+# Dice Rush Extended - lucky cube strings (English, German).
+S = {
+    "ui.via_lucky_gate": ("FOUND IN LUCKY CUBES FROM {n} CUBES OPENED", "IN GLÜCKSWÜRFELN AB {n} GEÖFFNETEN WÜRFELN"),
+    "lucky.exclusive_title": ("ONLY FROM LUCKY CUBES", "NUR AUS GLÜCKSWÜRFELN"),
+    "lucky.next_gate": ("NEXT: {name} AT {n} CUBES OPENED", "NÄCHSTER: {name} AB {n} GEÖFFNETEN WÜRFELN"),
+    "lucky.next_ready": ("{name} CAN DROP NOW!", "{name} KANN JETZT FALLEN!"),
+    "lucky.all_found": ("ALL LUCKY DICE FOUND!", "ALLE GLÜCKS-WÜRFEL GEFUNDEN!"),
+    "lucky.gate_tip": ("Can drop from {n} cubes opened.", "Kann ab {n} geöffneten Würfeln fallen."),
+    "lucky.chance_note": ("Every cube can also unlock new dice or drop cash, free dice, a lucky streak or talent gold!",
+                          "Jeder Würfel kann auch neue Würfel freischalten oder Geld, Gratis-Würfel, eine Glückssträhne oder Talent-Gold bringen!"),
+    "lucky.bonus_title": ("BONUS REWARD!", "BONUS-BELOHNUNG!"),
+    "lucky.unlocked": ("NEW DICE UNLOCKED!", "NEUER WÜRFEL FREIGESCHALTET!"),
+    "lucky.cash": ("CASH BAG", "GELDSACK"),
+    "lucky.cash_detail": ("+{v}", "+{v}"),
+    "lucky.free": ("FREE DICE", "GRATIS-WÜRFEL"),
+    "lucky.free_detail": ("+{n}× {name}", "+{n}× {name}"),
+    "lucky.boost": ("LUCKY STREAK", "GLÜCKSSTRÄHNE"),
+    "lucky.boost_detail": ("ALL DICE ×2 FOR {t}", "ALLE WÜRFEL ×2 FÜR {t}"),
+    "lucky.boost_active": ("LUCKY STREAK ×2 · {t}", "GLÜCKSSTRÄHNE ×2 · {t}"),
+    "lucky.gold": ("TALENT GOLD", "TALENT-GOLD"),
+    "lucky.gold_detail": ("+{n} GOLD", "+{n} GOLD"),
+}

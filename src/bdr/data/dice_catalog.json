@@ -1,0 +1,4582 @@
+{
+ "schema": "bdr-dice-v1",
+ "dice": [
+  {
+   "id": "wood",
+   "tier": 1,
+   "family": "material",
+   "unlock": "shop",
+   "price": 1500.0,
+   "unlock_price": 15000.0,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 10.0,
+   "p": {},
+   "name": {
+    "en": "Wooden Dice",
+    "de": "Holzwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ times the rolled face.",
+    "de": "Zahlt {pay}$ mal die gewürfelte Augenzahl."
+   },
+   "art": {
+    "top": "#c8904f",
+    "left": "#9a6532",
+    "right": "#7a4c22",
+    "edge": "#e8b878",
+    "ink": "#3b2210",
+    "pattern": "wood",
+    "glyphs": [
+     "pip:1",
+     "pip:2",
+     "pip:3"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "pepe",
+   "tier": 1,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 2500.0,
+   "unlock_price": 25000.0,
+   "npc": true,
+   "mech": "pepe",
+   "faces": [
+    1,
+    1,
+    1,
+    1,
+    10,
+    0
+   ],
+   "pay": 50.0,
+   "p": {
+    "hop_chance": 0.12
+   },
+   "name": {
+    "en": "Pepe Dice",
+    "de": "Pepe-Würfel"
+   },
+   "desc": {
+    "en": "Four frog faces pay {pay}$. 'Feels good man' pays x10, the sad frog pays nothing. Sometimes it hops again on its own.",
+    "de": "Vier Froschgesichter zahlen {pay}$. „Feels good man“ zahlt x10, der traurige Frosch nichts. Manchmal hüpft er von selbst nochmal."
+   },
+   "art": {
+    "top": "#6dbb45",
+    "left": "#4f9a2f",
+    "right": "#3c7a22",
+    "edge": "#a8e07a",
+    "ink": "#1d3a10",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:frog",
+     "icon:frog_smug",
+     "icon:frog"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sixseven",
+   "tier": 1,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 4000.0,
+   "unlock_price": 40000.0,
+   "npc": true,
+   "mech": "sixseven",
+   "faces": [
+    6,
+    7,
+    6,
+    7,
+    6,
+    67
+   ],
+   "pay": 4.0,
+   "p": {},
+   "name": {
+    "en": "67 Dice",
+    "de": "67-Würfel"
+   },
+   "desc": {
+    "en": "Faces 6 and 7 pay {pay}$ each pip. The 67 face pays 67 pips. A 6 followed by a 7 on the same dice pays x6.7!",
+    "de": "Seiten 6 und 7 zahlen {pay}$ pro Auge. Die 67-Seite zählt 67. Eine 6 gefolgt von einer 7 auf demselben Würfel zahlt x6,7!"
+   },
+   "art": {
+    "top": "#ff9a3c",
+    "left": "#e0701f",
+    "right": "#b85414",
+    "edge": "#ffd08a",
+    "ink": "#ffffff",
+    "pattern": "stripes",
+    "glyphs": [
+     "num:67",
+     "num:6",
+     "num:7"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "paper",
+   "tier": 1,
+   "family": "material",
+   "unlock": "talent",
+   "price": 2000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "fast",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 8.0,
+   "p": {
+    "speed": 2.5
+   },
+   "name": {
+    "en": "Paper Dice",
+    "de": "Papierwürfel"
+   },
+   "desc": {
+    "en": "Light as paper: rolls 2.5x faster. Pays {pay}$ times the face.",
+    "de": "Leicht wie Papier: würfelt 2,5x schneller. Zahlt {pay}$ mal die Augenzahl."
+   },
+   "art": {
+    "top": "#f4f1e6",
+    "left": "#d9d4c2",
+    "right": "#bfb9a3",
+    "edge": "#ffffff",
+    "ink": "#3d5a8a",
+    "pattern": "grid",
+    "glyphs": [
+     "pip:1",
+     "pip:4",
+     "pip:6"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "clover",
+   "tier": 1,
+   "family": "luck",
+   "unlock": "lucky",
+   "price": 6000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    21
+   ],
+   "pay": 10.0,
+   "p": {},
+   "name": {
+    "en": "Clover Dice",
+    "de": "Kleeblattwürfel"
+   },
+   "desc": {
+    "en": "Five faces pay {pay}x3$. The four-leaf clover pays seven times as much.",
+    "de": "Fünf Seiten zahlen {pay}x3$. Das vierblättrige Kleeblatt zahlt das Siebenfache."
+   },
+   "art": {
+    "top": "#2fa85a",
+    "left": "#22864a",
+    "right": "#186a3a",
+    "edge": "#7fe0a0",
+    "ink": "#e8ffe0",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:clover",
+     "num:3",
+     "icon:clover"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "dnd",
+   "tier": 1,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 7500.0,
+   "unlock_price": 75000.0,
+   "npc": true,
+   "mech": "dnd",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "pay": 6.0,
+   "p": {},
+   "name": {
+    "en": "D20 Dungeon Dice",
+    "de": "D20-Dungeon-Würfel"
+   },
+   "desc": {
+    "en": "A real D20: pays {pay}$ per pip. Natural 20 is a critical hit (x20), natural 1 a critical fail (0$).",
+    "de": "Ein echter W20: zahlt {pay}$ pro Auge. Eine natürliche 20 ist ein kritischer Treffer (x20), die 1 ein Patzer (0$)."
+   },
+   "art": {
+    "top": "#8a2be2",
+    "left": "#6a1fb4",
+    "right": "#4f168a",
+    "edge": "#c58cff",
+    "ink": "#ffe27a",
+    "pattern": "gem",
+    "glyphs": [
+     "num:20",
+     "num:1",
+     "icon:d20"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "candy",
+   "tier": 1,
+   "family": "food",
+   "unlock": "shop",
+   "price": 9000.0,
+   "unlock_price": 90000.0,
+   "npc": true,
+   "mech": "aura",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    4
+   ],
+   "pay": 25.0,
+   "p": {
+    "radius": 120,
+    "bonus": 15
+   },
+   "name": {
+    "en": "Candy Dice",
+    "de": "Bonbonwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Sugar rush: dice within {radius}px earn +{bonus}%.",
+    "de": "Zahlt {pay}$ pro Auge. Zuckerschock: Würfel im Umkreis von {radius}px verdienen +{bonus}%."
+   },
+   "art": {
+    "top": "#ff7ac8",
+    "left": "#e655aa",
+    "right": "#c23d8c",
+    "edge": "#ffc2e8",
+    "ink": "#ffffff",
+    "pattern": "stripes",
+    "glyphs": [
+     "icon:candy",
+     "icon:candy",
+     "icon:candy"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bubble",
+   "tier": 1,
+   "family": "element",
+   "unlock": "talent",
+   "price": 5000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "neighbors",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 15.0,
+   "p": {
+    "radius": 130,
+    "count": 2
+   },
+   "name": {
+    "en": "Bubble Dice",
+    "de": "Seifenblasenwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and pops when it lands, rolling up to {count} neighbours.",
+    "de": "Zahlt {pay}$ pro Auge und platzt beim Landen – bis zu {count} Nachbarn würfeln mit."
+   },
+   "art": {
+    "top": "#9ee8ff",
+    "left": "#6ccfee",
+    "right": "#45b2d8",
+    "edge": "#e0fbff",
+    "ink": "#ffffff",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:bubble",
+     "pip:2",
+     "icon:bubble"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "cookie",
+   "tier": 1,
+   "family": "food",
+   "unlock": "shop",
+   "price": 12000.0,
+   "unlock_price": 120000.0,
+   "npc": true,
+   "mech": "clicker",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 25.0,
+   "p": {
+    "mult": 5
+   },
+   "name": {
+    "en": "Cookie Dice",
+    "de": "Keks-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Rolls you trigger yourself (click or hover) pay x{mult}.",
+    "de": "Zahlt {pay}$ pro Auge. Würfe, die du selbst auslöst (Klick oder Hover), zahlen x{mult}."
+   },
+   "art": {
+    "top": "#d9a05b",
+    "left": "#b8803f",
+    "right": "#94632b",
+    "edge": "#f2c98c",
+    "ink": "#4a2a12",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:cookie",
+     "icon:cookie",
+     "icon:cookie"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "snail",
+   "tier": 1,
+   "family": "animal",
+   "unlock": "shop",
+   "price": 15000.0,
+   "unlock_price": 150000.0,
+   "npc": true,
+   "mech": "slow",
+   "faces": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    12
+   ],
+   "pay": 60.0,
+   "p": {
+    "slow": 3.0
+   },
+   "name": {
+    "en": "Snail Dice",
+    "de": "Schneckenwürfel"
+   },
+   "desc": {
+    "en": "Very slow (rolls take 3x longer) but pays {pay}$ per pip.",
+    "de": "Sehr langsam (Würfe dauern 3x länger), zahlt aber {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#e8c86a",
+    "left": "#c9a748",
+    "right": "#a8862f",
+    "edge": "#fff0a8",
+    "ink": "#5a3a12",
+    "pattern": "swirl",
+    "glyphs": [
+     "icon:snail",
+     "num:6",
+     "icon:shell"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "stone",
+   "tier": 2,
+   "family": "material",
+   "unlock": "shop",
+   "price": 1600000.0,
+   "unlock_price": 16000000.0,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    30
+   ],
+   "pay": 2500.0,
+   "p": {},
+   "name": {
+    "en": "Stone Dice",
+    "de": "Steinwürfel"
+   },
+   "desc": {
+    "en": "Heavy and reliable: pays {pay}$ per pip.",
+    "de": "Schwer und zuverlässig: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#9a9a9a",
+    "left": "#7c7c7c",
+    "right": "#5f5f5f",
+    "edge": "#c8c8c8",
+    "ink": "#2b2b2b",
+    "pattern": "stone",
+    "glyphs": [
+     "num:5",
+     "num:5",
+     "num:30"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "twitch",
+   "tier": 2,
+   "family": "tech",
+   "unlock": "shop",
+   "price": 2400000.0,
+   "unlock_price": 24000000.0,
+   "npc": true,
+   "mech": "twitch",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 3750.0,
+   "p": {
+    "raid_chance": 0.02
+   },
+   "name": {
+    "en": "Stream Dice",
+    "de": "Twitch-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip plus 2$ per viewer. Every roll brings viewers; sometimes a RAID rolls 10 dice and pays x10.",
+    "de": "Zahlt {pay}$ pro Auge plus 2$ pro Zuschauer. Jeder Wurf bringt Zuschauer; manchmal würfelt ein RAID 10 Würfel und zahlt x10."
+   },
+   "art": {
+    "top": "#9146ff",
+    "left": "#7432e0",
+    "right": "#5a23b8",
+    "edge": "#c9a4ff",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:chat",
+     "icon:chat",
+     "icon:live"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "youtube",
+   "tier": 2,
+   "family": "tech",
+   "unlock": "shop",
+   "price": 3000000.0,
+   "unlock_price": 30000000.0,
+   "npc": true,
+   "mech": "youtube",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 3750.0,
+   "p": {},
+   "name": {
+    "en": "Video Dice",
+    "de": "YouTube-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip plus subscribers/10. Each roll gains subscribers; every milestone (100, 1K, 10K…) pays a play-button bonus.",
+    "de": "Zahlt {pay}$ pro Auge plus Abonnenten/10. Jeder Wurf bringt Abonnenten; jeder Meilenstein (100, 1K, 10K…) zahlt einen Play-Button-Bonus."
+   },
+   "art": {
+    "top": "#ff2a2a",
+    "left": "#d81818",
+    "right": "#ad1010",
+    "edge": "#ff9a9a",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:play",
+     "icon:play",
+     "icon:play"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "pirate",
+   "tier": 2,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 3600000.0,
+   "unlock_price": 36000000.0,
+   "npc": true,
+   "mech": "pirate",
+   "faces": [
+    3,
+    3,
+    3,
+    0,
+    4,
+    30
+   ],
+   "pay": 6250.0,
+   "p": {
+    "plunder": 3,
+    "radius": 150
+   },
+   "name": {
+    "en": "Pirate Dice",
+    "de": "Piratenwürfel"
+   },
+   "desc": {
+    "en": "Coins pay {pay}x3$, the skull pays nothing, the chest pays x10 and the parrot rolls a neighbour. Plunders 3% of nearby payouts.",
+    "de": "Münzen zahlen {pay}x3$, der Totenkopf nichts, die Truhe x10 und der Papagei würfelt einen Nachbarn. Plündert 3% der Auszahlungen in der Nähe."
+   },
+   "art": {
+    "top": "#3d2b1f",
+    "left": "#2c1f16",
+    "right": "#20160f",
+    "edge": "#8a6a4a",
+    "ink": "#f2d16b",
+    "pattern": "wood",
+    "glyphs": [
+     "icon:skull",
+     "icon:coin",
+     "icon:chest"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "console",
+   "tier": 2,
+   "family": "tech",
+   "unlock": "shop",
+   "price": 4400000.0,
+   "unlock_price": 44000000.0,
+   "npc": true,
+   "mech": "combo",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 7500.0,
+   "p": {
+    "window": 4.0,
+    "step": 0.25,
+    "max": 10,
+    "maxmult": 3.5
+   },
+   "name": {
+    "en": "Console Dice",
+    "de": "Konsolen-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Rolled again within 4 seconds the combo rises (up to x{maxmult}).",
+    "de": "Zahlt {pay}$ pro Auge. Innerhalb von 4 Sekunden erneut gewürfelt steigt die Kombo (bis x{maxmult})."
+   },
+   "art": {
+    "top": "#3a3f4b",
+    "left": "#2b2f38",
+    "right": "#1e2128",
+    "edge": "#7c8494",
+    "ink": "#5ff5c8",
+    "pattern": "grid",
+    "glyphs": [
+     "icon:gamepad",
+     "icon:btn_a",
+     "icon:btn_b"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "slot",
+   "tier": 2,
+   "family": "casino",
+   "unlock": "shop",
+   "price": 5200000.0,
+   "unlock_price": 52000000.0,
+   "npc": true,
+   "mech": "slot",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 12500.0,
+   "p": {},
+   "name": {
+    "en": "Slot Machine Dice",
+    "de": "Spielautomat-Würfel"
+   },
+   "desc": {
+    "en": "Spins three reels: 7-7-7 pays x77, three of a kind x10, a pair x2. Base {pay}$.",
+    "de": "Dreht drei Walzen: 7-7-7 zahlt x77, drei Gleiche x10, ein Paar x2. Basis {pay}$."
+   },
+   "art": {
+    "top": "#e8c02a",
+    "left": "#c99a14",
+    "right": "#a07a0c",
+    "edge": "#fff08a",
+    "ink": "#c01818",
+    "pattern": "stripes",
+    "glyphs": [
+     "icon:seven",
+     "icon:cherry",
+     "icon:bell"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ice",
+   "tier": 2,
+   "family": "element",
+   "unlock": "talent",
+   "price": 2000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "freeze",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 4375.0,
+   "p": {
+    "radius": 140,
+    "mult": 2
+   },
+   "name": {
+    "en": "Ice Dice",
+    "de": "Eiswürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and freezes dice within {radius}px: their next payout is doubled.",
+    "de": "Zahlt {pay}$ pro Auge und friert Würfel im Umkreis von {radius}px ein: ihre nächste Auszahlung verdoppelt sich."
+   },
+   "art": {
+    "top": "#bfefff",
+    "left": "#8fd8f5",
+    "right": "#62bde6",
+    "edge": "#ffffff",
+    "ink": "#ffffff",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:snowflake",
+     "icon:snowflake",
+     "icon:snowflake"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "fire",
+   "tier": 2,
+   "family": "element",
+   "unlock": "talent",
+   "price": 2800000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "neighbors",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 5000.0,
+   "p": {
+    "radius": 110,
+    "count": 6
+   },
+   "name": {
+    "en": "Fire Dice",
+    "de": "Feuerwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and sets the table on fire: dice within {radius}px roll too (max {count}).",
+    "de": "Zahlt {pay}$ pro Auge und setzt den Tisch in Brand: Würfel im Umkreis von {radius}px würfeln mit (max. {count})."
+   },
+   "art": {
+    "top": "#ff6a1f",
+    "left": "#e04a10",
+    "right": "#b8350a",
+    "edge": "#ffb070",
+    "ink": "#ffe25a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:flame",
+     "icon:flame",
+     "icon:flame"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bunny",
+   "tier": 2,
+   "family": "animal",
+   "unlock": "lucky",
+   "price": 4000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "breeder",
+   "faces": [
+    2,
+    2,
+    2,
+    4,
+    4,
+    8
+   ],
+   "pay": 8750.0,
+   "p": {
+    "every": 25,
+    "max": 200
+   },
+   "name": {
+    "en": "Bunny Dice",
+    "de": "Hasenwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Bunnies multiply: every {every} bunny rolls a new bunny is born (max {max}).",
+    "de": "Zahlt {pay}$ pro Auge. Hasen vermehren sich: alle {every} Hasenwürfe kommt ein neuer Hase dazu (max. {max})."
+   },
+   "art": {
+    "top": "#f4f4f4",
+    "left": "#d8d8d8",
+    "right": "#bcbcbc",
+    "edge": "#ffffff",
+    "ink": "#ff8fb8",
+    "pattern": "none",
+    "glyphs": [
+     "icon:bunny",
+     "icon:carrot",
+     "icon:bunny"
+    ],
+    "special": "ears_bunny",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "donut",
+   "tier": 2,
+   "family": "food",
+   "unlock": "tarot",
+   "price": 6000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "donut",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 11250.0,
+   "p": {},
+   "name": {
+    "en": "Donut Dice",
+    "de": "Donut-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Face 1 collects a sprinkle; with 6 sprinkles the next donut roll pays x36.",
+    "de": "Zahlt {pay}$ pro Auge. Seite 1 sammelt Streusel; mit 6 Streuseln zahlt der nächste Donut-Wurf x36."
+   },
+   "art": {
+    "top": "#f2a7c8",
+    "left": "#d887ac",
+    "right": "#b86a8e",
+    "edge": "#ffd6e8",
+    "ink": "#7a4a2a",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:donut",
+     "icon:donut",
+     "icon:donut"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "godot",
+   "tier": 3,
+   "family": "tech",
+   "unlock": "talent",
+   "price": 2560000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "godot",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 500000.0,
+   "p": {},
+   "name": {
+    "en": "Godot Dice",
+    "de": "Godot-Würfel"
+   },
+   "desc": {
+    "en": "Node tree: pays {pay}$ per pip for every dice type you own. A 6 emits a signal that rolls all other Godot dice.",
+    "de": "Node-Baum: zahlt {pay}$ pro Auge für jede Würfelart, die du besitzt. Eine 6 sendet ein Signal, das alle anderen Godot-Würfel würfeln lässt."
+   },
+   "art": {
+    "top": "#478cbf",
+    "left": "#3a76a3",
+    "right": "#2c5d82",
+    "edge": "#9cc8ec",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:robot_head",
+     "icon:robot_head",
+     "icon:gear"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "tetris",
+   "tier": 3,
+   "family": "tech",
+   "unlock": "talent",
+   "price": 3413333332.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "tetris",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 20000000.0,
+   "p": {},
+   "name": {
+    "en": "Block Dice",
+    "de": "Tetris-Würfel"
+   },
+   "desc": {
+    "en": "Each roll drops a block. 10 blocks clear a line (all block dice pay x10). Four lines in 30 s: TETRIS (x100)!",
+    "de": "Jeder Wurf lässt einen Block fallen. 10 Blöcke räumen eine Reihe (alle Block-Würfel zahlen x10). Vier Reihen in 30 s: TETRIS (x100)!"
+   },
+   "art": {
+    "top": "#2ad1ff",
+    "left": "#ffd21f",
+    "right": "#ff4fa0",
+    "edge": "#ffffff",
+    "ink": "#ffffff",
+    "pattern": "bricks",
+    "glyphs": [
+     "icon:tetro_t",
+     "icon:tetro_l",
+     "icon:tetro_s"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "vault",
+   "tier": 3,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 4266666668.0,
+   "unlock_price": 42666666680.0,
+   "npc": true,
+   "mech": "vault",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 13333333.0,
+   "p": {
+    "every": 20,
+    "mult": 3
+   },
+   "name": {
+    "en": "Vault Dice",
+    "de": "Tresor-Würfel"
+   },
+   "desc": {
+    "en": "Pays half of {pay}$ per pip and locks the other half in the vault. Every {every} rolls the vault opens and pays its content x{mult}.",
+    "de": "Zahlt die Hälfte von {pay}$ pro Auge und schließt die andere Hälfte im Tresor ein. Alle {every} Würfe öffnet sich der Tresor und zahlt den Inhalt x{mult}."
+   },
+   "art": {
+    "top": "#6b7280",
+    "left": "#555b66",
+    "right": "#40454e",
+    "edge": "#a8afba",
+    "ink": "#ffd66b",
+    "pattern": "metal",
+    "glyphs": [
+     "icon:vault",
+     "icon:dial",
+     "icon:vault"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "luckyblock",
+   "tier": 3,
+   "family": "luck",
+   "unlock": "lucky",
+   "price": 5120000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "luckyblock",
+   "faces": [
+    1
+   ],
+   "pay": 25000000.0,
+   "p": {},
+   "name": {
+    "en": "Lucky Block Dice",
+    "de": "Lucky-Block-Würfel"
+   },
+   "desc": {
+    "en": "Every landing opens the block: coins, jackpots, Lucky Cube levels, a dice rain, sometimes even talent gold – or an explosion!",
+    "de": "Jede Landung öffnet den Block: Münzen, Jackpots, Glückswürfel-Stufen, ein Würfelregen, manchmal sogar Talent-Gold – oder eine Explosion!"
+   },
+   "art": {
+    "top": "#ffd23a",
+    "left": "#e8b01c",
+    "right": "#c48c0c",
+    "edge": "#fff2a0",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:question",
+     "icon:question",
+     "icon:question"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "zombie",
+   "tier": 3,
+   "family": "spooky",
+   "unlock": "tarot",
+   "price": 3840000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "zombie",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 16666667.0,
+   "p": {
+    "chance": 8,
+    "radius": 160,
+    "max": 300
+   },
+   "name": {
+    "en": "Zombie Dice",
+    "de": "Zombie-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Bites: {chance}% chance to turn a nearby 50/50 or D4 into another zombie (max {max}).",
+    "de": "Zahlt {pay}$ pro Auge. Beißt: {chance}% Chance, einen nahen 50/50- oder D4-Würfel in einen Zombie zu verwandeln (max. {max})."
+   },
+   "art": {
+    "top": "#7fae5a",
+    "left": "#628f43",
+    "right": "#4a7032",
+    "edge": "#b2d88f",
+    "ink": "#2a1a1a",
+    "pattern": "noise",
+    "glyphs": [
+     "icon:zombie",
+     "icon:hand",
+     "icon:zombie"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "lightning",
+   "tier": 3,
+   "family": "element",
+   "unlock": "shop",
+   "price": 5973333332.0,
+   "unlock_price": 59733333320.0,
+   "npc": true,
+   "mech": "lightning",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 20000000.0,
+   "p": {
+    "count": 3
+   },
+   "name": {
+    "en": "Lightning Dice",
+    "de": "Blitzwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and strikes {count} random dice anywhere on the table.",
+    "de": "Zahlt {pay}$ pro Auge und trifft {count} zufällige Würfel irgendwo auf dem Tisch."
+   },
+   "art": {
+    "top": "#3a3f8f",
+    "left": "#2c3070",
+    "right": "#1f2252",
+    "edge": "#8f96ff",
+    "ink": "#fff35a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:bolt",
+     "icon:bolt",
+     "icon:cloud"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ghost",
+   "tier": 3,
+   "family": "spooky",
+   "unlock": "shop",
+   "price": 6826666668.0,
+   "unlock_price": 68266666680.0,
+   "npc": true,
+   "mech": "ghost",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 21666667.0,
+   "p": {
+    "count": 2
+   },
+   "name": {
+    "en": "Ghost Dice",
+    "de": "Geisterwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip, then haunts a random spot of the table and scares 2 dice into rolling.",
+    "de": "Zahlt {pay}$ pro Auge, spukt dann an einer zufälligen Stelle und erschreckt 2 Würfel."
+   },
+   "art": {
+    "top": "#e9ecff",
+    "left": "#c9cdf0",
+    "right": "#a8addb",
+    "edge": "#ffffff",
+    "ink": "#3a3a5a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:ghost",
+     "icon:ghost",
+     "icon:boo"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "stonks",
+   "tier": 3,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 7680000000.0,
+   "unlock_price": 76800000000.0,
+   "npc": true,
+   "mech": "stonks",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 25000000.0,
+   "p": {},
+   "name": {
+    "en": "Stonks Dice",
+    "de": "Stonks-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip times the Stonks market (x0.5 to x20). The market updates every 45 s and mostly goes up.",
+    "de": "Zahlt {pay}$ pro Auge mal dem Stonks-Kurs (x0,5 bis x20). Der Kurs ändert sich alle 45 s und steigt meistens."
+   },
+   "art": {
+    "top": "#1f3b73",
+    "left": "#172d58",
+    "right": "#10203e",
+    "edge": "#5f86d6",
+    "ink": "#33ff7a",
+    "pattern": "grid",
+    "glyphs": [
+     "icon:arrow_up",
+     "icon:chart",
+     "icon:arrow_up"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "pizza",
+   "tier": 3,
+   "family": "food",
+   "unlock": "shop",
+   "price": 8533333332.0,
+   "unlock_price": 85333333320.0,
+   "npc": true,
+   "mech": "every_n",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 26666667.0,
+   "p": {
+    "every": 8,
+    "mult": 8
+   },
+   "name": {
+    "en": "Pizza Dice",
+    "de": "Pizzawürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Every 8th pizza roll is a pizza party: x8!",
+    "de": "Zahlt {pay}$ pro Auge. Jeder 8. Pizza-Wurf ist eine Pizzaparty: x8!"
+   },
+   "art": {
+    "top": "#ffcf5a",
+    "left": "#e8a83a",
+    "right": "#c4842a",
+    "edge": "#fff0a0",
+    "ink": "#c83a1a",
+    "pattern": "dots",
+    "glyphs": [
+     "icon:pizza",
+     "icon:pizza",
+     "icon:pizza"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "robot",
+   "tier": 3,
+   "family": "tech",
+   "unlock": "shop",
+   "price": 10666666668.0,
+   "unlock_price": 106666666680.0,
+   "npc": false,
+   "mech": "auto",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 30000000.0,
+   "p": {
+    "interval": 2.5
+   },
+   "name": {
+    "en": "Robot Dice",
+    "de": "Roboterwürfel"
+   },
+   "desc": {
+    "en": "Rolls itself every {interval} s – no worker needed. Pays {pay}$ per pip.",
+    "de": "Würfelt sich alle {interval} s selbst – kein Arbeiter nötig. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#b8c4d0",
+    "left": "#95a3b2",
+    "right": "#748394",
+    "edge": "#e0e8f0",
+    "ink": "#ff4a4a",
+    "pattern": "metal",
+    "glyphs": [
+     "icon:robot",
+     "icon:bolt_small",
+     "icon:robot"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ruby",
+   "tier": 4,
+   "family": "material",
+   "unlock": "shop",
+   "price": 4096000000000.0,
+   "unlock_price": 40960000000000.0,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 8333333333.0,
+   "p": {},
+   "name": {
+    "en": "Ruby Dice",
+    "de": "Rubinwürfel"
+   },
+   "desc": {
+    "en": "A polished gem: pays {pay}$ per pip.",
+    "de": "Ein geschliffener Edelstein: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff3a5c",
+    "left": "#d81c40",
+    "right": "#a8102e",
+    "edge": "#ffb0c0",
+    "ink": "#ffe0e8",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "car",
+   "tier": 4,
+   "family": "vehicle",
+   "unlock": "shop",
+   "price": 6144000000000.0,
+   "unlock_price": 61440000000000.0,
+   "npc": true,
+   "mech": "car",
+   "faces": [
+    1
+   ],
+   "pay": 66666666667.0,
+   "p": {
+    "speed": 620,
+    "width": 46,
+    "gold_chance": 0.02
+   },
+   "name": {
+    "en": "Racing Car Dice",
+    "de": "Auto-Würfel"
+   },
+   "desc": {
+    "en": "Drives in a straight line until it hits the wall. Every dice in its way rolls. Hitting the wall pays {pay}$ (+2% per dice hit) and sometimes a gold coin.",
+    "de": "Fährt geradeaus, bis er gegen die Wand fährt. Jeder Würfel im Weg würfelt. Der Aufprall zahlt {pay}$ (+2% pro getroffenem Würfel) und manchmal eine Goldmünze."
+   },
+   "art": {
+    "top": "#e8261c",
+    "left": "#c41a12",
+    "right": "#9a120c",
+    "edge": "#ff8a80",
+    "ink": "#ffffff",
+    "pattern": "stripes",
+    "glyphs": [
+     "icon:car",
+     "icon:wheel",
+     "icon:wheel"
+    ],
+    "special": "spoiler",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "knight",
+   "tier": 4,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 6826666666668.0,
+   "unlock_price": 68266666666680.0,
+   "npc": true,
+   "mech": "aura",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 10000000000.0,
+   "p": {
+    "radius": 160,
+    "bonus": 25
+   },
+   "name": {
+    "en": "Knight Dice",
+    "de": "Ritterwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. Its shield protects dice within {radius}px: +{bonus}% payout.",
+    "de": "Zahlt {pay}$ pro Auge. Sein Schild schützt Würfel im Umkreis von {radius}px: +{bonus}% Auszahlung."
+   },
+   "art": {
+    "top": "#c0c6d0",
+    "left": "#9aa2ae",
+    "right": "#76808e",
+    "edge": "#ffffff",
+    "ink": "#c8102e",
+    "pattern": "metal",
+    "glyphs": [
+     "icon:shield",
+     "icon:sword",
+     "icon:shield"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "roulette",
+   "tier": 4,
+   "family": "casino",
+   "unlock": "shop",
+   "price": 7509333333332.0,
+   "unlock_price": 75093333333320.0,
+   "npc": true,
+   "mech": "roulette",
+   "faces": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "pay": 13333333333.0,
+   "p": {},
+   "name": {
+    "en": "Roulette Dice",
+    "de": "Roulettewürfel"
+   },
+   "desc": {
+    "en": "37 pockets: green zero pays x36, red pays x2, black x1. Base {pay}$.",
+    "de": "37 Fächer: die grüne Null zahlt x36, Rot x2, Schwarz x1. Basis {pay}$."
+   },
+   "art": {
+    "top": "#1a8f3a",
+    "left": "#c81e1e",
+    "right": "#1b1b1b",
+    "edge": "#7fe09a",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:wheel_roulette",
+     "num:0",
+     "num:36"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bomb",
+   "tier": 4,
+   "family": "element",
+   "unlock": "shop",
+   "price": 8192000000000.0,
+   "unlock_price": 81920000000000.0,
+   "npc": true,
+   "mech": "bomb",
+   "faces": [
+    3,
+    2,
+    1
+   ],
+   "pay": 20000000000.0,
+   "p": {
+    "radius": 220,
+    "count": 30,
+    "mult": 10
+   },
+   "name": {
+    "en": "Bomb Dice",
+    "de": "Bombenwürfel"
+   },
+   "desc": {
+    "en": "Counts down 3-2-1. On zero: BOOM – all dice within {radius}px roll and it pays x10. Base {pay}$.",
+    "de": "Zählt 3-2-1 herunter. Bei Null: BUMM – alle Würfel im Umkreis von {radius}px würfeln und er zahlt x10. Basis {pay}$."
+   },
+   "art": {
+    "top": "#2b2b33",
+    "left": "#1f1f26",
+    "right": "#141419",
+    "edge": "#6a6a7a",
+    "ink": "#ff5a2a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:bomb",
+     "num:3",
+     "icon:fuse"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sushi",
+   "tier": 4,
+   "family": "food",
+   "unlock": "shop",
+   "price": 9557333333332.0,
+   "unlock_price": 95573333333320.0,
+   "npc": true,
+   "mech": "food",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 10000000000.0,
+   "p": {},
+   "name": {
+    "en": "Sushi Dice",
+    "de": "Sushi-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip, +25% for every other food dice type you own.",
+    "de": "Zahlt {pay}$ pro Auge, +25% für jede andere Essens-Würfelart, die du besitzt."
+   },
+   "art": {
+    "top": "#f4f4ec",
+    "left": "#2b3a2a",
+    "right": "#ff7a5a",
+    "edge": "#ffffff",
+    "ink": "#1b1b1b",
+    "pattern": "none",
+    "glyphs": [
+     "icon:sushi",
+     "icon:nori",
+     "icon:salmon"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "dragon",
+   "tier": 4,
+   "family": "animal",
+   "unlock": "talent",
+   "price": 10922666666668.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "cone",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 13333333333.0,
+   "p": {
+    "radius": 300,
+    "count": 25,
+    "mult": 1
+   },
+   "name": {
+    "en": "Dragon Dice",
+    "de": "Drachenwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and breathes fire in a {radius}px cone – everything in it rolls (max {count}).",
+    "de": "Zahlt {pay}$ pro Auge und speit Feuer in einem {radius}px-Kegel – alles darin würfelt (max. {count})."
+   },
+   "art": {
+    "top": "#2e9a4e",
+    "left": "#227a3c",
+    "right": "#185a2b",
+    "edge": "#7fe0a0",
+    "ink": "#ffd23a",
+    "pattern": "scales",
+    "glyphs": [
+     "icon:dragon",
+     "icon:flame",
+     "icon:scales"
+    ],
+    "special": "horns",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "magic8",
+   "tier": 4,
+   "family": "casino",
+   "unlock": "talent",
+   "price": 12288000000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "magic8",
+   "faces": [
+    1,
+    0,
+    2,
+    1,
+    0,
+    1
+   ],
+   "pay": 26666666667.0,
+   "p": {
+    "radius": 250
+   },
+   "name": {
+    "en": "Magic 8-Ball Dice",
+    "de": "Magische-8-Ball-Würfel"
+   },
+   "desc": {
+    "en": "YES: dice within {radius}px get double payout on their next roll. NO: nothing. ASK AGAIN: rolls itself again. Base {pay}$.",
+    "de": "JA: Würfel im Umkreis von {radius}px bekommen beim nächsten Wurf doppelte Auszahlung. NEIN: nichts. FRAG SPÄTER: würfelt sich erneut. Basis {pay}$."
+   },
+   "art": {
+    "top": "#1b1b22",
+    "left": "#121217",
+    "right": "#0a0a0d",
+    "edge": "#4a4a5a",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "num:8",
+     "icon:triangle",
+     "num:8"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "owl",
+   "tier": 4,
+   "family": "animal",
+   "unlock": "lucky",
+   "price": 13653333333332.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "owl",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 10000000000.0,
+   "p": {},
+   "name": {
+    "en": "Owl Dice",
+    "de": "Eulenwürfel"
+   },
+   "desc": {
+    "en": "Wise: pays {pay}$ per pip, +2% for every unlocked achievement.",
+    "de": "Weise: zahlt {pay}$ pro Auge, +2% für jede freigeschaltete Errungenschaft."
+   },
+   "art": {
+    "top": "#8a6a4a",
+    "left": "#6e5238",
+    "right": "#543d28",
+    "edge": "#c8a47a",
+    "ink": "#ffd23a",
+    "pattern": "scales",
+    "glyphs": [
+     "icon:owl",
+     "icon:feather",
+     "icon:owl"
+    ],
+    "special": "ears_owl",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "wizard",
+   "tier": 4,
+   "family": "adventure",
+   "unlock": "tarot",
+   "price": 16384000000000.0,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "enchant",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 16666666667.0,
+   "p": {
+    "mult": 10
+   },
+   "name": {
+    "en": "Wizard Dice",
+    "de": "Zaubererwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and enchants a random dice: its next roll pays x10.",
+    "de": "Zahlt {pay}$ pro Auge und verzaubert einen zufälligen Würfel: sein nächster Wurf zahlt x10."
+   },
+   "art": {
+    "top": "#3a2a8a",
+    "left": "#2c1f6e",
+    "right": "#1f1552",
+    "edge": "#8a7aff",
+    "ink": "#ffd23a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:hat",
+     "icon:star",
+     "icon:wand"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sapphire",
+   "tier": 5,
+   "family": "material",
+   "unlock": "shop",
+   "price": 6553600000000001.0,
+   "unlock_price": 6.553600000000001e+16,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 7500000000000.0,
+   "p": {},
+   "name": {
+    "en": "Sapphire Dice",
+    "de": "Saphirwürfel"
+   },
+   "desc": {
+    "en": "A flawless gem: pays {pay}$ per pip.",
+    "de": "Ein makelloser Edelstein: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#2a6aff",
+    "left": "#1a50d8",
+    "right": "#103aa8",
+    "edge": "#8ab0ff",
+    "ink": "#dfe8ff",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "rocket",
+   "tier": 5,
+   "family": "vehicle",
+   "unlock": "shop",
+   "price": 9830400000000002.0,
+   "unlock_price": 9.830400000000002e+16,
+   "npc": true,
+   "mech": "rocket",
+   "faces": [
+    1
+   ],
+   "pay": 150000000000000.0,
+   "p": {
+    "radius": 200,
+    "count": 30,
+    "flight": 2.5
+   },
+   "name": {
+    "en": "Rocket Dice",
+    "de": "Raketenwürfel"
+   },
+   "desc": {
+    "en": "Launches into the sky and crashes down somewhere else: the shockwave rolls dice within {radius}px. Pays {pay}$.",
+    "de": "Startet in den Himmel und schlägt woanders ein: die Druckwelle lässt Würfel im Umkreis von {radius}px würfeln. Zahlt {pay}$."
+   },
+   "art": {
+    "top": "#e8e8f0",
+    "left": "#c8c8d4",
+    "right": "#a4a4b4",
+    "edge": "#ffffff",
+    "ink": "#e8261c",
+    "pattern": "none",
+    "glyphs": [
+     "icon:rocket",
+     "icon:flame",
+     "icon:rocket"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "doge",
+   "tier": 5,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 1.1468800000000002e+16,
+   "unlock_price": 1.1468800000000002e+17,
+   "npc": true,
+   "mech": "doge",
+   "faces": [
+    1
+   ],
+   "pay": 50000000000000.0,
+   "p": {},
+   "name": {
+    "en": "Doge Dice",
+    "de": "Doge-Würfel"
+   },
+   "desc": {
+    "en": "Much random, very wow: pays between x0.1 and x10 of {pay}$. 1% TO THE MOON pays x100.",
+    "de": "Viel Zufall, sehr wow: zahlt zwischen x0,1 und x10 von {pay}$. 1% TO THE MOON zahlt x100."
+   },
+   "art": {
+    "top": "#e8b45a",
+    "left": "#c9953e",
+    "right": "#a6772a",
+    "edge": "#ffe0a0",
+    "ink": "#3a2410",
+    "pattern": "none",
+    "glyphs": [
+     "icon:doge",
+     "icon:doge",
+     "text:WOW"
+    ],
+    "special": "ears_dog",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "viking",
+   "tier": 5,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 1.3107200000000002e+16,
+   "unlock_price": 1.3107200000000002e+17,
+   "npc": true,
+   "mech": "horn",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 12500000000000.0,
+   "p": {
+    "count": 30
+   },
+   "name": {
+    "en": "Viking Dice",
+    "de": "Wikingerwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. A 6 blows the war horn: all Viking dice roll (max {count}).",
+    "de": "Zahlt {pay}$ pro Auge. Eine 6 bläst das Kriegshorn: alle Wikingerwürfel würfeln (max. {count})."
+   },
+   "art": {
+    "top": "#8a5a2a",
+    "left": "#6e4520",
+    "right": "#523316",
+    "edge": "#c89a6a",
+    "ink": "#e8e8e8",
+    "pattern": "wood",
+    "glyphs": [
+     "icon:viking",
+     "icon:axe",
+     "icon:horn"
+    ],
+    "special": "horns",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "troll",
+   "tier": 5,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 1.4745600000000002e+16,
+   "unlock_price": 1.4745600000000003e+17,
+   "npc": true,
+   "mech": "troll",
+   "faces": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "pay": 100000000000000.0,
+   "p": {},
+   "name": {
+    "en": "Troll Dice",
+    "de": "Trollface-Würfel"
+   },
+   "desc": {
+    "en": "Problem? 50% pays nothing, 50% pays {pay}$.",
+    "de": "Problem? 50% zahlt nichts, 50% zahlt {pay}$."
+   },
+   "art": {
+    "top": "#f2f2f2",
+    "left": "#d4d4d4",
+    "right": "#b4b4b4",
+    "edge": "#ffffff",
+    "ink": "#1b1b1b",
+    "pattern": "none",
+    "glyphs": [
+     "icon:troll",
+     "icon:troll",
+     "text:?"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "burger",
+   "tier": 5,
+   "family": "food",
+   "unlock": "shop",
+   "price": 1.6384000000000004e+16,
+   "unlock_price": 1.6384000000000003e+17,
+   "npc": true,
+   "mech": "stack",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 15000000000000.0,
+   "p": {
+    "step": 10,
+    "max": 300
+   },
+   "name": {
+    "en": "Burger Dice",
+    "de": "Burger-Würfel"
+   },
+   "desc": {
+    "en": "Stacks up: every roll without a 1 adds +10% (up to +300%). Base {pay}$ per pip.",
+    "de": "Stapelt sich: jeder Wurf ohne 1 bringt +10% (bis +300%). Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#d98a3a",
+    "left": "#8a4a1f",
+    "right": "#4a9a2a",
+    "edge": "#ffc080",
+    "ink": "#ffe25a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:burger",
+     "icon:burger",
+     "icon:burger"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ninja",
+   "tier": 5,
+   "family": "adventure",
+   "unlock": "talent",
+   "price": 1.8022400000000004e+16,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "ninja",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 15000000000000.0,
+   "p": {
+    "count": 2,
+    "speed": 3.0
+   },
+   "name": {
+    "en": "Ninja Dice",
+    "de": "Ninjawürfel"
+   },
+   "desc": {
+    "en": "Strikes in a flash (very fast roll) and throws shuriken at 2 distant dice. Pays {pay}$ per pip.",
+    "de": "Schlägt blitzschnell zu (sehr schneller Wurf) und wirft Shuriken auf 2 entfernte Würfel. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#22222a",
+    "left": "#18181e",
+    "right": "#0e0e12",
+    "edge": "#5a5a6a",
+    "ink": "#e8261c",
+    "pattern": "none",
+    "glyphs": [
+     "icon:ninja",
+     "icon:shuriken",
+     "icon:shuriken"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "domino",
+   "tier": 5,
+   "family": "casino",
+   "unlock": "talent",
+   "price": 1.9660800000000004e+16,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "domino",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 15000000000000.0,
+   "p": {
+    "delay": 0.12,
+    "step": 5
+   },
+   "name": {
+    "en": "Domino Dice",
+    "de": "Domino-Würfel"
+   },
+   "desc": {
+    "en": "Topples the next Domino dice, which topples the next… Each step of the chain pays +5% more. Base {pay}$ per pip.",
+    "de": "Stößt den nächsten Domino-Würfel um, der den nächsten umstößt… Jeder Kettenschritt zahlt +5% mehr. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#f8f8f2",
+    "left": "#dcdcd2",
+    "right": "#bcbcb0",
+    "edge": "#ffffff",
+    "ink": "#1b1b1b",
+    "pattern": "none",
+    "glyphs": [
+     "pip:5",
+     "pip:3",
+     "pip:6"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "comet",
+   "tier": 5,
+   "family": "cosmic",
+   "unlock": "lucky",
+   "price": 2.2937600000000004e+16,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "comet",
+   "faces": [
+    1
+   ],
+   "pay": 75000000000000.0,
+   "p": {
+    "width": 60,
+    "count": 40
+   },
+   "name": {
+    "en": "Comet Dice",
+    "de": "Kometenwürfel"
+   },
+   "desc": {
+    "en": "Streaks across the table – every dice along its tail rolls. Pays {pay}$ +3% per dice hit.",
+    "de": "Rast über den Tisch – jeder Würfel entlang seines Schweifs würfelt. Zahlt {pay}$ +3% pro getroffenem Würfel."
+   },
+   "art": {
+    "top": "#5ad6ff",
+    "left": "#3ab0e0",
+    "right": "#2088b8",
+    "edge": "#c0f0ff",
+    "ink": "#ffffff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:comet",
+     "icon:star",
+     "icon:comet"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "vampire",
+   "tier": 5,
+   "family": "spooky",
+   "unlock": "tarot",
+   "price": 2.6214400000000004e+16,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "drain",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 17500000000000.0,
+   "p": {
+    "radius": 150,
+    "percent": 10
+   },
+   "name": {
+    "en": "Vampire Dice",
+    "de": "Vampirwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and drains 10% of the last payouts of dice within {radius}px (they keep theirs).",
+    "de": "Zahlt {pay}$ pro Auge und saugt 10% der letzten Auszahlungen von Würfeln im Umkreis von {radius}px ab (sie behalten ihre)."
+   },
+   "art": {
+    "top": "#5a0e1e",
+    "left": "#460a17",
+    "right": "#320710",
+    "edge": "#a8304a",
+    "ink": "#ff2a4a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:bat",
+     "icon:fangs",
+     "icon:bat"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "emerald",
+   "tier": 6,
+   "family": "material",
+   "unlock": "shop",
+   "price": 1.0485760000000002e+19,
+   "unlock_price": 1.0485760000000002e+20,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 8000000000000000.0,
+   "p": {},
+   "name": {
+    "en": "Emerald Dice",
+    "de": "Smaragdwürfel"
+   },
+   "desc": {
+    "en": "A royal gem: pays {pay}$ per pip.",
+    "de": "Ein königlicher Edelstein: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#1fd27a",
+    "left": "#14ae60",
+    "right": "#0c8a4a",
+    "edge": "#90f5c0",
+    "ink": "#e0ffef",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sus",
+   "tier": 6,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 1.5728640000000004e+19,
+   "unlock_price": 1.5728640000000003e+20,
+   "npc": true,
+   "mech": "sus",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.2e+16,
+   "p": {
+    "radius": 250,
+    "count": 40
+   },
+   "name": {
+    "en": "Sus Dice",
+    "de": "Sus-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. 10%: EMERGENCY MEETING – all dice within {radius}px roll. 5%: ejected, pays nothing.",
+    "de": "Zahlt {pay}$ pro Auge. 10%: NOTFALL-TREFFEN – alle Würfel im Umkreis von {radius}px würfeln. 5%: rausgeworfen, zahlt nichts."
+   },
+   "art": {
+    "top": "#e8261c",
+    "left": "#c41a12",
+    "right": "#9a120c",
+    "edge": "#ff8a80",
+    "ink": "#9ee8ff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:crewmate",
+     "icon:crewmate",
+     "icon:knife"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "nyan",
+   "tier": 6,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 2.0971520000000004e+19,
+   "unlock_price": 2.0971520000000003e+20,
+   "npc": true,
+   "mech": "trail",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.4e+16,
+   "p": {
+    "width": 50,
+    "count": 25,
+    "bonus": 20
+   },
+   "name": {
+    "en": "Nyan Dice",
+    "de": "Nyan-Würfel"
+   },
+   "desc": {
+    "en": "Flies with a rainbow: every dice under its flight path rolls with +20%. Pays {pay}$ per pip.",
+    "de": "Fliegt mit einem Regenbogen: jeder Würfel unter seiner Flugbahn würfelt mit +20%. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffb0d8",
+    "left": "#ff4a4a",
+    "right": "#4a7aff",
+    "edge": "#ffe0f0",
+    "ink": "#3a3a3a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:nyan",
+     "icon:rainbow",
+     "icon:nyan"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "pumpkin",
+   "tier": 6,
+   "family": "spooky",
+   "unlock": "shop",
+   "price": 2.621440000000001e+19,
+   "unlock_price": 2.6214400000000007e+20,
+   "npc": false,
+   "mech": "grow",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.6e+16,
+   "p": {},
+   "name": {
+    "en": "Pumpkin Dice",
+    "de": "Kürbiswürfel"
+   },
+   "desc": {
+    "en": "Grows while it rests: +5% every 10 s since its last roll (up to x10). Workers leave it alone. Base {pay}$ per pip.",
+    "de": "Wächst in Ruhe: +5% alle 10 s seit dem letzten Wurf (bis x10). Arbeiter lassen ihn in Ruhe. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff8a1f",
+    "left": "#e06a10",
+    "right": "#b8500a",
+    "edge": "#ffc070",
+    "ink": "#ffe25a",
+    "pattern": "stripes",
+    "glyphs": [
+     "icon:jackolantern",
+     "icon:jackolantern",
+     "icon:leaf"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "rickroll",
+   "tier": 6,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 3.145728000000001e+19,
+   "unlock_price": 3.1457280000000007e+20,
+   "npc": true,
+   "mech": "rickroll",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+16,
+   "p": {},
+   "name": {
+    "en": "Rickroll Dice",
+    "de": "Rickroll-Würfel"
+   },
+   "desc": {
+    "en": "Never gonna give you up: it never pays less than 3 pips. A 6 never lets you down: x6! Base {pay}$.",
+    "de": "Never gonna give you up: zahlt nie weniger als 3 Augen. Eine 6 lässt dich nie im Stich: x6! Basis {pay}$."
+   },
+   "art": {
+    "top": "#2a2a2a",
+    "left": "#1e1e1e",
+    "right": "#141414",
+    "edge": "#6a6a6a",
+    "ink": "#ffd23a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:mic",
+     "icon:note",
+     "icon:note"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "moon",
+   "tier": 6,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 3.670016000000001e+19,
+   "unlock_price": 3.6700160000000007e+20,
+   "npc": true,
+   "mech": "moon",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+16,
+   "p": {},
+   "name": {
+    "en": "Moon Dice",
+    "de": "Mondwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip – triple while any event is active.",
+    "de": "Zahlt {pay}$ pro Auge – dreifach, solange ein Ereignis aktiv ist."
+   },
+   "art": {
+    "top": "#d8dce8",
+    "left": "#b4b8c8",
+    "right": "#8e92a4",
+    "edge": "#ffffff",
+    "ink": "#3a3e5a",
+    "pattern": "noise",
+    "glyphs": [
+     "icon:moon",
+     "icon:crater",
+     "icon:moon"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "gigachad",
+   "tier": 6,
+   "family": "meme",
+   "unlock": "talent",
+   "price": 2.0971520000000004e+19,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "always_max",
+   "faces": [
+    6
+   ],
+   "pay": 1.5e+16,
+   "p": {},
+   "name": {
+    "en": "Gigachad Dice",
+    "de": "Gigachad-Würfel"
+   },
+   "desc": {
+    "en": "Always rolls a 6. No luck needed. Pays {pay}$ per pip.",
+    "de": "Würfelt immer eine 6. Glück braucht er nicht. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#9a9a9a",
+    "left": "#7a7a7a",
+    "right": "#5a5a5a",
+    "edge": "#d0d0d0",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:chad",
+     "pip:6",
+     "icon:muscle"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "samurai",
+   "tier": 6,
+   "family": "adventure",
+   "unlock": "talent",
+   "price": 4.194304000000001e+19,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "slash",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.2e+16,
+   "p": {
+    "width": 40,
+    "count": 40
+   },
+   "name": {
+    "en": "Samurai Dice",
+    "de": "Samuraiwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. A 6 slices the table: every dice on its row rolls (max {count}).",
+    "de": "Zahlt {pay}$ pro Auge. Eine 6 zerschneidet den Tisch: jeder Würfel in seiner Reihe würfelt (max. {count})."
+   },
+   "art": {
+    "top": "#f2f2f2",
+    "left": "#c41a1a",
+    "right": "#1b1b1b",
+    "edge": "#ffffff",
+    "ink": "#c41a1a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:katana",
+     "icon:katana",
+     "icon:sun_jp"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "treasure",
+   "tier": 6,
+   "family": "adventure",
+   "unlock": "lucky",
+   "price": 4.718592000000001e+19,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "keys",
+   "faces": [
+    1
+   ],
+   "pay": 2e+16,
+   "p": {
+    "chance": 0.333,
+    "keys": 3,
+    "mult": 50
+   },
+   "name": {
+    "en": "Treasure Chest Dice",
+    "de": "Schatztruhen-Würfel"
+   },
+   "desc": {
+    "en": "Finds a key with 1/3 chance. With 3 keys the chest opens: x50! Otherwise pays {pay}$.",
+    "de": "Findet mit 1/3 Chance einen Schlüssel. Mit 3 Schlüsseln öffnet sich die Truhe: x50! Sonst zahlt sie {pay}$."
+   },
+   "art": {
+    "top": "#a8642a",
+    "left": "#8a4e1f",
+    "right": "#6a3a16",
+    "edge": "#e0a060",
+    "ink": "#ffd23a",
+    "pattern": "wood",
+    "glyphs": [
+     "icon:chest",
+     "icon:key",
+     "icon:lock"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "thisisfine",
+   "tier": 6,
+   "family": "meme",
+   "unlock": "tarot",
+   "price": 5.242880000000002e+19,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "chaos",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.5e+16,
+   "p": {
+    "radius": 180,
+    "count": 20
+   },
+   "name": {
+    "en": "This Is Fine Dice",
+    "de": "Alles-gut-Würfel"
+   },
+   "desc": {
+    "en": "Everything is on fire: ignites dice within {radius}px and earns +5% per dice currently rolling (up to x3). Base {pay}$ per pip.",
+    "de": "Alles brennt: entzündet Würfel im Umkreis von {radius}px und verdient +5% pro gerade rollendem Würfel (bis x3). Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffb43a",
+    "left": "#ff7a1f",
+    "right": "#e04a10",
+    "edge": "#ffe0a0",
+    "ink": "#5a2a10",
+    "pattern": "none",
+    "glyphs": [
+     "icon:dog_hat",
+     "icon:flame",
+     "icon:mug"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "amethyst",
+   "tier": 7,
+   "family": "material",
+   "unlock": "shop",
+   "price": 1.6777216000000006e+22,
+   "unlock_price": 1.6777216000000007e+23,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 8e+18,
+   "p": {},
+   "name": {
+    "en": "Amethyst Dice",
+    "de": "Amethystwürfel"
+   },
+   "desc": {
+    "en": "A mystic gem: pays {pay}$ per pip.",
+    "de": "Ein mystischer Edelstein: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#b45aff",
+    "left": "#933ae0",
+    "right": "#7024b8",
+    "edge": "#e0b0ff",
+    "ink": "#f5e0ff",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ufo",
+   "tier": 7,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 2.348810240000001e+22,
+   "unlock_price": 2.3488102400000007e+23,
+   "npc": true,
+   "mech": "ufo",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.2e+19,
+   "p": {
+    "mult": 3
+   },
+   "name": {
+    "en": "UFO Dice",
+    "de": "UFO-Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip and abducts a random dice: it lands somewhere else and pays x3.",
+    "de": "Zahlt {pay}$ pro Auge und entführt einen zufälligen Würfel: er landet woanders und zahlt x3."
+   },
+   "art": {
+    "top": "#8ae0a0",
+    "left": "#6ac080",
+    "right": "#4a9a60",
+    "edge": "#c0ffd0",
+    "ink": "#2a2a3a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:ufo",
+     "icon:alien",
+     "icon:beam"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "skibidi",
+   "tier": 7,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 3.0198988800000013e+22,
+   "unlock_price": 3.0198988800000013e+23,
+   "npc": false,
+   "mech": "skibidi",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.4e+19,
+   "p": {
+    "interval": 1.5
+   },
+   "name": {
+    "en": "Skibidi Dice",
+    "de": "Skibidi-Würfel"
+   },
+   "desc": {
+    "en": "Spins on its own every {interval} s. Each auto-spin adds +1% brainrot (up to +100%); your click resets it. Base {pay}$ per pip.",
+    "de": "Dreht sich alle {interval} s von selbst. Jede Selbstdrehung bringt +1% Brainrot (bis +100%); dein Klick setzt es zurück. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#e8f0f8",
+    "left": "#c8d4e0",
+    "right": "#a4b4c4",
+    "edge": "#ffffff",
+    "ink": "#2a3a5a",
+    "pattern": "bricks",
+    "glyphs": [
+     "icon:toilet",
+     "icon:head",
+     "icon:toilet"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "witch",
+   "tier": 7,
+   "family": "spooky",
+   "unlock": "shop",
+   "price": 3.6909875200000013e+22,
+   "unlock_price": 3.6909875200000013e+23,
+   "npc": true,
+   "mech": "potion",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.6e+19,
+   "p": {
+    "chance": 0.25,
+    "radius": 200,
+    "mult": 3
+   },
+   "name": {
+    "en": "Witch Dice",
+    "de": "Hexenwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. 25%: brews a potion – dice within {radius}px pay x3 on their next roll.",
+    "de": "Zahlt {pay}$ pro Auge. 25%: braut einen Trank – Würfel im Umkreis von {radius}px zahlen beim nächsten Wurf x3."
+   },
+   "art": {
+    "top": "#4a2a6e",
+    "left": "#3a1f58",
+    "right": "#2a1540",
+    "edge": "#9a6ad0",
+    "ink": "#7aff5a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:witch_hat",
+     "icon:cauldron",
+     "icon:potion"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sigma",
+   "tier": 7,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 4.362076160000002e+22,
+   "unlock_price": 4.3620761600000013e+23,
+   "npc": true,
+   "mech": "sigma",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.8e+19,
+   "p": {},
+   "name": {
+    "en": "Sigma Dice",
+    "de": "Sigma-Würfel"
+   },
+   "desc": {
+    "en": "Grindset: +10% for every worker roll in a row (up to x6). Your own click resets the grind. Base {pay}$ per pip.",
+    "de": "Grindset: +10% für jeden Arbeiterwurf in Folge (bis x6). Dein eigener Klick setzt den Grind zurück. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#2a2a3a",
+    "left": "#1e1e2a",
+    "right": "#14141c",
+    "edge": "#6a6a8a",
+    "ink": "#ffd23a",
+    "pattern": "none",
+    "glyphs": [
+     "text:Σ",
+     "icon:wolf",
+     "text:Σ"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bee",
+   "tier": 7,
+   "family": "animal",
+   "unlock": "shop",
+   "price": 5.033164800000002e+22,
+   "unlock_price": 5.0331648000000013e+23,
+   "npc": true,
+   "mech": "bee",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+19,
+   "p": {
+    "jar": 20,
+    "mult": 30
+   },
+   "name": {
+    "en": "Bee Dice",
+    "de": "Bienenwürfel"
+   },
+   "desc": {
+    "en": "Collects honey with every roll; a full jar (20) pays x30. Also pollinates a neighbour. Base {pay}$ per pip.",
+    "de": "Sammelt mit jedem Wurf Honig; ein volles Glas (20) zahlt x30. Bestäubt außerdem einen Nachbarn. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffd21f",
+    "left": "#1b1b1b",
+    "right": "#ffd21f",
+    "edge": "#fff2a0",
+    "ink": "#1b1b1b",
+    "pattern": "stripes",
+    "glyphs": [
+     "icon:bee",
+     "icon:honey",
+     "icon:bee"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "aura",
+   "tier": 7,
+   "family": "meme",
+   "unlock": "talent",
+   "price": 3.3554432000000013e+22,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "aura",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+19,
+   "p": {
+    "radius": 200,
+    "bonus": 50
+   },
+   "name": {
+    "en": "Aura Dice",
+    "de": "Aura-Würfel"
+   },
+   "desc": {
+    "en": "+1000 aura: dice within {radius}px earn +{bonus}%. Pays {pay}$ per pip.",
+    "de": "+1000 Aura: Würfel im Umkreis von {radius}px verdienen +{bonus}%. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#fff4c8",
+    "left": "#ffe28a",
+    "right": "#ffcf4a",
+    "edge": "#ffffff",
+    "ink": "#b8860b",
+    "pattern": "stars",
+    "glyphs": [
+     "text:+1000",
+     "icon:sparkle",
+     "icon:sparkle"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "train",
+   "tier": 7,
+   "family": "vehicle",
+   "unlock": "talent",
+   "price": 5.368709120000002e+22,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "train",
+   "faces": [
+    1
+   ],
+   "pay": 6e+19,
+   "p": {
+    "width": 40,
+    "count": 60
+   },
+   "name": {
+    "en": "Train Dice",
+    "de": "Zugwürfel"
+   },
+   "desc": {
+    "en": "Races along its row across the whole table, rolling every dice on the track (max {count}). Pays {pay}$ +2% per dice.",
+    "de": "Rast entlang seiner Reihe über den ganzen Tisch und lässt jeden Würfel auf der Strecke würfeln (max. {count}). Zahlt {pay}$ +2% pro Würfel."
+   },
+   "art": {
+    "top": "#2a6a3a",
+    "left": "#1f5a2e",
+    "right": "#164a22",
+    "edge": "#6ab07a",
+    "ink": "#ffd23a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:train",
+     "icon:wheel",
+     "icon:wheel"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "quantum",
+   "tier": 7,
+   "family": "cosmic",
+   "unlock": "lucky",
+   "price": 6.7108864000000025e+22,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "quantum",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.6e+19,
+   "p": {},
+   "name": {
+    "en": "Quantum Dice",
+    "de": "Quantenwürfel"
+   },
+   "desc": {
+    "en": "Superposition: rolls two faces at once and pays both. Double six is entangled: x36. Base {pay}$ per pip.",
+    "de": "Superposition: würfelt zwei Seiten gleichzeitig und zahlt beide. Doppel-Sechs ist verschränkt: x36. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#1a1a3a",
+    "left": "#12122e",
+    "right": "#0a0a20",
+    "edge": "#5a5aaa",
+    "ink": "#5affff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:atom",
+     "pip:6",
+     "icon:atom"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "skeleton",
+   "tier": 7,
+   "family": "spooky",
+   "unlock": "tarot",
+   "price": 8.388608000000003e+22,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "skeleton",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.4e+19,
+   "p": {},
+   "name": {
+    "en": "Skeleton Dice",
+    "de": "Skelettwürfel"
+   },
+   "desc": {
+    "en": "Collects bones: every skull rolled by a 50/50 dice adds +0.1% (up to x4). Base {pay}$ per pip.",
+    "de": "Sammelt Knochen: jeder Totenkopf eines 50/50-Würfels bringt +0,1% (bis x4). Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ececdc",
+    "left": "#cfcfbd",
+    "right": "#b0b09c",
+    "edge": "#ffffff",
+    "ink": "#1b1b1b",
+    "pattern": "none",
+    "glyphs": [
+     "icon:skull",
+     "icon:bone",
+     "icon:skull"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "platinum",
+   "tier": 8,
+   "family": "material",
+   "unlock": "shop",
+   "price": 2.684354560000001e+25,
+   "unlock_price": 2.6843545600000007e+26,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 8e+21,
+   "p": {},
+   "name": {
+    "en": "Platinum Dice",
+    "de": "Platinwürfel"
+   },
+   "desc": {
+    "en": "Pure platinum: pays {pay}$ per pip.",
+    "de": "Reines Platin: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#e4ecf2",
+    "left": "#c4ced8",
+    "right": "#a0acb8",
+    "edge": "#ffffff",
+    "ink": "#5a6a7a",
+    "pattern": "metal",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bonk",
+   "tier": 8,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 4.026531840000002e+25,
+   "unlock_price": 4.0265318400000014e+26,
+   "npc": true,
+   "mech": "bonk",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.2e+22,
+   "p": {
+    "count": 5
+   },
+   "name": {
+    "en": "Bonk Dice",
+    "de": "Bonk-Würfel"
+   },
+   "desc": {
+    "en": "Bonks the {count} nearest dice (they roll). +10% per bonk. Base {pay}$ per pip.",
+    "de": "Bonkt die {count} nächsten Würfel (sie würfeln). +10% pro Bonk. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#e8c07a",
+    "left": "#c9a05a",
+    "right": "#a6803e",
+    "edge": "#ffe8b0",
+    "ink": "#3a2410",
+    "pattern": "none",
+    "glyphs": [
+     "icon:doge",
+     "icon:bat_club",
+     "text:BONK"
+    ],
+    "special": "ears_dog",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "bank",
+   "tier": 8,
+   "family": "casino",
+   "unlock": "shop",
+   "price": 5.368709120000002e+25,
+   "unlock_price": 5.3687091200000014e+26,
+   "npc": true,
+   "mech": "bank",
+   "faces": [
+    1
+   ],
+   "pay": 1e+22,
+   "p": {},
+   "name": {
+    "en": "Bank Dice",
+    "de": "Bankwürfel"
+   },
+   "desc": {
+    "en": "Pays interest: 0.2% of your current money per roll (at least {pay}$, at most 50x).",
+    "de": "Zahlt Zinsen: 0,2% deines aktuellen Geldes pro Wurf (mindestens {pay}$, höchstens das 50-fache)."
+   },
+   "art": {
+    "top": "#2e7a4a",
+    "left": "#22603a",
+    "right": "#18482a",
+    "edge": "#7ac09a",
+    "ink": "#ffd23a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:bank",
+     "text:%",
+     "icon:coin"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "mahjong",
+   "tier": 8,
+   "family": "casino",
+   "unlock": "shop",
+   "price": 6.710886400000003e+25,
+   "unlock_price": 6.710886400000003e+26,
+   "npc": true,
+   "mech": "mahjong",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "pay": 1e+22,
+   "p": {},
+   "name": {
+    "en": "Mahjong Dice",
+    "de": "Mahjong-Würfel"
+   },
+   "desc": {
+    "en": "Draws tiles 1-9. Three equal tiles in a row (across all Mahjong dice) call MAHJONG: x13! Base {pay}$ per pip.",
+    "de": "Zieht Steine 1-9. Drei gleiche Steine in Folge (über alle Mahjong-Würfel) rufen MAHJONG: x13! Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#f2f0e0",
+    "left": "#2e8a4a",
+    "right": "#226a38",
+    "edge": "#ffffff",
+    "ink": "#c41a1a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:tile",
+     "icon:tile",
+     "icon:tile"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "cyber",
+   "tier": 8,
+   "family": "tech",
+   "unlock": "shop",
+   "price": 8.053063680000003e+25,
+   "unlock_price": 8.053063680000003e+26,
+   "npc": true,
+   "mech": "glitch",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+22,
+   "p": {
+    "chance": 0.1,
+    "mult": 8
+   },
+   "name": {
+    "en": "Cyber Dice",
+    "de": "Cyberwürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip. 10% chance to glitch: x8!",
+    "de": "Zahlt {pay}$ pro Auge. 10% Chance auf einen Glitch: x8!"
+   },
+   "art": {
+    "top": "#0a0a1a",
+    "left": "#14143a",
+    "right": "#1e1e5a",
+    "edge": "#ff2aaa",
+    "ink": "#00ffd0",
+    "pattern": "glitch",
+    "glyphs": [
+     "icon:circuit",
+     "text:01",
+     "icon:circuit"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ohio",
+   "tier": 8,
+   "family": "meme",
+   "unlock": "shop",
+   "price": 9.395240960000003e+25,
+   "unlock_price": 9.395240960000003e+26,
+   "npc": true,
+   "mech": "ohio",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.2e+22,
+   "p": {},
+   "name": {
+    "en": "Ohio Dice",
+    "de": "Ohio-Würfel"
+   },
+   "desc": {
+    "en": "Only in Ohio: anything can happen – x20, nothing at all, teleports, or the whole table rolls. Base {pay}$ per pip.",
+    "de": "Nur in Ohio: alles kann passieren – x20, gar nichts, Teleports oder der ganze Tisch würfelt. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#c41a1a",
+    "left": "#9a1212",
+    "right": "#6e0c0c",
+    "edge": "#ff7a7a",
+    "ink": "#ffffff",
+    "pattern": "glitch",
+    "glyphs": [
+     "text:OH",
+     "icon:corn",
+     "text:IO"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "blackhole",
+   "tier": 8,
+   "family": "cosmic",
+   "unlock": "talent",
+   "price": 5.368709120000002e+25,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "gravity",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.5e+22,
+   "p": {
+    "radius": 250,
+    "count": 30
+   },
+   "name": {
+    "en": "Black Hole Dice",
+    "de": "Schwarzes-Loch-Würfel"
+   },
+   "desc": {
+    "en": "Gravity pulls dice within {radius}px toward it – they all roll. +1% per dice pulled. Base {pay}$ per pip.",
+    "de": "Die Schwerkraft zieht Würfel im Umkreis von {radius}px an – sie alle würfeln. +1% pro angezogenem Würfel. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#0a0a14",
+    "left": "#08080e",
+    "right": "#050508",
+    "edge": "#5a2a8a",
+    "ink": "#b45aff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:blackhole",
+     "icon:swirl",
+     "icon:blackhole"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "phoenix",
+   "tier": 8,
+   "family": "animal",
+   "unlock": "talent",
+   "price": 1.0737418240000003e+26,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "phoenix",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.5e+22,
+   "p": {},
+   "name": {
+    "en": "Phoenix Dice",
+    "de": "Phönixwürfel"
+   },
+   "desc": {
+    "en": "Rolling a 1 burns it to ashes (0$) – the next roll is a rebirth paying x10. Base {pay}$ per pip.",
+    "de": "Eine 1 verbrennt ihn zu Asche (0$) – der nächste Wurf ist eine Wiedergeburt mit x10. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff7a1f",
+    "left": "#e8501a",
+    "right": "#c43010",
+    "edge": "#ffc070",
+    "ink": "#ffe25a",
+    "pattern": "scales",
+    "glyphs": [
+     "icon:phoenix",
+     "icon:flame",
+     "icon:feather"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "fox",
+   "tier": 8,
+   "family": "animal",
+   "unlock": "lucky",
+   "price": 1.2079595520000005e+26,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "copycat",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2.5e+22,
+   "p": {
+    "radius": 200
+   },
+   "name": {
+    "en": "Fox Dice",
+    "de": "Fuchswürfel"
+   },
+   "desc": {
+    "en": "Clever: adds the highest recent payout of a dice within {radius}px to its own {pay}$ per pip.",
+    "de": "Schlau: addiert die höchste letzte Auszahlung eines Würfels im Umkreis von {radius}px zu seinen {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff8a2a",
+    "left": "#e06a1a",
+    "right": "#b84e10",
+    "edge": "#ffc080",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:fox",
+     "icon:fox",
+     "icon:tail"
+    ],
+    "special": "ears_fox",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "lava",
+   "tier": 8,
+   "family": "element",
+   "unlock": "tarot",
+   "price": 1.3421772800000005e+26,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "eruption",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 3e+22,
+   "p": {
+    "every": 10,
+    "radius": 300,
+    "count": 50,
+    "mult": 2
+   },
+   "name": {
+    "en": "Lava Dice",
+    "de": "Lavawürfel"
+   },
+   "desc": {
+    "en": "Every 10th roll erupts: all dice within {radius}px roll and pay double. Base {pay}$ per pip.",
+    "de": "Jeder 10. Wurf bricht aus: alle Würfel im Umkreis von {radius}px würfeln und zahlen doppelt. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#3a1a10",
+    "left": "#2a120a",
+    "right": "#1e0c06",
+    "edge": "#ff4a1f",
+    "ink": "#ff6a1f",
+    "pattern": "noise",
+    "glyphs": [
+     "icon:volcano",
+     "icon:lava",
+     "icon:flame"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "obsidian",
+   "tier": 9,
+   "family": "material",
+   "unlock": "shop",
+   "price": 4.294967296000003e+28,
+   "unlock_price": 4.294967296000003e+29,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 7.5e+24,
+   "p": {},
+   "name": {
+    "en": "Obsidian Dice",
+    "de": "Obsidianwürfel"
+   },
+   "desc": {
+    "en": "Volcanic glass: pays {pay}$ per pip.",
+    "de": "Vulkanglas: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#2a2238",
+    "left": "#1e182a",
+    "right": "#14101c",
+    "edge": "#6a5a8a",
+    "ink": "#b49aff",
+    "pattern": "gem",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "galaxy",
+   "tier": 9,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 6.442450944000003e+28,
+   "unlock_price": 6.442450944000003e+29,
+   "npc": true,
+   "mech": "galaxy",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1e+25,
+   "p": {},
+   "name": {
+    "en": "Galaxy Dice",
+    "de": "Galaxiewürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip, +1% for every 10 dice you own.",
+    "de": "Zahlt {pay}$ pro Auge, +1% für je 10 Würfel, die du besitzt."
+   },
+   "art": {
+    "top": "#2a1a5a",
+    "left": "#1e1248",
+    "right": "#140c34",
+    "edge": "#7a5aca",
+    "ink": "#ffb0ff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:galaxy",
+     "icon:star",
+     "icon:galaxy"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "crown",
+   "tier": 9,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 8.589934592000005e+28,
+   "unlock_price": 8.589934592000006e+29,
+   "npc": true,
+   "mech": "global_bonus",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.25e+25,
+   "p": {
+    "per": 1,
+    "max": 50
+   },
+   "name": {
+    "en": "Crown Dice",
+    "de": "Kronenwürfel"
+   },
+   "desc": {
+    "en": "Royal decree: every Crown dice adds +1% to ALL income (up to +50%). Pays {pay}$ per pip.",
+    "de": "Königlicher Erlass: jeder Kronenwürfel bringt +1% auf ALLE Einnahmen (bis +50%). Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffd23a",
+    "left": "#e8b01c",
+    "right": "#c48c0c",
+    "edge": "#fff2a0",
+    "ink": "#c41a3a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:crown",
+     "icon:gem",
+     "icon:crown"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "meteor",
+   "tier": 9,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 1.0737418240000005e+29,
+   "unlock_price": 1.0737418240000006e+30,
+   "npc": true,
+   "mech": "impact",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.5e+25,
+   "p": {
+    "radius": 260,
+    "count": 40,
+    "bonus": 50
+   },
+   "name": {
+    "en": "Meteorite Dice",
+    "de": "Meteoritenwürfel"
+   },
+   "desc": {
+    "en": "Impacts the table: dice within {radius}px roll with +50%. Pays {pay}$ per pip.",
+    "de": "Schlägt auf dem Tisch ein: Würfel im Umkreis von {radius}px würfeln mit +50%. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#6a4a3a",
+    "left": "#523828",
+    "right": "#3a281c",
+    "edge": "#a8806a",
+    "ink": "#ff8a2a",
+    "pattern": "stone",
+    "glyphs": [
+     "icon:meteor",
+     "icon:crater",
+     "icon:flame"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "jackpot",
+   "tier": 9,
+   "family": "casino",
+   "unlock": "shop",
+   "price": 1.2884901888000005e+29,
+   "unlock_price": 1.2884901888000006e+30,
+   "npc": true,
+   "mech": "jackpot",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.5e+25,
+   "p": {
+    "chance": 0.01
+   },
+   "name": {
+    "en": "Jackpot Dice",
+    "de": "Jackpot-Würfel"
+   },
+   "desc": {
+    "en": "Every roll feeds the progressive jackpot; 1% chance to win the whole pot! Base {pay}$ per pip.",
+    "de": "Jeder Wurf füttert den progressiven Jackpot; 1% Chance, den ganzen Topf zu gewinnen! Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#c41a3a",
+    "left": "#9a122e",
+    "right": "#6e0c20",
+    "edge": "#ff7a9a",
+    "ink": "#ffd23a",
+    "pattern": "stripes",
+    "glyphs": [
+     "text:JP",
+     "icon:seven",
+     "icon:coin"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "nebula",
+   "tier": 9,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 1.5032385536000009e+29,
+   "unlock_price": 1.5032385536000008e+30,
+   "npc": true,
+   "mech": "aura",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.75e+25,
+   "p": {
+    "radius": 160,
+    "bonus": 100
+   },
+   "name": {
+    "en": "Nebula Dice",
+    "de": "Nebelwürfel"
+   },
+   "desc": {
+    "en": "Cosmic aura: dice within {radius}px earn +{bonus}%. Pays {pay}$ per pip.",
+    "de": "Kosmische Aura: Würfel im Umkreis von {radius}px verdienen +{bonus}%. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff5ac8",
+    "left": "#a43ae0",
+    "right": "#4a2ab8",
+    "edge": "#ffb0f0",
+    "ink": "#ffffff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:nebula",
+     "icon:star",
+     "icon:nebula"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "sun",
+   "tier": 9,
+   "family": "cosmic",
+   "unlock": "talent",
+   "price": 1.0737418240000005e+29,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "global_bonus",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.5e+25,
+   "p": {
+    "per": 3,
+    "max": 150
+   },
+   "name": {
+    "en": "Sun Dice",
+    "de": "Sonnenwürfel"
+   },
+   "desc": {
+    "en": "Sunshine: every Sun dice adds +3% to ALL income (up to +150%). Pays {pay}$ per pip.",
+    "de": "Sonnenschein: jeder Sonnenwürfel bringt +3% auf ALLE Einnahmen (bis +150%). Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffe25a",
+    "left": "#ffc21f",
+    "right": "#ff9a0c",
+    "edge": "#fff8c0",
+    "ink": "#ff5a0c",
+    "pattern": "none",
+    "glyphs": [
+     "icon:sun",
+     "icon:sun",
+     "icon:sun"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "golem",
+   "tier": 9,
+   "family": "material",
+   "unlock": "talent",
+   "price": 1.717986918400001e+29,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "slow",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 5e+25,
+   "p": {
+    "slow": 3.0
+   },
+   "name": {
+    "en": "Golem Dice",
+    "de": "Golemwürfel"
+   },
+   "desc": {
+    "en": "A slow giant: rolls take 3x longer but pay {pay}$ per pip.",
+    "de": "Ein langsamer Riese: Würfe dauern 3x länger, zahlen aber {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#8a8070",
+    "left": "#6e6658",
+    "right": "#524c40",
+    "edge": "#b8ae9a",
+    "ink": "#5affd0",
+    "pattern": "stone",
+    "glyphs": [
+     "icon:golem",
+     "icon:rune",
+     "icon:golem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "timedie",
+   "tier": 9,
+   "family": "cosmic",
+   "unlock": "lucky",
+   "price": 1.932735283200001e+29,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "rewind",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.75e+25,
+   "p": {
+    "chance": 0.25,
+    "max": 3
+   },
+   "name": {
+    "en": "Time Dice",
+    "de": "Zeitwürfel"
+   },
+   "desc": {
+    "en": "Rewind: 25% chance to land again and pay again (up to 3 times). Base {pay}$ per pip.",
+    "de": "Zurückspulen: 25% Chance, erneut zu landen und erneut zu zahlen (bis zu 3-mal). Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#c8a44a",
+    "left": "#a8862f",
+    "right": "#86681c",
+    "edge": "#ffe0a0",
+    "ink": "#2a1a0a",
+    "pattern": "none",
+    "glyphs": [
+     "icon:hourglass",
+     "icon:clock",
+     "icon:hourglass"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "kraken",
+   "tier": 9,
+   "family": "animal",
+   "unlock": "tarot",
+   "price": 2.147483648000001e+29,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "lightning",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+25,
+   "p": {
+    "count": 8
+   },
+   "name": {
+    "en": "Kraken Dice",
+    "de": "Krakenwürfel"
+   },
+   "desc": {
+    "en": "Eight tentacles roll {count} random dice anywhere on the table. Pays {pay}$ per pip.",
+    "de": "Acht Tentakel lassen {count} zufällige Würfel irgendwo auf dem Tisch würfeln. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#8a2a6a",
+    "left": "#6e1f55",
+    "right": "#521640",
+    "edge": "#d06ab0",
+    "ink": "#ffd0f0",
+    "pattern": "scales",
+    "glyphs": [
+     "icon:kraken",
+     "icon:tentacle",
+     "icon:tentacle"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "mithril",
+   "tier": 10,
+   "family": "material",
+   "unlock": "shop",
+   "price": 6.871947673600004e+31,
+   "unlock_price": 6.871947673600003e+32,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    2,
+    2,
+    3,
+    3,
+    4,
+    10
+   ],
+   "pay": 6.666666666666667e+27,
+   "p": {},
+   "name": {
+    "en": "Mithril Dice",
+    "de": "Mithrilwürfel"
+   },
+   "desc": {
+    "en": "Legendary metal: pays {pay}$ per pip.",
+    "de": "Legendäres Metall: zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#c8f0ff",
+    "left": "#9ad8f0",
+    "right": "#6ab8d8",
+    "edge": "#ffffff",
+    "ink": "#1a4a6a",
+    "pattern": "metal",
+    "glyphs": [
+     "icon:gem",
+     "num:10",
+     "icon:gem"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "divine",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 1.1453246122666673e+32,
+   "unlock_price": 1.1453246122666673e+33,
+   "npc": false,
+   "mech": "divine",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1e+28,
+   "p": {
+    "per": 5,
+    "max": 100,
+    "interval": 6.0
+   },
+   "name": {
+    "en": "Divine Dice",
+    "de": "Götterwürfel"
+   },
+   "desc": {
+    "en": "Blesses everything: each Divine dice adds +5% to ALL income (up to +100%) and rolls itself every {interval} s. Pays {pay}$ per pip.",
+    "de": "Segnet alles: jeder Götterwürfel bringt +5% auf ALLE Einnahmen (bis +100%) und würfelt sich alle {interval} s selbst. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#fff8e0",
+    "left": "#ffe8a0",
+    "right": "#ffd25a",
+    "edge": "#ffffff",
+    "ink": "#c89a1a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:halo",
+     "icon:wing",
+     "icon:wing"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "supernova",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 1.3743895347200007e+32,
+   "unlock_price": 1.3743895347200006e+33,
+   "npc": true,
+   "mech": "supernova",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.3333333333333334e+28,
+   "p": {
+    "charge": 10,
+    "count": 400,
+    "mult": 2
+   },
+   "name": {
+    "en": "Supernova Dice",
+    "de": "Supernova-Würfel"
+   },
+   "desc": {
+    "en": "Charges up for 10 rolls, then explodes: up to {count} dice all over the table roll and pay double. Base {pay}$ per pip.",
+    "de": "Lädt sich 10 Würfe lang auf und explodiert dann: bis zu {count} Würfel auf dem ganzen Tisch würfeln und zahlen doppelt. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ffffff",
+    "left": "#ffd2f0",
+    "right": "#ff8ad8",
+    "edge": "#ffffff",
+    "ink": "#ff2a8a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:supernova",
+     "icon:star",
+     "icon:supernova"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "omega",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 2.2906492245333345e+32,
+   "unlock_price": 2.2906492245333347e+33,
+   "npc": true,
+   "mech": "faces",
+   "faces": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    66
+   ],
+   "pay": 3.3333333333333336e+27,
+   "p": {},
+   "name": {
+    "en": "Omega Dice",
+    "de": "Omega-Würfel"
+   },
+   "desc": {
+    "en": "The final dice: five sixes and one 66. Pays {pay}$ per pip.",
+    "de": "Der letzte Würfel: fünf Sechsen und eine 66. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#1a1a1a",
+    "left": "#c89a1a",
+    "right": "#8a6a0c",
+    "edge": "#ffe8a0",
+    "ink": "#ffd23a",
+    "pattern": "none",
+    "glyphs": [
+     "text:Ω",
+     "num:66",
+     "text:Ω"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "architect",
+   "tier": 10,
+   "family": "adventure",
+   "unlock": "shop",
+   "price": 1.6034544571733342e+32,
+   "unlock_price": 1.603454457173334e+33,
+   "npc": true,
+   "mech": "builder",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.3333333333333334e+28,
+   "p": {
+    "every": 30
+   },
+   "name": {
+    "en": "Architect Dice",
+    "de": "Architektenwürfel"
+   },
+   "desc": {
+    "en": "Builds: every {every} rolls it constructs a free dice of a type you own. Pays {pay}$ per pip.",
+    "de": "Baut: alle {every} Würfe errichtet er gratis einen Würfel einer Art, die du besitzt. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#4a6a9a",
+    "left": "#3a5480",
+    "right": "#2a3e60",
+    "edge": "#9ab8e8",
+    "ink": "#ffffff",
+    "pattern": "grid",
+    "glyphs": [
+     "icon:blueprint",
+     "icon:hammer",
+     "icon:brick"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "ascension",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "shop",
+   "price": 1.8325193796266673e+32,
+   "unlock_price": 1.8325193796266673e+33,
+   "npc": true,
+   "mech": "ascend",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1e+28,
+   "p": {
+    "step": 1,
+    "max": 900
+   },
+   "name": {
+    "en": "Ascension Dice",
+    "de": "Aufstiegswürfel"
+   },
+   "desc": {
+    "en": "Grows forever: every roll permanently adds +1% to this dice (up to x10). Base {pay}$ per pip.",
+    "de": "Wächst für immer: jeder Wurf bringt diesem Würfel dauerhaft +1% (bis x10). Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#e0f8ff",
+    "left": "#a8e0ff",
+    "right": "#70c0f0",
+    "edge": "#ffffff",
+    "ink": "#2a5a9a",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:arrow_up",
+     "icon:wing",
+     "icon:arrow_up"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "infinity",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "talent",
+   "price": 2.2906492245333345e+32,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "infinity",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.3333333333333334e+28,
+   "p": {},
+   "name": {
+    "en": "Infinity Dice",
+    "de": "Unendlichkeitswürfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip, +5% per achievement and +4% per dice type owned.",
+    "de": "Zahlt {pay}$ pro Auge, +5% pro Errungenschaft und +4% pro besessener Würfelart."
+   },
+   "art": {
+    "top": "#5a2aa8",
+    "left": "#4a1f8a",
+    "right": "#36146a",
+    "edge": "#b08aff",
+    "ink": "#ffd23a",
+    "pattern": "stars",
+    "glyphs": [
+     "text:∞",
+     "text:∞",
+     "text:∞"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "rainbow",
+   "tier": 10,
+   "family": "luck",
+   "unlock": "talent",
+   "price": 2.7487790694400014e+32,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "rainbow",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1e+28,
+   "p": {},
+   "name": {
+    "en": "Rainbow Dice",
+    "de": "Regenbogenwürfel"
+   },
+   "desc": {
+    "en": "Counts as every type: +5% per dice type you own. Pays {pay}$ per pip.",
+    "de": "Zählt als jede Art: +5% pro Würfelart, die du besitzt. Zahlt {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#ff4a4a",
+    "left": "#ffd21f",
+    "right": "#4a7aff",
+    "edge": "#ffffff",
+    "ink": "#ffffff",
+    "pattern": "none",
+    "glyphs": [
+     "icon:rainbow",
+     "icon:rainbow",
+     "icon:rainbow"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "cosmic",
+   "tier": 10,
+   "family": "cosmic",
+   "unlock": "lucky",
+   "price": 2.977843991893335e+32,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "cosmic",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 1.6666666666666667e+28,
+   "p": {},
+   "name": {
+    "en": "Cosmic Dice",
+    "de": "Kosmischer Würfel"
+   },
+   "desc": {
+    "en": "Pays {pay}$ per pip, multiplied by (1 + active events), doubled during Golden Luck.",
+    "de": "Zahlt {pay}$ pro Auge, multipliziert mit (1 + aktive Ereignisse), verdoppelt während Goldenem Glück."
+   },
+   "art": {
+    "top": "#14143a",
+    "left": "#0e0e2a",
+    "right": "#08081a",
+    "edge": "#5a5aca",
+    "ink": "#5affff",
+    "pattern": "stars",
+    "glyphs": [
+     "icon:planet",
+     "icon:star",
+     "icon:planet"
+    ],
+    "special": "",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  },
+  {
+   "id": "elderdragon",
+   "tier": 10,
+   "family": "animal",
+   "unlock": "tarot",
+   "price": 3.435973836800002e+32,
+   "unlock_price": 0.0,
+   "npc": true,
+   "mech": "cone",
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "pay": 2e+28,
+   "p": {
+    "radius": 420,
+    "count": 60,
+    "mult": 3
+   },
+   "name": {
+    "en": "Elder Dragon Dice",
+    "de": "Uralter-Drache-Würfel"
+   },
+   "desc": {
+    "en": "Ancient fire: a {radius}px cone of flames rolls up to {count} dice that pay x3. Base {pay}$ per pip.",
+    "de": "Uraltes Feuer: ein {radius}px-Flammenkegel lässt bis zu {count} Würfel würfeln, die x3 zahlen. Basis {pay}$ pro Auge."
+   },
+   "art": {
+    "top": "#2a1a4a",
+    "left": "#1f1238",
+    "right": "#140c26",
+    "edge": "#7a5aca",
+    "ink": "#ff5a1f",
+    "pattern": "scales",
+    "glyphs": [
+     "icon:dragon",
+     "icon:flame",
+     "icon:crown"
+    ],
+    "special": "horns",
+    "outline": "#14101c",
+    "rivets": true
+   }
+  }
+ ]
+}

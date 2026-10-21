@@ -1,0 +1,72 @@
+{
+ "cursor_1": {
+  "hotspot": [
+   45,
+   4
+  ],
+  "name": "golden gauntlet"
+ },
+ "cursor_2": {
+  "hotspot": [
+   45,
+   4
+  ],
+  "name": "crystal hand"
+ },
+ "cursor_3": {
+  "hotspot": [
+   7,
+   4
+  ],
+  "name": "robot claw"
+ },
+ "cursor_4": {
+  "hotspot": [
+   55,
+   14
+  ],
+  "name": "pirate hook"
+ },
+ "cursor_5": {
+  "hotspot": [
+   13,
+   12
+  ],
+  "name": "wizard wand"
+ },
+ "cursor_6": {
+  "hotspot": [
+   23,
+   14
+  ],
+  "name": "cat paw"
+ },
+ "cursor_7": {
+  "hotspot": [
+   7,
+   6
+  ],
+  "name": "sword"
+ },
+ "cursor_8": {
+  "hotspot": [
+   5,
+   4
+  ],
+  "name": "neon arrow"
+ },
+ "cursor_9": {
+  "hotspot": [
+   45,
+   6
+  ],
+  "name": "skeleton hand"
+ },
+ "cursor_10": {
+  "hotspot": [
+   45,
+   4
+  ],
+  "name": "rainbow glove"
+ }
+}

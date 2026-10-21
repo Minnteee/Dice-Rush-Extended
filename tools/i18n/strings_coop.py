@@ -1,0 +1,52 @@
+# Dice Rush Extended - coop strings (English, German).
+S = {
+    "coop.menu_host": ("HOST GAME", "HOSTEN"),
+    "coop.menu_host_tip": ("Start your last save and let a friend join (coop for 2 players).",
+                           "Starte deinen letzten Spielstand und lass einen Freund beitreten (Koop für 2 Spieler)."),
+    "coop.menu_join": ("JOIN GAME", "BEITRETEN"),
+    "coop.menu_join_tip": ("Join the game of a friend.", "Tritt dem Spiel eines Freundes bei."),
+    "coop.join_title": ("JOIN A FRIEND", "EINEM FREUND BEITRETEN"),
+    "coop.join_ip": ("IP ADDRESS OF THE HOST", "IP-ADRESSE DES HOSTS"),
+    "coop.join_port": ("PORT", "PORT"),
+    "coop.join_info": ("Works over LAN, Hamachi / Radmin VPN or with port forwarding (UDP port 47777). "
+                       "The host sees their IP addresses in the coop menu of the game.\n"
+                       "You can also join a friend through Steam: open the Steam friends list, right-click your friend "
+                       "and choose \"Join Game\" - or accept their invite.",
+                       "Funktioniert über LAN, Hamachi / Radmin VPN oder mit Portweiterleitung (UDP-Port 47777). "
+                       "Der Host sieht seine IP-Adressen im Koop-Menü im Spiel.\n"
+                       "Du kannst einem Freund auch über Steam beitreten: Öffne die Steam-Freundesliste, klicke deinen "
+                       "Freund mit Rechtsklick an und wähle \"Spiel beitreten\" - oder nimm seine Einladung an."),
+    "coop.join_need_ip": ("PLEASE ENTER THE IP ADDRESS OF THE HOST", "BITTE GIB DIE IP-ADRESSE DES HOSTS EIN"),
+    "coop.connect": ("CONNECT", "VERBINDEN"),
+    "coop.connecting": ("CONNECTING TO {address} ...", "VERBINDE MIT {address} ..."),
+    "coop.cancel": ("CANCEL", "ABBRECHEN"),
+    "coop.error_connect": ("Could not connect to {address}. Is the host online and the port open?",
+                           "Keine Verbindung zu {address}. Ist der Host online und der Port offen?"),
+    "coop.error_port": ("Port {port} is already in use - coop could not start.",
+                        "Port {port} ist belegt - Koop konnte nicht starten."),
+    "coop.error_version": ("The host uses another version of Dice Rush Extended ({version}).",
+                           "Der Host nutzt eine andere Version von Dice Rush Extended ({version})."),
+    "coop.error_snapshot": ("The table of the host could not be loaded.", "Der Tisch des Hosts konnte nicht geladen werden."),
+    "coop.host_left": ("The host has ended the game.", "Der Host hat das Spiel beendet."),
+    "coop.hosting": ("COOP: HOSTING ON PORT {port}", "KOOP: HOST AUF PORT {port}"),
+    "coop.partner_joined": ("{name} JOINED THE GAME", "{name} IST BEIGETRETEN"),
+    "coop.partner_left": ("PLAYER 2 LEFT THE GAME", "SPIELER 2 HAT DAS SPIEL VERLASSEN"),
+    "coop.joined": ("CONNECTED - YOU PLAY ON THE HOST'S TABLE", "VERBUNDEN - DU SPIELST AM TISCH DES HOSTS"),
+    "coop.ended": ("COOP ENDED", "KOOP BEENDET"),
+    "coop.title": ("COOP", "KOOP"),
+    "coop.button_tip": ("Coop for 2 players: host, invite, status", "Koop für 2 Spieler: Hosten, Einladen, Status"),
+    "coop.status_host": ("You are the host (port {port}).", "Du bist der Host (Port {port})."),
+    "coop.your_ips": ("Your IP addresses: {ips}", "Deine IP-Adressen: {ips}"),
+    "coop.partner_connected": ("Player 2 connected: {name}", "Spieler 2 verbunden: {name}"),
+    "coop.waiting": ("Waiting for player 2 ...", "Warte auf Spieler 2 ..."),
+    "coop.status_client": ("You play on the table of {address}.", "Du spielst am Tisch von {address}."),
+    "coop.status_off": ("Coop is off.", "Koop ist aus."),
+    "coop.hint_host": ("Start hosting so that a friend can join you.", "Starte das Hosten, damit ein Freund dir beitreten kann."),
+    "coop.host_now": ("START HOSTING", "HOSTEN STARTEN"),
+    "coop.invite": ("INVITE (STEAM)", "EINLADEN (STEAM)"),
+    "coop.steam_missing": ("Steam is not available - share your IP address instead.",
+                           "Steam ist nicht verfügbar - teile stattdessen deine IP-Adresse."),
+    "coop.steam_failed": ("The Steam lobby could not be created.", "Die Steam-Lobby konnte nicht erstellt werden."),
+    "coop.leave": ("LEAVE THE GAME", "SPIEL VERLASSEN"),
+    "coop.stop_host": ("STOP HOSTING", "HOSTEN BEENDEN"),
+}
