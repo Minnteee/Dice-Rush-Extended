@@ -441,6 +441,7 @@ func _clear_actors() -> void :
 	prehistoric_root_batch_serial = 0
 	prehistoric_root_batch_chains.clear()
 	prehistoric_root_batch_remaining.clear()
+	_bdr_root_batch_msec.clear()
 	if bdr:
 		bdr.on_actors_cleared()
 
@@ -522,6 +523,7 @@ func _start_die_roll(die: DiceActor, chain_id: int = 0, forced_target: Vector2 =
 		die.set_meta("prehistoric_root_batch", prehistoric_root_batch_serial)
 		var root_batch: = int(die.get_meta("prehistoric_root_batch", 0))
 		prehistoric_root_batch_remaining[root_batch] = int(prehistoric_root_batch_remaining.get(root_batch, 0)) + 1
+		_bdr_root_batch_msec[root_batch] = Time.get_ticks_msec()
 	if play_roll_sound:
 		GameSession.play_sfx("roll")
 	var dynamic_value: = 0
@@ -1098,6 +1100,7 @@ func _trigger_prehistoric_wave(source: DiceActor, chain_id: int, root_batch: int
 	if not wave_chains.has(chain_id):
 		return
 	var state: Dictionary = wave_chains[chain_id]
+	state["bdr_touch"] = now_msec
 	var visited: Dictionary = state.visited
 	visited[source.get_instance_id()] = true
 	var radius: = _prehistoric_wave_radius()

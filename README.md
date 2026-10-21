@@ -44,6 +44,12 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
 
 ## Changelog
 
+**1.1.1**
+- Fixed: the tarot shrine could still load for 30 seconds and then go back to the table without
+  letting you offer dice. Prehistoric dice waves could stay open forever (for example when a wave hit
+  a driving racing car), and the shrine waited for them. Waves can no longer get stuck, open waves
+  are closed when the shrine opens, and the shrine is ready in a fraction of a second.
+
 **1.1.0**
 - **500 more dice on the table**: the limit went up from 6,500 to 7,000 dice.
 - Fixed: the tarot shrine loaded for a long time on a busy table and then went back to the table without
@@ -58,12 +64,12 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
 
 ## Install
 
-1. Download **`Dice-Rush-Extended-1.1.0.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
+1. Download **`Dice-Rush-Extended-1.1.1.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
 2. Extract it into your DICE RUSH game folder, the folder that contains `Dice Rush.exe`
    (Steam: right click DICE RUSH -> Manage -> Browse local files).
    You should now have `override.cfg`, the folder `DiceRushExtended` and `Uninstall Dice Rush Extended.bat`
    next to `Dice Rush.exe`.
-3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.1.0"** at the bottom left.
+3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.1.1"** at the bottom left.
 
 **Uninstall:** run `Uninstall Dice Rush Extended.bat` (or delete `override.cfg` and the `DiceRushExtended`
 folder). Your saves are not deleted. The original game cannot store more than 9.2e18 money, so a modded
@@ -103,7 +109,7 @@ DICE RUSH **v1.0.0 (Full)** - Godot 4.7.1.
 
 ## Mod version
 
-Dice Rush Extended **1.1.0** - final version.
+Dice Rush Extended **1.1.1** - final version.
 
 ## Players
 

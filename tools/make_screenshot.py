@@ -64,14 +64,14 @@ USER_DIR = os.path.join(os.environ.get("APPDATA", ""), "Dice Rush BDR Test")
 
 
 def main():
-    subprocess.run(["taskkill", "/F", "/IM", "Dice Rush.exe"], capture_output=True)
+    subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(TOOLS, "kill_test.ps1")], capture_output=True)
     time.sleep(1.0)
     settings_path = os.path.join(USER_DIR, "settings.json")
     settings_backup = open(settings_path, "rb").read() if os.path.exists(settings_path) else None
     try:
         shoot()
     finally:
-        subprocess.run(["taskkill", "/F", "/IM", "Dice Rush.exe"], capture_output=True)
+        subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(TOOLS, "kill_test.ps1")], capture_output=True)
         time.sleep(1.0)
         # leave the test install as it was: settings (language, last slot) and no extra save
         if settings_backup is not None:

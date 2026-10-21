@@ -333,8 +333,15 @@ func _bdr_drain_world_for_menu() -> void:
 	for die_value in active_roll_ids.values():
 		if budget <= 0:
 			return
-		if is_instance_valid(die_value) and die_value.rolling:
-			die_value.complete_roll_now()
-			budget -= 1
-	if active_roll_ids.is_empty() and active_roll_count > 0:
-		_synchronize_active_roll_count()
+		if not is_instance_valid(die_value) or not die_value.rolling:
+			continue
+		if not die_value.complete_roll_now() and die_value.die_kind != "cat":
+			# a roll without a running driver would never end and block the shrine
+			die_value.abort_roll()
+		budget -= 1
+	# recount from the dice themselves (drops finished / aborted entries right away)
+	_synchronize_active_roll_count()
+	if active_roll_ids.is_empty():
+		# nothing rolls any more and wave targets do not roll while the shrine opens, so open
+		# waves and prehistoric root batches can never finish by themselves: close them now
+		_bdr_close_open_waves()

@@ -1,11 +1,11 @@
-DICE RUSH EXTENDED 1.1.0 - fan mod for DICE RUSH v1.0.0 (Full)
+DICE RUSH EXTENDED 1.1.1 - fan mod for DICE RUSH v1.0.0 (Full)
 ================================================================
 
 INSTALL
 -------
 1. Copy "override.cfg" and the "DiceRushExtended" folder into the game folder
    (the folder that contains "Dice Rush.exe").
-2. Start the game as usual. The main menu shows "Dice Rush Extended 1.1.0" at the
+2. Start the game as usual. The main menu shows "Dice Rush Extended 1.1.1" at the
    bottom left and the HOST GAME / JOIN GAME buttons at the top right.
 
 UNINSTALL
