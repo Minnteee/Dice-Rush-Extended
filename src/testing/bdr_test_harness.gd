@@ -353,6 +353,52 @@ func show_cards(cards: Array) -> bool:
 	return true
 
 
+## Test only: packs all dice into the middle of the table (like saves of version 1.0).
+func cluster_dice() -> int:
+	var main := m()
+	var center: Vector2 = main.bdr.board_safe_rect().get_center()
+	var moved := 0
+	for die in main.dice:
+		if is_instance_valid(die) and not die.rolling and not die.special_motion and die.die_kind != "cat":
+			main.bdr.teleport_die(die, center + Vector2(randfn(0.0, 110.0), randfn(0.0, 90.0)))
+			moved += 1
+	return moved
+
+
+## Share of the dice in the middle quarter of the felt (an even spread gives about 0.25).
+func middle_share() -> float:
+	var main := m()
+	var safe: Rect2 = main.bdr.board_safe_rect()
+	var middle := Rect2(safe.position + safe.size * 0.25, safe.size * 0.5)
+	var inside := 0
+	var counted := 0
+	for die in main.dice:
+		if is_instance_valid(die) and die.die_kind != "cat":
+			counted += 1
+			if middle.has_point(die.position):
+				inside += 1
+	return float(inside) / float(maxi(1, counted))
+
+
+## Times the steps of opening the tarot shrine (usec), then closes it again.
+func time_shrine() -> Dictionary:
+	var main := m()
+	var out := {}
+	var t := Time.get_ticks_usec()
+	main.menu_controller.set_game_hud_visible(false)
+	out["hud_hide"] = Time.get_ticks_usec() - t
+	t = Time.get_ticks_usec()
+	main.dog_shrine_controller.set_grimoire_cards(main._dog_shrine_grimoire_data())
+	out["grimoire"] = Time.get_ticks_usec() - t
+	t = Time.get_ticks_usec()
+	main.dog_shrine_controller.open_screen(main._dog_shrine_inventory_items(), main._dog_shrine_pending_card_data(), main._dog_shrine_offerings_left(), false)
+	out["open_screen"] = Time.get_ticks_usec() - t
+	t = Time.get_ticks_usec()
+	main.dog_shrine_controller.set_world_ready(true)
+	out["world_ready"] = Time.get_ticks_usec() - t
+	return out
+
+
 ## Formats numbers with the mod's number format (for tests).
 func fmt(values: Array) -> Array:
 	var script: Script = load("res://bdr/core/numfmt.gd")

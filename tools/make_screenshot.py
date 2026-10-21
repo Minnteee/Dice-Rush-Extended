@@ -100,8 +100,6 @@ def shoot():
     ev(HOST, "m().bdr.shop.buy('board', %d)" % BOARD_DESIGN)
     ev(HOST, "m().bdr.shop.buy('cursor', %d)" % HOST_CURSOR)
     ev(HOST, "m().set('money', 1.25e21)")
-    # show the first new dice in the shop
-    ev(HOST, "m().shop_scroll.set('scroll_vertical', int(m().shop_card_containers['pepe'].position.y) - 12)")
     ev(HOST, "m()._save_game(true)")
     print("host table:", ev(HOST, "m().dice.size()"), "dice, scale", ev(HOST, "m().bdr.dice_scale()"))
     ev(HOST, "m().bdr.coop_ui._host_now()")
@@ -117,6 +115,8 @@ def shoot():
     ev(GUEST, "m().bdr.coop.set('test_cursor', Vector2(%f, %f))" % P2_AT)
     ev(HOST, "m().bdr.coop_ui.set('show_local_cursor', true)")
     time.sleep(4.0)
+    # show the first new dice in the shop (the shop layout is settled by now)
+    ev(HOST, "m().shop_scroll.set('scroll_vertical', int(m().shop_card_containers['pepe'].position.y) - 12)")
     # a calm moment: no new effect lines / popups for a second, so the dice are easy to see
     ev(HOST, "n('/root/GameSession').set('visual_effects_enabled', false)")
     ev(HOST, "n('/root/GameSession').set('money_popups_enabled', false)")

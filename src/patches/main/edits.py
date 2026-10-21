@@ -28,6 +28,10 @@ EDITS = [
     # coop client: leaving the game needs no save
     ('func _request_safe_action(action: String) -> void :\n',
      'func _request_safe_action(action: String) -> void :\n\tif bdr.is_coop_client() and bdr.coop_leave(action):\n\t\treturn\n'),
+    # tarot: finish the running rolls at once instead of waiting (up to 30 s) for a quiet table -
+    # on a crowded table there was always something rolling, so the shrine closed again
+    ('\t\twait_frames += 1\n\t\tif wait_frames % 30 == 0:\n\t\t\t_synchronize_active_roll_count()\n\t\tawait get_tree().process_frame\n',
+     '\t\twait_frames += 1\n\t\t_bdr_drain_world_for_menu()\n\t\tif wait_frames % 30 == 0:\n\t\t\t_synchronize_active_roll_count()\n\t\tawait get_tree().process_frame\n'),
 ]
 
 # Replaced everywhere in main.gd.

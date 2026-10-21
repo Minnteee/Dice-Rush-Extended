@@ -44,7 +44,7 @@ python tools\build.py --release
    from `tools/i18n/strings*.py`. The other 29 languages are the JSON files in `src/bdr/i18n/`;
    `tools/i18n/check_translations.py` checks that every language has every key.
 3. Everything is packed into `dist/DiceRushExtended/DiceRushExtended.pck`; `--release` also writes
-   `dist/Dice-Rush-Extended-1.0.0.zip`.
+   `dist/Dice-Rush-Extended-<version>.zip`.
 
 Install options:
 

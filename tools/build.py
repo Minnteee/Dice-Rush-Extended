@@ -136,7 +136,7 @@ def install(target, test=False):
     print("installed to", target)
 
 
-MOD_VERSION = "1.0.0"
+MOD_VERSION = "1.1.0"
 
 
 def make_release_zip():

@@ -5,7 +5,6 @@
 
 const BDR_MONEY_CAP: = 1.0e300
 const BDRNumFmt: = preload("res://bdr/core/numfmt.gd")
-const BDR_SUFFIXES: = [[33, "d"], [30, "N"], [27, "O"], [24, "S"], [21, "s"], [18, "Q"], [15, "q"], [12, "T"], [9, "B"], [6, "M"], [3, "K"]]
 
 var money: float = 0.0
 var total_money_earned: float = 0.0

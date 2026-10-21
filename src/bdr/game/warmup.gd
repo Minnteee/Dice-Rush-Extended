@@ -72,7 +72,7 @@ func _warm_glyphs() -> void:
 		var name := str(key)
 		if name.begins_with("fx.") or name.begins_with("event.") or name.begins_with("lucky.") or name.begins_with("staff."):
 			text += str(table[key]) + " "
-	text += "0123456789.,+-x%KMBTqQsSONd"
+	text += "0123456789.,+-x%KMBTqQsSoNdabcdefghijk"
 	var center: Vector2 = game.board_safe_rect().get_center()
 	for size in FONT_SIZES:
 		var label := Label.new()

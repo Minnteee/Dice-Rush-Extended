@@ -323,3 +323,18 @@ func _load_dog_shrine_save_data(value: Variant) -> void :
 		"amount": int(pending_value.get("amount", 10)),
 		"choices": choices,
 	}
+
+
+## Tarot shrine: the original game waits until no dice is rolling before the shrine can be used
+## (and gives up after 30 s). On a crowded table something always rolls, so the running rolls are
+## finished right away (they pay out normally) - the shrine opens within a frame or two.
+func _bdr_drain_world_for_menu() -> void:
+	var budget: = 500
+	for die_value in active_roll_ids.values():
+		if budget <= 0:
+			return
+		if is_instance_valid(die_value) and die_value.rolling:
+			die_value.complete_roll_now()
+			budget -= 1
+	if active_roll_ids.is_empty() and active_roll_count > 0:
+		_synchronize_active_roll_count()

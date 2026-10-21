@@ -1,11 +1,11 @@
-DICE RUSH EXTENDED 1.0.0 - fan mod for DICE RUSH v1.0.0 (Full)
+DICE RUSH EXTENDED 1.1.0 - fan mod for DICE RUSH v1.0.0 (Full)
 ================================================================
 
 INSTALL
 -------
 1. Copy "override.cfg" and the "DiceRushExtended" folder into the game folder
    (the folder that contains "Dice Rush.exe").
-2. Start the game as usual. The main menu shows "Dice Rush Extended 1.0.0" at the
+2. Start the game as usual. The main menu shows "Dice Rush Extended 1.1.0" at the
    bottom left and the HOST GAME / JOIN GAME buttons at the top right.
 
 UNINSTALL
@@ -21,6 +21,7 @@ WHAT THE MOD ADDS
 - Performance: smooth even with thousands of dice (spatial grid, batched drawing,
   light-weight rolls, background warm-up). From 200 dice on, all dice get smaller so
   the table looks bigger.
+- 500 more dice fit on the table: up to 7,000 dice.
 - 100 new dice in 10 tiers (Pepe, 67, Twitch, YouTube, Pirate, Console, D&D,
   Lucky Block, Godot, Vault, Zombie, Racing Car, Tetris, Doge, Rickroll, Skibidi,
   Ohio and many more), each with its own effect. Big numbers up to 1dk (10^300),

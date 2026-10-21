@@ -3,7 +3,8 @@ extends RefCounted
 ## Never "e" notation. After d (10^33) the suffixes go on with two letters like idle games:
 ## aa = 10^36, ab = 10^39, ... az, ba, ... (enough for the 10^300 money cap).
 
-const SUFFIXES := ["", "K", "M", "B", "T", "q", "Q", "s", "S", "O", "N", "d"]
+## Octillion is a small "o": a capital "O" looks exactly like a zero in the game's pixel font.
+const SUFFIXES := ["", "K", "M", "B", "T", "q", "Q", "s", "S", "o", "N", "d"]
 
 
 ## Suffix for 1000^group (group 1 = K, 12 = aa, 13 = ab ...).

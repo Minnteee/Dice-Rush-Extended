@@ -28,22 +28,38 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
 - **67 new achievements**.
 - **Coop for 2 players** over the internet or LAN (IP address, Hamachi / Radmin VPN) or Steam invites.
   Both players see each other's mouse with its own design and a P1 / P2 tag.
+- **500 more dice on the table**: up to **7,000 dice** fit on the table (the original game stops at 6,500).
 - **Performance**: smooth even with thousands of dice (spatial grid, batched drawing, light-weight rolls,
-  background warm-up). From 200 dice on, all dice get smaller, so the table looks bigger.
-- **Big numbers, written short**: 1, 10, 100, 1K, 1.1K, 1M, 1.1M, 1B, 1T, 1q, 1Q ... 1d, then 1aa, 1ab ...
+  background warm-up). From 200 dice on, all dice get smaller and stay spread over the whole table.
+- **Big numbers, written short**: 1, 10, 100, 1K, 1.1K, 1M, 1.1M, 1B, 1T, 1q, 1Q, 1s, 1S, 1o, 1N, 1d,
+  then 1aa, 1ab ...
   never "e" notation.
 - **Balanced progression**: the 10 tiers unlock one after another. A shop dice of tier 2 or higher needs
   dice of the tier below first, so the game keeps you busy for hours instead of minutes.
 - **All 31 languages** of the game are supported.
 
+## Changelog
+
+**1.1.0**
+- **500 more dice on the table**: the limit went up from 6,500 to 7,000 dice.
+- Fixed: the tarot shrine loaded for a long time on a busy table and then went back to the table without
+  letting you offer dice. It now opens at once - rolling dice finish instantly and pay out as usual.
+- Fixed: on crowded tables the small dice gathered in the middle of the table. They now spread over the
+  whole table again; saves from 1.0.0 are spread out once when they are loaded.
+- The coop button now sits next to the achievements button (it was hidden behind it on wide screens).
+- The GitHub logo is now also shown in the game, at the bottom right.
+- Octillion is now written with a small "o" (a capital O looked like a zero in the game's font).
+
+**1.0.0** - first release.
+
 ## Install
 
-1. Download **`Dice-Rush-Extended-1.0.0.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
+1. Download **`Dice-Rush-Extended-1.1.0.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
 2. Extract it into your DICE RUSH game folder, the folder that contains `Dice Rush.exe`
    (Steam: right click DICE RUSH -> Manage -> Browse local files).
    You should now have `override.cfg`, the folder `DiceRushExtended` and `Uninstall Dice Rush Extended.bat`
    next to `Dice Rush.exe`.
-3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.0.0"** at the bottom left.
+3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.1.0"** at the bottom left.
 
 **Uninstall:** run `Uninstall Dice Rush Extended.bat` (or delete `override.cfg` and the `DiceRushExtended`
 folder). Your saves are not deleted. The original game cannot store more than 9.2e18 money, so a modded
@@ -83,7 +99,7 @@ DICE RUSH **v1.0.0 (Full)** - Godot 4.7.1.
 
 ## Mod version
 
-Dice Rush Extended **1.0.0** - final version.
+Dice Rush Extended **1.1.0** - final version.
 
 ## Players
 

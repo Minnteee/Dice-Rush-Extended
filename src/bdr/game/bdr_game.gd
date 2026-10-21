@@ -7,6 +7,7 @@ const CatalogScript := preload("res://bdr/core/catalog.gd")
 const MechanicsScript := preload("res://bdr/game/mechanics.gd")
 const FXScript := preload("res://bdr/render/fx.gd")
 const BDRSettings := preload("res://bdr/core/settings.gd")
+const GitHubScript := preload("res://bdr/ui/github_button.gd")
 const ShopLogicScript := preload("res://bdr/game/shop_logic.gd")
 const TalentsExtScript := preload("res://bdr/game/talents_ext.gd")
 const LuckyExtScript := preload("res://bdr/game/lucky_ext.gd")
@@ -17,7 +18,7 @@ const AchievementsScript := preload("res://bdr/game/achievements_ext.gd")
 const CoopScript := preload("res://bdr/net/coop.gd")
 const CoopUIScript := preload("res://bdr/ui/coop_ui.gd")
 const WarmupScript := preload("res://bdr/game/warmup.gd")
-const MOD_VERSION := "1.0.0"
+const MOD_VERSION := "1.1.0"
 const STAFF_POP_MAX := 6
 const ROMAN := ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
 const FAMILY_COLORS := {"classic": "5dabf6", "material": "c8904f", "meme": "6dbb45", "element": "ff6a1f", "animal": "f2c98c", "tech": "478cbf", "adventure": "c0c6d0", "casino": "e8c02a", "food": "ff7ac8", "spooky": "7fae5a", "vehicle": "e8261c", "cosmic": "b45aff", "luck": "2fa85a"}
@@ -592,7 +593,7 @@ func effect_radius_mult() -> float:
 
 # ---------------------------------------------------------------- crowded tables
 ## [minimum dice, size factor]: from 200 dice on the dice get smaller (the table looks bigger).
-const SCALE_STEPS := [[200, 0.85], [600, 0.72], [1500, 0.6], [3000, 0.5], [5000, 0.42]]
+const SCALE_STEPS := [[200, 0.85], [600, 0.72], [1500, 0.6], [3000, 0.5], [5000, 0.42], [6000, 0.38]]
 
 
 func dice_scale() -> float:
@@ -728,7 +729,14 @@ func process_always(_delta: float) -> void:
 		warmup.process()
 
 
+## True while a menu (tarot shrine) waits for a quiet table: no new rolls from the mod then.
+func world_frozen_for_menu() -> bool:
+	return bool(main.dog_shrine_transaction_active) and not world_runs_during_menus()
+
+
 func process_world(delta: float) -> void:
+	if world_frozen_for_menu():
+		return
 	var on: bool = main.bdr_prof_on
 	var t0 := Time.get_ticks_usec() if on else 0
 	_update_dice_scale(delta)
@@ -784,6 +792,33 @@ func try_bonus(key: String) -> bool:
 	budget[key] = value - 1.0
 	extra["bonus_budget"] = budget
 	return true
+
+
+## Version 1.0 pulled the flight targets on crowded tables towards the dice itself, so over time
+## the dice gathered in the middle of the table. Saves from that version are spread out evenly
+## once after loading (an even spread has about 25% of the dice in the middle quarter).
+func spread_dice_if_clustered() -> int:
+	if main.dice.size() < 200:
+		return 0
+	var safe: Rect2 = board_safe_rect()
+	var middle := Rect2(safe.position + safe.size * 0.25, safe.size * 0.5)
+	var counted := 0
+	var inside := 0
+	for die in main.dice:
+		if not is_instance_valid(die) or die.die_kind == "cat":
+			continue
+		counted += 1
+		if middle.has_point(die.position):
+			inside += 1
+	if counted == 0 or float(inside) / float(counted) < 0.4:
+		return 0
+	var moved := 0
+	for die in main.dice:
+		if not is_instance_valid(die) or die.rolling or die.special_motion or die.die_kind == "cat":
+			continue
+		teleport_die(die, main._bdr_random_felt_point())
+		moved += 1
+	return moved
 
 
 ## Puts dice that ended up outside the board (older versions could let cars drive off the
@@ -895,6 +930,8 @@ func _build_shop_hud_button() -> void:
 	shop_hud_button.name = "BDRShopHudButton"
 	shop_hud_button.focus_mode = Control.FOCUS_ALL
 	main._wire_ui_feedback(shop_hud_button, visual, 1.055, 0.95)
+	# GitHub logo at the bottom right of the table screen (same as in the main menu)
+	GitHubScript.make(main, Rect2(1840, 998, 60, 60), 23)
 
 
 func open_shop() -> void:
@@ -1212,6 +1249,7 @@ func on_new_game() -> void:
 func on_loaded() -> void:
 	shop.apply()
 	rescue_stray_dice()
+	spread_dice_if_clustered()
 
 
 func save_data() -> Dictionary:

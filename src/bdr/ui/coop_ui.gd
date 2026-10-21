@@ -205,10 +205,29 @@ var show_local_cursor := false
 var _local_cursor: Control
 
 
+## The coop button sits right of the achievements (trophy) button. That button lives on the
+## table's canvas, which is shifted on wide windows, so its real screen position is used.
+func _align_to_trophy() -> void:
+	var menu = main.get("menu_controller")
+	if menu == null or not is_instance_valid(menu):
+		return
+	var trophy = menu.get("achievement_button")
+	if trophy == null or not is_instance_valid(trophy) or not trophy.is_inside_tree():
+		return
+	var to_screen: Transform2D = trophy.get_global_transform_with_canvas()
+	var top_left: Vector2 = to_screen * Vector2.ZERO
+	var bottom_right: Vector2 = to_screen * trophy.size
+	_button.position = Vector2(bottom_right.x + 10.0, top_left.y)
+	_button.size = Vector2(maxf(40.0, bottom_right.x - top_left.x), maxf(40.0, bottom_right.y - top_left.y))
+	_panel.position = Vector2(_button.position.x, bottom_right.y + 10.0)
+
+
 func _process(_delta: float) -> void:
 	var coop = game.coop
 	var in_game: bool = bool(main.game_started) and not coop.local_in_menu()
 	_button.visible = in_game or _panel.visible
+	if _button.visible:
+		_align_to_trophy()
 	if show_local_cursor and coop.is_active():
 		if _local_cursor == null:
 			_local_cursor = _make_cursor()
