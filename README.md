@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/brand_780.png" alt="Dice Rush Extended logo: a lucky block, a Pepe dice and a 67 dice under the words DICE RUSH EXTENDED" width="195" height="195">
+</p>
+
 # Dice Rush Extended
 
 **Dice Rush Extended** is a big fan mod for **DICE RUSH**. It adds 100 new dice with their own effects, a shop,
