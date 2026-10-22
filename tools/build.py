@@ -70,6 +70,28 @@ def collect():
         with open(target, "w", encoding="utf-8", newline="\n") as handle:
             handle.write('[remap]\n\npath="res://%s"\n' % rel)
         files.append(("res://" + rel + ".remap", target))
+    # Dice Shaker game mode (res://shaker/...): code, data, texts, generated art and sounds
+    for root_dir in (os.path.join(SRC, "shaker"), os.path.join(GEN, "shaker")):
+        if not os.path.isdir(root_dir):
+            continue
+        for base, dirs, names in os.walk(root_dir):
+            dirs[:] = [d for d in dirs if d != "__pycache__"]
+            for name in names:
+                if os.path.splitext(name)[1] in SKIP_EXT or name in SKIP_NAMES or name.startswith("_preview"):
+                    continue
+                abs_path = os.path.join(base, name)
+                rel = os.path.relpath(abs_path, root_dir).replace("\\", "/")
+                files.append(("res://shaker/" + rel, abs_path))
+    # Dice Shaker: the start menu scene gets a script with the DICE SHAKER button (it extends the menu script)
+    menu_remap = os.path.join(remap_dir, "scenes", "start_menu.tscn.remap")
+    os.makedirs(os.path.dirname(menu_remap), exist_ok=True)
+    with open(menu_remap, "w", encoding="utf-8", newline="\n") as handle:
+        handle.write('[remap]\n\npath="res://shaker/menu/start_menu.tscn"\n')
+    files.append(("res://scenes/start_menu.tscn.remap", menu_remap))
+    seen = set()
+    for res, _src in files:
+        assert res not in seen, "duplicate file in pack: " + res
+        seen.add(res)
     return files
 
 
@@ -104,7 +126,8 @@ def make_dist():
     return os.path.join(DIST, "DiceRushExtended", "DiceRushExtended.pck")
 
 
-OLD_NAMES = ("BetherDiceRush", "Bether Dice Rush deinstallieren.bat")   # first version of the mod
+# files of older versions: the first version was called "Bether Dice Rush", Dice Shaker was a separate mod
+OLD_NAMES = ("BetherDiceRush", "Bether Dice Rush deinstallieren.bat", "DiceShaker", "Uninstall Dice Shaker.bat")
 UNINSTALL_NAME = "Uninstall Dice Rush Extended.bat"
 
 
@@ -136,7 +159,7 @@ def install(target, test=False):
     print("installed to", target)
 
 
-MOD_VERSION = "1.1.1"
+MOD_VERSION = "1.2.0"
 
 
 def make_release_zip():
@@ -157,9 +180,20 @@ def make_release_zip():
     return path
 
 
+def make_shaker_data():
+    """Dice Shaker: game data + English/German texts from tools/shaker/shaker_design.py, sounds if missing."""
+    sys.path.insert(0, os.path.join(ROOT, "tools", "shaker"))
+    import make_shaker_data as shaker_data
+    shaker_data.main()
+    if not os.path.isdir(os.path.join(GEN, "shaker", "audio")):
+        subprocess.run([os.path.join(ROOT, "tools", "venv", "Scripts", "python.exe"),
+                        os.path.join(ROOT, "tools", "shaker", "gen_sounds.py")], check=True)
+
+
 if __name__ == "__main__":
     import apply_patches
     apply_patches.main()
+    make_shaker_data()
     sys.path.insert(0, os.path.join(ROOT, 'tools', 'i18n'))
     import build_i18n
     build_i18n.main()

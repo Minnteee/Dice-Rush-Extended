@@ -18,10 +18,11 @@ OUT = os.path.join(REPO, "docs", "social_preview.png")
 WIDTH, HEIGHT = 427, 214
 SCALE = 3
 FEATURES = [
+    ("NEW MODE: DICE SHAKER", "#c46bff"),
     ("100 NEW DICE", "#7ee06a"),
     ("SHOP AND DESIGNS", "#ffd166"),
     ("67 NEW TALENTS", "#5dd0ff"),
-    ("40 TAROT CARDS", "#c79bff"),
+    ("40 TAROT CARDS", "#ff9fd8"),
     ("10 STAFF TYPES", "#ff9f5a"),
     ("COOP FOR 2 PLAYERS", "#ff6fa8"),
     ("UP TO 7,000 DICE", "#9fe3ff"),
@@ -79,7 +80,7 @@ def main():
     image.alpha_composite(title, (left - 1, 18))
     draw.line((left, 34, WIDTH - 16, 34), fill=brand.hexc("#5a3fa0"))
     for index, (text, color) in enumerate(FEATURES):
-        y = 46 + index * 19
+        y = 44 + index * 17
         gem(draw, left, y, color)
         line = brand.outlined(brand.text_mask(text, 8), brand.hexc("#ffffff"), brand.hexc("#d8e6ff"), brand.hexc("#0a0618"), 1)
         image.alpha_composite(line, (left + 12, y - 1))

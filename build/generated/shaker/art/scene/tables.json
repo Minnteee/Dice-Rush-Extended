@@ -1,0 +1,102 @@
+[
+ {
+  "id": 0,
+  "name_en": "Royal Purple",
+  "name_de": "Königslila"
+ },
+ {
+  "id": 1,
+  "name_en": "Midnight Blue",
+  "name_de": "Mitternachtsblau"
+ },
+ {
+  "id": 2,
+  "name_en": "Crimson Velvet",
+  "name_de": "Karminsamt"
+ },
+ {
+  "id": 3,
+  "name_en": "Emerald Silk",
+  "name_de": "Smaragdseide"
+ },
+ {
+  "id": 4,
+  "name_en": "Golden Sun",
+  "name_de": "Goldene Sonne"
+ },
+ {
+  "id": 5,
+  "name_en": "Black Lace",
+  "name_de": "Schwarze Spitze"
+ },
+ {
+  "id": 6,
+  "name_en": "Rose Garden",
+  "name_de": "Rosengarten"
+ },
+ {
+  "id": 7,
+  "name_en": "Ocean Wave",
+  "name_de": "Meereswoge"
+ },
+ {
+  "id": 8,
+  "name_en": "Forest Moss",
+  "name_de": "Waldmoos"
+ },
+ {
+  "id": 9,
+  "name_en": "Lavender Stars",
+  "name_de": "Lavendelsterne"
+ },
+ {
+  "id": 10,
+  "name_en": "Moon Phases",
+  "name_de": "Mondphasen"
+ },
+ {
+  "id": 11,
+  "name_en": "Desert Sand",
+  "name_de": "Wüstensand"
+ },
+ {
+  "id": 12,
+  "name_en": "Frozen Lake",
+  "name_de": "Gefrorener See"
+ },
+ {
+  "id": 13,
+  "name_en": "Ember",
+  "name_de": "Glut"
+ },
+ {
+  "id": 14,
+  "name_en": "Candy Pink",
+  "name_de": "Bonbonrosa"
+ },
+ {
+  "id": 15,
+  "name_en": "Galaxy Swirl",
+  "name_de": "Galaxienwirbel"
+ },
+ {
+  "id": 16,
+  "name_en": "Chess Board",
+  "name_de": "Schachbrett"
+ },
+ {
+  "id": 17,
+  "name_en": "Rune Circle",
+  "name_de": "Runenkreis"
+ },
+ {
+  "id": 18,
+  "name_en": "Tarot Tapestry",
+  "name_de": "Tarot-Wandteppich"
+ },
+ {
+  "id": 19,
+  "name_en": "Peacock",
+  "name_de": "Pfau"
+ }
+]

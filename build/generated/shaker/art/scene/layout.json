@@ -1,0 +1,22 @@
+{
+ "native": [480, 270],
+ "scale": 4,
+ "table": [0, 170, 480, 100],
+ "cloth": [0, 170, 480, 100],
+ "cushion": [156, 170, 168, 52],
+ "stand": [178, 154, 124, 36],
+ "ball": [176, 44, 128, 128],
+ "ball_inner": {"center": [240, 108], "radius": 56},
+ "dice_floor": {"center": [240, 148], "rx": 40, "ry": 8},
+ "hand_left": [56, 62, 112, 88],
+ "hand_right": [312, 62, 112, 88],
+ "gumball_machine": [18, 70, 72, 140],
+ "gumball_chute": [54, 191],
+ "gumball_slot": [43, 165],
+ "gumball_crank": [54, 173],
+ "gumball_globe": {"center": [54, 121], "radius": 30},
+ "candles": [[392, 160], [414, 180]],
+ "candle_sprites": ["candle", "candle_short"],
+ "flame_offset": [4, -14],
+ "draw_order": ["background", "hand_left", "hand_right", "table", "cloth", "gumball_machine", "gumball_crank", "candles", "flames", "cushion", "ball_back", "dice", "ball_front", "stand"]
+}

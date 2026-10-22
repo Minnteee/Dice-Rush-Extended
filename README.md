@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/brand_780.png" alt="Dice Rush Extended logo: a lucky block, a Pepe dice and a 67 dice under the words DICE RUSH EXTENDED" width="195" height="195">
+  <img src="docs/brand_780.png" alt="Dice Rush Extended logo: a lucky block, a Pepe dice and a 67 dice between the fortune teller's hands, under the words DICE RUSH +DICE SHAKER +COOP and EXTENDED" width="195" height="195">
 </p>
 
 # Dice Rush Extended
@@ -8,9 +8,14 @@
 staff, new talents, tarot cards, lucky cube rewards, random events and achievements, keeps the game smooth
 with thousands of dice on the table, and lets you play **coop with a friend**.
 
+It also comes with **Dice Shaker**, a whole new game mode: shake a crystal ball full of dice on a fortune
+teller's table.
+
 ![Dice Rush Extended in coop: player 1 (golden gauntlet) and player 2 (wizard wand) on the Purple Galaxy table](docs/screenshot.png)
 
-## What the mod adds
+![Dice Shaker: a crystal ball full of dice on the fortune teller's table, her hands next to the ball, the gumball machine on the left and the gauntlet rack on the right](docs/screenshot_shaker.png)
+
+## What the mod adds to the game
 
 - **100 new dice in 10 tiers**: Pepe, 67, Twitch, YouTube, Pirate, Console, D&D, Lucky Block, Godot, Vault,
   Zombie, Racing Car, Tetris, Doge, Rickroll, Skibidi, Ohio, Gigachad, Black Hole, Supernova and many more.
@@ -42,25 +47,42 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
   dice of the tier below first, so the game keeps you busy for hours instead of minutes.
 - **All 31 languages** of the game are supported.
 
-## Changelog
+## Dice Shaker - the new game mode
 
-**1.1.1**
-- Fixed: the tarot shrine could still load for 30 seconds and then go back to the table without
-  letting you offer dice. Prehistoric dice waves could stay open forever (for example when a wave hit
-  a driving racing car), and the shrine waited for them. Waves can no longer get stuck, open waves
-  are closed when the shrine opens, and the shrine is ready in a fraction of a second.
+A calm, single-player game mode with its own save cards. Click **DICE SHAKER** in the main menu (under
+NEW GAME) and pick one of its 3 save cards - they are separate from your normal saves.
 
-**1.1.0**
-- **500 more dice on the table**: the limit went up from 6,500 to 7,000 dice.
-- Fixed: the tarot shrine loaded for a long time on a busy table and then went back to the table without
-  letting you offer dice. It now opens at once - rolling dice finish instantly and pay out as usual.
-- Fixed: on crowded tables the small dice gathered in the middle of the table. They now spread over the
-  whole table again; saves from 1.0.0 are spread out once when they are loaded.
-- The coop button now sits next to the achievements button (it was hidden behind it on wide screens).
-- The GitHub logo is now also shown in the game, at the bottom right.
-- Octillion is now written with a small "o" (a capital O looked like a zero in the game's font).
-
-**1.0.0** - first release.
+- **The table**: a fortune teller's table with a purple tablecloth and cushion. On it sits a **crystal ball**
+  on a wooden stand - the dice are inside the glass. The fortune teller's hands move closer to the ball and
+  back, without ever touching it.
+- **Shake**: click the ball (or hold the mouse button, or press SPACE). The dice fly around inside the glass,
+  land and pay their faces. Equal faces make **combos**: pair, triple, four, five and six of a kind,
+  straight and "all the same".
+- **Dice level up**: you do not buy dice. You start with 1 die, and every die gains experience with every
+  shake and levels up (up to level 100).
+- **100 dice** from the original game and from this mod, sorted by **rarity** (common, uncommon, rare, epic,
+  legendary), each with its own effect - critical hits, auras, combos, jackpots, echoes, money for every
+  die in the ball, the digits of pi, a d20 ... Up to 6 big dice fit into the ball; the talent "Compact Dice"
+  makes them smaller, then up to **12 dice** fit.
+- **Gumball machine**: insert money, the crank turns and a gumball full of **talent points** rolls out.
+  The colour shows how many points it holds (1 to 13), and every gumball costs more than the last.
+- **Talent tree**: 52 talents, paid with talent points and money - more dice, faster and automatic shaking,
+  money, combos, critical shakes, experience, cheaper Lucky Cube and tarot, and the black market contact.
+- **Lucky Cube**: rerolls your dice into new ones - their **levels stay**. Lock the dice you want to keep.
+  5 tiers from cheap (100 % common) to expensive (mostly epic and legendary); the chances are shown next to
+  the ROLL button.
+- **Tarot**: 30 new cards, drawn with money. Draw the same card again and it rises from common up to
+  **legendary**.
+- **Shop**: 30 **gauntlets** - mouse cursors with real bonuses (money, combos, experience, critical shakes,
+  faster shaking ...). Every gauntlet you bought is listed on the right side of the screen with its effect:
+  click one to equip it. 20 **table designs** (tablecloth and cushion, looks only).
+- **Black market**: 30 illegal cards, only sold here - strong, stackable, with a limit per card.
+- **Random events every 5 minutes**: 30 s shop and black market -50 %, talents -50 %, Lucky Cube -50 %,
+  tarot -50 %, 10 s money rush (every shake pays x5) or 30 s turbo shake (auto-shake 1 s faster, the dice
+  land faster).
+- **Dice book**: all 100 dice; every die you discover gives +2 % money.
+- No workers, no achievements, no coop and no story in this mode - just you, the ball and the dice.
+  Its effects are calmer than in the normal game.
 
 ## Install
 
@@ -71,17 +93,19 @@ with thousands of dice on the table, and lets you play **coop with a friend**.
 > **If you have epilepsy or are sensitive to flashing lights, please do not download or play this mod.**
 > If you feel dizzy or unwell while playing (for example blurred vision or twitching eyes or muscles), stop playing immediately and talk to a doctor.
 
-1. Download **`Dice-Rush-Extended-1.1.1.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
+1. Download **`Dice-Rush-Extended-1.2.0.zip`** from the [latest release](https://github.com/Minnteee/Dice-Rush-Extended/releases/latest).
 2. Extract it into your DICE RUSH game folder, the folder that contains `Dice Rush.exe`
    (Steam: right click DICE RUSH -> Manage -> Browse local files).
    You should now have `override.cfg`, the folder `DiceRushExtended` and `Uninstall Dice Rush Extended.bat`
-   next to `Dice Rush.exe`.
-3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.1.1"** at the bottom left.
+   next to `Dice Rush.exe`. Replace the files of an older version.
+3. Start the game as usual. The main menu shows **"Dice Rush Extended 1.2.0"** at the bottom left and the
+   new **DICE SHAKER** button under NEW GAME.
 
 **Uninstall:** run `Uninstall Dice Rush Extended.bat` (or delete `override.cfg` and the `DiceRushExtended`
 folder). Your saves are not deleted. The original game cannot store more than 9.2e18 money, so a modded
 save with more money shows wrong amounts without the mod. The mod's achievements are stored in their own
-file (`bdr_achievements.json`); the original achievements are not changed.
+file (`bdr_achievements.json`); the original achievements are not changed. Dice Shaker saves are the files
+`shaker_slot_1.json` to `shaker_slot_3.json` in the game's save folder.
 
 ## Play
 
@@ -92,6 +116,7 @@ file (`bdr_achievements.json`); the original achievements are not changed.
 - Staff is hired in the shop list like workers. The new talents are in the talent tree (key `U`).
 - Offer dice at the tarot shrine to get the new tarot cards.
 - Random events show up by themselves - click coins, chests and clovers when they appear.
+- For **Dice Shaker**, click **DICE SHAKER** in the main menu (see above).
 
 ## Host and Join
 
@@ -108,7 +133,7 @@ file (`bdr_achievements.json`); the original achievements are not changed.
 
 The game runs on the host's PC and uses the host's save. Player 2 plays on the same table with the same
 money and can roll, buy, sell and use talents, lucky cubes and tarot. Both players need the same mod version.
-Achievements are earned by the host.
+Achievements are earned by the host. Dice Shaker is single player only.
 
 ## Game version
 
@@ -116,11 +141,12 @@ DICE RUSH **v1.0.0 (Full)** - Godot 4.7.1.
 
 ## Mod version
 
-Dice Rush Extended **1.1.1** - final version.
+Dice Rush Extended **1.2.0** (with Dice Shaker) - final version. What changed in each version is written
+in the [releases](https://github.com/Minnteee/Dice-Rush-Extended/releases).
 
 ## Players
 
-1 player, or 2 players in coop.
+1 player, or 2 players in coop. Dice Shaker: 1 player.
 
 ## Platform
 
@@ -133,11 +159,13 @@ The complete source code of the mod is in this repository, so you can learn from
 | Folder | Contents |
 | --- | --- |
 | `src/bdr/` | the mod itself: core (grid, numbers, settings, translations), game systems (dice mechanics, shop, staff, talents, lucky cubes, tarot, events, achievements), coop networking, rendering and UI |
+| `src/shaker/` | the Dice Shaker game mode: game data, rules, the crystal ball's dice physics, the scene, its screens (talents, Lucky Cube, tarot, shop, dice book), save cards and texts in 31 languages |
 | `src/patches/` | changes to the original game scripts: function / variable blocks that replace or extend the original ones |
 | `src/loader/` | `override.cfg` and `boot.gd`, which load the mod's `.pck` file at game start |
 | `src/bdr/i18n/`, `tools/i18n/` | texts in all 31 languages |
 | `tools/` | build tool, patch tool, dice catalog, art generators, test harness client |
-| `build/generated/bdr/art/` | all pixel art of the mod (made by the scripts in `tools/art/`) |
+| `tools/shaker/` | Dice Shaker: all game data and balance numbers (`shaker_design.py`), the balance simulation, sounds and text checks |
+| `build/generated/bdr/art/`, `build/generated/shaker/` | all pixel art and sounds of the mod (made by the scripts in `tools/art/`, `tools/shaker_art/` and `tools/shaker/`) |
 
 How to build the mod yourself is explained in [docs/BUILDING.md](docs/BUILDING.md).
 The original game's files are **not** included - you need your own copy of DICE RUSH.

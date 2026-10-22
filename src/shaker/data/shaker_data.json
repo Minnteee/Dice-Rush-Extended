@@ -1,0 +1,4753 @@
+{
+ "version": 1,
+ "balance": {
+  "start_die": "wood",
+  "max_dice": 12,
+  "big_dice_max": 6,
+  "max_level": 100,
+  "xp_base": 6.0,
+  "xp_growth": 1.13,
+  "level_growth": 1.08,
+  "level_milestone": 10,
+  "level_milestone_mult": 2.0,
+  "shake_time": 1.15,
+  "shake_time_min": 0.35,
+  "streak_window": 3.0,
+  "crit_mult": 3.0,
+  "combo_group": {
+   "2": 1.25,
+   "3": 1.6,
+   "4": 2.2,
+   "5": 3.0,
+   "6": 4.5
+  },
+  "combo_straight": 2.0,
+  "combo_all_same": 4.0,
+  "collection_pct": 2,
+  "gauntlet_owned_pct": 2,
+  "market_period": 30.0,
+  "money_cap": 1e+300,
+  "autosave_seconds": 30.0,
+  "max_discount_pct": 80,
+  "event_every": 300.0,
+  "events": {
+   "shop_sale": 30.0,
+   "talent_sale": 30.0,
+   "lucky_sale": 30.0,
+   "tarot_sale": 30.0,
+   "money_rush": 10.0,
+   "turbo": 30.0
+  }
+ },
+ "rarities": [
+  "common",
+  "uncommon",
+  "rare",
+  "epic",
+  "legendary"
+ ],
+ "rarity_colors": {
+  "common": "#b9c2cf",
+  "uncommon": "#5fd36a",
+  "rare": "#4aa8ff",
+  "epic": "#c46bff",
+  "legendary": "#ffb52e"
+ },
+ "stats": {
+  "money_pct": "add",
+  "money_x": "mul",
+  "manual_pct": "add",
+  "xp_pct": "add",
+  "xp_x": "mul",
+  "combo_pct": "add",
+  "combo_x": "mul",
+  "crit_chance": "add",
+  "crit_mult": "add",
+  "speed_pct": "add",
+  "auto_pct": "add",
+  "auto_x": "mul",
+  "auto_every": "min",
+  "echo_chance": "add",
+  "double_chance": "add",
+  "common_pct": "add",
+  "uncommon_pct": "add",
+  "rare_pct": "add",
+  "epic_pct": "add",
+  "legendary_pct": "add",
+  "common_x": "mul",
+  "uncommon_x": "mul",
+  "rare_x": "mul",
+  "epic_x": "mul",
+  "legendary_x": "mul",
+  "six_x": "mul",
+  "min_face": "max",
+  "ones_as_six": "max",
+  "best_pct": "add",
+  "bell_x": "mul",
+  "treasure_n": "add",
+  "coin_chance": "add",
+  "lucky_discount": "add",
+  "lucky_odds": "add",
+  "reroll_levels": "add",
+  "tarot_discount": "add",
+  "tarot_choices": "add",
+  "gumball_discount": "add",
+  "gumball_luck": "add",
+  "gumball_slow": "add",
+  "tp_pct": "add",
+  "tp_extra": "add",
+  "double_ball": "add",
+  "talent_discount": "add",
+  "shop_discount": "add",
+  "black_discount": "add",
+  "xp_need_pct": "add",
+  "catchup_x": "mul",
+  "black_market": "max",
+  "slots": "add",
+  "compact": "max"
+ },
+ "passive_fx": {
+  "xp": "xp_pct",
+  "tp_luck": "tp_pct",
+  "quick": "speed_pct",
+  "auto": "auto_pct",
+  "cheap_lucky": "lucky_discount",
+  "cheap_tarot": "tarot_discount",
+  "combo": "combo_pct"
+ },
+ "dice": [
+  {
+   "id": "wood",
+   "rarity": "common",
+   "pay": 1.0,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/wood.png",
+   "name_src": [
+    "bdr",
+    "dice.wood.name"
+   ]
+  },
+  {
+   "id": "50_50",
+   "rarity": "common",
+   "pay": 1.0,
+   "fx": "gamble",
+   "p": {
+    "chance": 50,
+    "mult": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/art/магаизн 5050.png",
+   "name_src": [
+    "game",
+    "die_50"
+   ]
+  },
+  {
+   "id": "d4",
+   "rarity": "common",
+   "pay": 1.1,
+   "fx": "high",
+   "p": {
+    "face": 4,
+    "mult": 2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "art": "res://assets/dice/d4.png",
+   "name_src": [
+    "game",
+    "die_d4"
+   ]
+  },
+  {
+   "id": "pepe",
+   "rarity": "common",
+   "pay": 0.8,
+   "fx": "ones",
+   "p": {
+    "mult": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/pepe.png",
+   "name_src": [
+    "bdr",
+    "dice.pepe.name"
+   ]
+  },
+  {
+   "id": "sixseven",
+   "rarity": "common",
+   "pay": 0.55,
+   "fx": "pair",
+   "p": {
+    "pct": 20
+   },
+   "faces": [
+    6,
+    7,
+    6,
+    7,
+    6,
+    7
+   ],
+   "art": "res://bdr/art/dice/sixseven.png",
+   "name_src": [
+    "bdr",
+    "dice.sixseven.name"
+   ]
+  },
+  {
+   "id": "paper",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "quick",
+   "p": {
+    "pct": 4
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/paper.png",
+   "name_src": [
+    "bdr",
+    "dice.paper.name"
+   ]
+  },
+  {
+   "id": "clover",
+   "rarity": "common",
+   "pay": 0.75,
+   "fx": "crit",
+   "p": {
+    "chance": 7,
+    "mult": 7
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/clover.png",
+   "name_src": [
+    "bdr",
+    "dice.clover.name"
+   ]
+  },
+  {
+   "id": "dnd",
+   "rarity": "common",
+   "pay": 0.25,
+   "fx": "d20",
+   "p": {
+    "mult": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "art": "res://bdr/art/dice/dnd.png",
+   "name_src": [
+    "bdr",
+    "dice.dnd.name"
+   ]
+  },
+  {
+   "id": "candy",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "aura",
+   "p": {
+    "pct": 4
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/candy.png",
+   "name_src": [
+    "bdr",
+    "dice.candy.name"
+   ]
+  },
+  {
+   "id": "bubble",
+   "rarity": "common",
+   "pay": 0.95,
+   "fx": "pair",
+   "p": {
+    "pct": 25
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bubble.png",
+   "name_src": [
+    "bdr",
+    "dice.bubble.name"
+   ]
+  },
+  {
+   "id": "cookie",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "streak",
+   "p": {
+    "step": 1,
+    "max": 30
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/cookie.png",
+   "name_src": [
+    "bdr",
+    "dice.cookie.name"
+   ]
+  },
+  {
+   "id": "snail",
+   "rarity": "common",
+   "pay": 0.5,
+   "fx": "every",
+   "p": {
+    "n": 10,
+    "mult": 12
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/snail.png",
+   "name_src": [
+    "bdr",
+    "dice.snail.name"
+   ]
+  },
+  {
+   "id": "stone",
+   "rarity": "common",
+   "pay": 1.25,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/stone.png",
+   "name_src": [
+    "bdr",
+    "dice.stone.name"
+   ]
+  },
+  {
+   "id": "twitch",
+   "rarity": "common",
+   "pay": 0.8,
+   "fx": "streak",
+   "p": {
+    "step": 2,
+    "max": 40
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/twitch.png",
+   "name_src": [
+    "bdr",
+    "dice.twitch.name"
+   ]
+  },
+  {
+   "id": "youtube",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "xp",
+   "p": {
+    "pct": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/youtube.png",
+   "name_src": [
+    "bdr",
+    "dice.youtube.name"
+   ]
+  },
+  {
+   "id": "pirate",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "jackpot",
+   "p": {
+    "chance": 1,
+    "mult": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/pirate.png",
+   "name_src": [
+    "bdr",
+    "dice.pirate.name"
+   ]
+  },
+  {
+   "id": "console",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "combo",
+   "p": {
+    "pct": 15
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/console.png",
+   "name_src": [
+    "bdr",
+    "dice.console.name"
+   ]
+  },
+  {
+   "id": "slot",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "jackpot",
+   "p": {
+    "chance": 2,
+    "mult": 7
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/slot.png",
+   "name_src": [
+    "bdr",
+    "dice.slot.name"
+   ]
+  },
+  {
+   "id": "ice",
+   "rarity": "common",
+   "pay": 0.75,
+   "fx": "even",
+   "p": {
+    "mult": 1.6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ice.png",
+   "name_src": [
+    "bdr",
+    "dice.ice.name"
+   ]
+  },
+  {
+   "id": "fire",
+   "rarity": "common",
+   "pay": 0.7,
+   "fx": "high",
+   "p": {
+    "face": 5,
+    "mult": 1.8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/fire.png",
+   "name_src": [
+    "bdr",
+    "dice.fire.name"
+   ]
+  },
+  {
+   "id": "bunny",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "tp_luck",
+   "p": {
+    "pct": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bunny.png",
+   "name_src": [
+    "bdr",
+    "dice.bunny.name"
+   ]
+  },
+  {
+   "id": "donut",
+   "rarity": "common",
+   "pay": 0.75,
+   "fx": "odd",
+   "p": {
+    "mult": 1.8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/donut.png",
+   "name_src": [
+    "bdr",
+    "dice.donut.name"
+   ]
+  },
+  {
+   "id": "tetris",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "per_die",
+   "p": {
+    "pct": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/tetris.png",
+   "name_src": [
+    "bdr",
+    "dice.tetris.name"
+   ]
+  },
+  {
+   "id": "vault",
+   "rarity": "common",
+   "pay": 0.5,
+   "fx": "every",
+   "p": {
+    "n": 25,
+    "mult": 30
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/vault.png",
+   "name_src": [
+    "bdr",
+    "dice.vault.name"
+   ]
+  },
+  {
+   "id": "zombie",
+   "rarity": "common",
+   "pay": 0.8,
+   "fx": "grow",
+   "p": {
+    "step": 2,
+    "max": 60
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/zombie.png",
+   "name_src": [
+    "bdr",
+    "dice.zombie.name"
+   ]
+  },
+  {
+   "id": "ghost",
+   "rarity": "common",
+   "pay": 0.9,
+   "fx": "echo",
+   "p": {
+    "chance": 2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ghost.png",
+   "name_src": [
+    "bdr",
+    "dice.ghost.name"
+   ]
+  },
+  {
+   "id": "stonks",
+   "rarity": "common",
+   "pay": 0.7,
+   "fx": "market",
+   "p": {
+    "min": 0.5,
+    "max": 2.5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/stonks.png",
+   "name_src": [
+    "bdr",
+    "dice.stonks.name"
+   ]
+  },
+  {
+   "id": "pizza",
+   "rarity": "common",
+   "pay": 0.6,
+   "fx": "every",
+   "p": {
+    "n": 8,
+    "mult": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/pizza.png",
+   "name_src": [
+    "bdr",
+    "dice.pizza.name"
+   ]
+  },
+  {
+   "id": "robot",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "auto",
+   "p": {
+    "pct": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/robot.png",
+   "name_src": [
+    "bdr",
+    "dice.robot.name"
+   ]
+  },
+  {
+   "id": "luckyblock",
+   "rarity": "common",
+   "pay": 0.85,
+   "fx": "cheap_lucky",
+   "p": {
+    "pct": 4
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/luckyblock.png",
+   "name_src": [
+    "bdr",
+    "dice.luckyblock.name"
+   ]
+  },
+  {
+   "id": "3x4",
+   "rarity": "uncommon",
+   "pay": 3.5,
+   "fx": "pair",
+   "p": {
+    "pct": 15
+   },
+   "faces": [
+    3,
+    4,
+    3,
+    4,
+    3,
+    4
+   ],
+   "art": "res://assets/dice/three_by_four.png",
+   "name_src": [
+    "game",
+    "die_3x4"
+   ]
+  },
+  {
+   "id": "d2",
+   "rarity": "uncommon",
+   "pay": 4.2,
+   "fx": "crit",
+   "p": {
+    "chance": 10,
+    "mult": 10
+   },
+   "faces": [
+    1,
+    2
+   ],
+   "art": "res://assets/dice/d_squared.png",
+   "name_src": [
+    "game",
+    "die_d2"
+   ]
+  },
+  {
+   "id": "godot",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "xp",
+   "p": {
+    "pct": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/godot.png",
+   "name_src": [
+    "bdr",
+    "dice.godot.name"
+   ]
+  },
+  {
+   "id": "ruby",
+   "rarity": "uncommon",
+   "pay": 3.97,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ruby.png",
+   "name_src": [
+    "bdr",
+    "dice.ruby.name"
+   ]
+  },
+  {
+   "id": "car",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "quick",
+   "p": {
+    "pct": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/car.png",
+   "name_src": [
+    "bdr",
+    "dice.car.name"
+   ]
+  },
+  {
+   "id": "knight",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "aura",
+   "p": {
+    "pct": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/knight.png",
+   "name_src": [
+    "bdr",
+    "dice.knight.name"
+   ]
+  },
+  {
+   "id": "roulette",
+   "rarity": "uncommon",
+   "pay": 2.1,
+   "fx": "crit",
+   "p": {
+    "chance": 2.7,
+    "mult": 36
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/roulette.png",
+   "name_src": [
+    "bdr",
+    "dice.roulette.name"
+   ]
+  },
+  {
+   "id": "bomb",
+   "rarity": "uncommon",
+   "pay": 1.47,
+   "fx": "bomb",
+   "p": {
+    "mult": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bomb.png",
+   "name_src": [
+    "bdr",
+    "dice.bomb.name"
+   ]
+  },
+  {
+   "id": "sushi",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "share",
+   "p": {
+    "pct": 1.5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/sushi.png",
+   "name_src": [
+    "bdr",
+    "dice.sushi.name"
+   ]
+  },
+  {
+   "id": "dragon",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "high",
+   "p": {
+    "face": 5,
+    "mult": 2.2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/dragon.png",
+   "name_src": [
+    "bdr",
+    "dice.dragon.name"
+   ]
+  },
+  {
+   "id": "magic8",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "meteor",
+   "p": {
+    "chance": 2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/magic8.png",
+   "name_src": [
+    "bdr",
+    "dice.magic8.name"
+   ]
+  },
+  {
+   "id": "owl",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "xp",
+   "p": {
+    "pct": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/owl.png",
+   "name_src": [
+    "bdr",
+    "dice.owl.name"
+   ]
+  },
+  {
+   "id": "wizard",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "cheap_tarot",
+   "p": {
+    "pct": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/wizard.png",
+   "name_src": [
+    "bdr",
+    "dice.wizard.name"
+   ]
+  },
+  {
+   "id": "sapphire",
+   "rarity": "uncommon",
+   "pay": 4.2,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/sapphire.png",
+   "name_src": [
+    "bdr",
+    "dice.sapphire.name"
+   ]
+  },
+  {
+   "id": "rocket",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "auto",
+   "p": {
+    "pct": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/rocket.png",
+   "name_src": [
+    "bdr",
+    "dice.rocket.name"
+   ]
+  },
+  {
+   "id": "doge",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "gamble",
+   "p": {
+    "chance": 60,
+    "mult": 2.2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/doge.png",
+   "name_src": [
+    "bdr",
+    "dice.doge.name"
+   ]
+  },
+  {
+   "id": "viking",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "combo",
+   "p": {
+    "pct": 25
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/viking.png",
+   "name_src": [
+    "bdr",
+    "dice.viking.name"
+   ]
+  },
+  {
+   "id": "troll",
+   "rarity": "uncommon",
+   "pay": 2.33,
+   "fx": "ones",
+   "p": {
+    "mult": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/troll.png",
+   "name_src": [
+    "bdr",
+    "dice.troll.name"
+   ]
+  },
+  {
+   "id": "burger",
+   "rarity": "uncommon",
+   "pay": 3.03,
+   "fx": "per_die",
+   "p": {
+    "pct": 4
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/burger.png",
+   "name_src": [
+    "bdr",
+    "dice.burger.name"
+   ]
+  },
+  {
+   "id": "ninja",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "quick",
+   "p": {
+    "pct": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ninja.png",
+   "name_src": [
+    "bdr",
+    "dice.ninja.name"
+   ]
+  },
+  {
+   "id": "domino",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "streak",
+   "p": {
+    "step": 3,
+    "max": 60
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/domino.png",
+   "name_src": [
+    "bdr",
+    "dice.domino.name"
+   ]
+  },
+  {
+   "id": "comet",
+   "rarity": "uncommon",
+   "pay": 2.22,
+   "fx": "every",
+   "p": {
+    "n": 7,
+    "mult": 7
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/comet.png",
+   "name_src": [
+    "bdr",
+    "dice.comet.name"
+   ]
+  },
+  {
+   "id": "vampire",
+   "rarity": "uncommon",
+   "pay": 2.8,
+   "fx": "swallow",
+   "p": {
+    "mult": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/vampire.png",
+   "name_src": [
+    "bdr",
+    "dice.vampire.name"
+   ]
+  },
+  {
+   "id": "emerald",
+   "rarity": "uncommon",
+   "pay": 4.43,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/emerald.png",
+   "name_src": [
+    "bdr",
+    "dice.emerald.name"
+   ]
+  },
+  {
+   "id": "pumpkin",
+   "rarity": "uncommon",
+   "pay": 2.57,
+   "fx": "grow",
+   "p": {
+    "step": 3,
+    "max": 90
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/pumpkin.png",
+   "name_src": [
+    "bdr",
+    "dice.pumpkin.name"
+   ]
+  },
+  {
+   "id": "777",
+   "rarity": "rare",
+   "pay": 9.6,
+   "fx": "seven",
+   "p": {
+    "mult": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/dice_777.png",
+   "name_src": [
+    "game",
+    "die_777"
+   ]
+  },
+  {
+   "id": "prehistoric",
+   "rarity": "rare",
+   "pay": 10.6,
+   "fx": "echo",
+   "p": {
+    "chance": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/prehistoric.png",
+   "name_src": [
+    "game",
+    "prehistoric"
+   ]
+  },
+  {
+   "id": "npc_die",
+   "rarity": "rare",
+   "pay": 10.1,
+   "fx": "teacher",
+   "p": {
+    "xp": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/npc_die.png",
+   "name_src": [
+    "game",
+    "npc_die"
+   ]
+  },
+  {
+   "id": "sus",
+   "rarity": "rare",
+   "pay": 10.6,
+   "fx": "copy",
+   "p": {
+    "pct": 15
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/sus.png",
+   "name_src": [
+    "bdr",
+    "dice.sus.name"
+   ]
+  },
+  {
+   "id": "rickroll",
+   "rarity": "rare",
+   "pay": 5.28,
+   "fx": "every",
+   "p": {
+    "n": 13,
+    "mult": 20
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/rickroll.png",
+   "name_src": [
+    "bdr",
+    "dice.rickroll.name"
+   ]
+  },
+  {
+   "id": "moon",
+   "rarity": "rare",
+   "pay": 7.68,
+   "fx": "even",
+   "p": {
+    "mult": 2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/moon.png",
+   "name_src": [
+    "bdr",
+    "dice.moon.name"
+   ]
+  },
+  {
+   "id": "gigachad",
+   "rarity": "rare",
+   "pay": 7.2,
+   "fx": "max",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/gigachad.png",
+   "name_src": [
+    "bdr",
+    "dice.gigachad.name"
+   ]
+  },
+  {
+   "id": "samurai",
+   "rarity": "rare",
+   "pay": 7.44,
+   "fx": "crit",
+   "p": {
+    "chance": 12,
+    "mult": 6
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/samurai.png",
+   "name_src": [
+    "bdr",
+    "dice.samurai.name"
+   ]
+  },
+  {
+   "id": "treasure",
+   "rarity": "rare",
+   "pay": 11.0,
+   "fx": "tp_luck",
+   "p": {
+    "pct": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/treasure.png",
+   "name_src": [
+    "bdr",
+    "dice.treasure.name"
+   ]
+  },
+  {
+   "id": "thisisfine",
+   "rarity": "rare",
+   "pay": 8.16,
+   "fx": "grow",
+   "p": {
+    "step": 4,
+    "max": 120
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/thisisfine.png",
+   "name_src": [
+    "bdr",
+    "dice.thisisfine.name"
+   ]
+  },
+  {
+   "id": "amethyst",
+   "rarity": "rare",
+   "pay": 12.5,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/amethyst.png",
+   "name_src": [
+    "bdr",
+    "dice.amethyst.name"
+   ]
+  },
+  {
+   "id": "ufo",
+   "rarity": "rare",
+   "pay": 10.1,
+   "fx": "rarity_aura",
+   "p": {
+    "rarity": "common",
+    "pct": 50
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ufo.png",
+   "name_src": [
+    "bdr",
+    "dice.ufo.name"
+   ]
+  },
+  {
+   "id": "skibidi",
+   "rarity": "rare",
+   "pay": 10.1,
+   "fx": "auto",
+   "p": {
+    "pct": 15
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/skibidi.png",
+   "name_src": [
+    "bdr",
+    "dice.skibidi.name"
+   ]
+  },
+  {
+   "id": "witch",
+   "rarity": "rare",
+   "pay": 10.6,
+   "fx": "cheap_tarot",
+   "p": {
+    "pct": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/witch.png",
+   "name_src": [
+    "bdr",
+    "dice.witch.name"
+   ]
+  },
+  {
+   "id": "sigma",
+   "rarity": "rare",
+   "pay": 6.72,
+   "fx": "per_level",
+   "p": {
+    "pct": 2
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/sigma.png",
+   "name_src": [
+    "bdr",
+    "dice.sigma.name"
+   ]
+  },
+  {
+   "id": "bee",
+   "rarity": "rare",
+   "pay": 10.6,
+   "fx": "pair",
+   "p": {
+    "pct": 30
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bee.png",
+   "name_src": [
+    "bdr",
+    "dice.bee.name"
+   ]
+  },
+  {
+   "id": "aura",
+   "rarity": "rare",
+   "pay": 10.1,
+   "fx": "aura",
+   "p": {
+    "pct": 12
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/aura.png",
+   "name_src": [
+    "bdr",
+    "dice.aura.name"
+   ]
+  },
+  {
+   "id": "train",
+   "rarity": "rare",
+   "pay": 10.1,
+   "fx": "per_die",
+   "p": {
+    "pct": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/train.png",
+   "name_src": [
+    "bdr",
+    "dice.train.name"
+   ]
+  },
+  {
+   "id": "quantum",
+   "rarity": "rare",
+   "pay": 11.0,
+   "fx": "wild",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/quantum.png",
+   "name_src": [
+    "bdr",
+    "dice.quantum.name"
+   ]
+  },
+  {
+   "id": "skeleton",
+   "rarity": "rare",
+   "pay": 6.48,
+   "fx": "high",
+   "p": {
+    "face": 6,
+    "mult": 4
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/skeleton.png",
+   "name_src": [
+    "bdr",
+    "dice.skeleton.name"
+   ]
+  },
+  {
+   "id": "golden",
+   "rarity": "epic",
+   "pay": 36.8,
+   "fx": "share",
+   "p": {
+    "pct": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/golden.png",
+   "name_src": [
+    "game",
+    "golden"
+   ]
+  },
+  {
+   "id": "crypto",
+   "rarity": "epic",
+   "pay": 21.0,
+   "fx": "market",
+   "p": {
+    "min": 0.2,
+    "max": 4.0
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/crypto.png",
+   "name_src": [
+    "lucky",
+    "crypto_die"
+   ]
+  },
+  {
+   "id": "platinum",
+   "rarity": "epic",
+   "pay": 45.2,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/platinum.png",
+   "name_src": [
+    "bdr",
+    "dice.platinum.name"
+   ]
+  },
+  {
+   "id": "bonk",
+   "rarity": "epic",
+   "pay": 22.1,
+   "fx": "crit",
+   "p": {
+    "chance": 15,
+    "mult": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bonk.png",
+   "name_src": [
+    "bdr",
+    "dice.bonk.name"
+   ]
+  },
+  {
+   "id": "bank",
+   "rarity": "epic",
+   "pay": 15.8,
+   "fx": "every",
+   "p": {
+    "n": 20,
+    "mult": 40
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/bank.png",
+   "name_src": [
+    "bdr",
+    "dice.bank.name"
+   ]
+  },
+  {
+   "id": "mahjong",
+   "rarity": "epic",
+   "pay": 37.8,
+   "fx": "combo",
+   "p": {
+    "pct": 40
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/mahjong.png",
+   "name_src": [
+    "bdr",
+    "dice.mahjong.name"
+   ]
+  },
+  {
+   "id": "ohio",
+   "rarity": "epic",
+   "pay": 30.5,
+   "fx": "gamble",
+   "p": {
+    "chance": 33,
+    "mult": 4.5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ohio.png",
+   "name_src": [
+    "bdr",
+    "dice.ohio.name"
+   ]
+  },
+  {
+   "id": "blackhole",
+   "rarity": "epic",
+   "pay": 36.8,
+   "fx": "swallow",
+   "p": {
+    "mult": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/blackhole.png",
+   "name_src": [
+    "bdr",
+    "dice.blackhole.name"
+   ]
+  },
+  {
+   "id": "phoenix",
+   "rarity": "epic",
+   "pay": 37.8,
+   "fx": "echo",
+   "p": {
+    "chance": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/phoenix.png",
+   "name_src": [
+    "bdr",
+    "dice.phoenix.name"
+   ]
+  },
+  {
+   "id": "fox",
+   "rarity": "epic",
+   "pay": 37.8,
+   "fx": "copy",
+   "p": {
+    "pct": 30
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/fox.png",
+   "name_src": [
+    "bdr",
+    "dice.fox.name"
+   ]
+  },
+  {
+   "id": "lava",
+   "rarity": "epic",
+   "pay": 20.5,
+   "fx": "high",
+   "p": {
+    "face": 4,
+    "mult": 2.5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/lava.png",
+   "name_src": [
+    "bdr",
+    "dice.lava.name"
+   ]
+  },
+  {
+   "id": "obsidian",
+   "rarity": "epic",
+   "pay": 47.2,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/obsidian.png",
+   "name_src": [
+    "bdr",
+    "dice.obsidian.name"
+   ]
+  },
+  {
+   "id": "meteor",
+   "rarity": "epic",
+   "pay": 37.8,
+   "fx": "meteor",
+   "p": {
+    "chance": 5
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/meteor.png",
+   "name_src": [
+    "bdr",
+    "dice.meteor.name"
+   ]
+  },
+  {
+   "id": "jackpot",
+   "rarity": "epic",
+   "pay": 36.8,
+   "fx": "jackpot",
+   "p": {
+    "chance": 4,
+    "mult": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/jackpot.png",
+   "name_src": [
+    "bdr",
+    "dice.jackpot.name"
+   ]
+  },
+  {
+   "id": "timedie",
+   "rarity": "epic",
+   "pay": 38.9,
+   "fx": "quick",
+   "p": {
+    "pct": 12
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/timedie.png",
+   "name_src": [
+    "bdr",
+    "dice.timedie.name"
+   ]
+  },
+  {
+   "id": "diamond",
+   "rarity": "legendary",
+   "pay": 68.0,
+   "fx": "crit",
+   "p": {
+    "chance": 20,
+    "mult": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://assets/dice/diamond.png",
+   "name_src": [
+    "lucky",
+    "diamond_die"
+   ]
+  },
+  {
+   "id": "pi",
+   "rarity": "legendary",
+   "pay": 38.0,
+   "fx": "pi",
+   "p": {
+    "mult": 3.14
+   },
+   "faces": [
+    3,
+    1,
+    4,
+    1,
+    5,
+    9,
+    2,
+    6,
+    5,
+    3,
+    5,
+    8,
+    9,
+    7,
+    9
+   ],
+   "art": "res://assets/dice/pi.png",
+   "name_src": [
+    "lucky",
+    "pi_die"
+   ]
+  },
+  {
+   "id": "galaxy",
+   "rarity": "legendary",
+   "pay": 130.0,
+   "fx": "per_rarity",
+   "p": {
+    "pct": 25
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/galaxy.png",
+   "name_src": [
+    "bdr",
+    "dice.galaxy.name"
+   ]
+  },
+  {
+   "id": "crown",
+   "rarity": "legendary",
+   "pay": 140.0,
+   "fx": "rarity_aura",
+   "p": {
+    "rarity": "legendary",
+    "pct": 40
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/crown.png",
+   "name_src": [
+    "bdr",
+    "dice.crown.name"
+   ]
+  },
+  {
+   "id": "mithril",
+   "rarity": "legendary",
+   "pay": 180.0,
+   "fx": "none",
+   "p": {},
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/mithril.png",
+   "name_src": [
+    "bdr",
+    "dice.mithril.name"
+   ]
+  },
+  {
+   "id": "divine",
+   "rarity": "legendary",
+   "pay": 140.0,
+   "fx": "global",
+   "p": {
+    "pct": 15
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/divine.png",
+   "name_src": [
+    "bdr",
+    "dice.divine.name"
+   ]
+  },
+  {
+   "id": "architect",
+   "rarity": "legendary",
+   "pay": 130.0,
+   "fx": "per_die",
+   "p": {
+    "pct": 8
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/architect.png",
+   "name_src": [
+    "bdr",
+    "dice.architect.name"
+   ]
+  },
+  {
+   "id": "ascension",
+   "rarity": "legendary",
+   "pay": 90.0,
+   "fx": "per_level",
+   "p": {
+    "pct": 3
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/ascension.png",
+   "name_src": [
+    "bdr",
+    "dice.ascension.name"
+   ]
+  },
+  {
+   "id": "infinity",
+   "rarity": "legendary",
+   "pay": 100.0,
+   "fx": "grow",
+   "p": {
+    "step": 5,
+    "max": 300
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/infinity.png",
+   "name_src": [
+    "bdr",
+    "dice.infinity.name"
+   ]
+  },
+  {
+   "id": "cosmic",
+   "rarity": "legendary",
+   "pay": 140.0,
+   "fx": "share",
+   "p": {
+    "pct": 10
+   },
+   "faces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "art": "res://bdr/art/dice/cosmic.png",
+   "name_src": [
+    "bdr",
+    "dice.cosmic.name"
+   ]
+  }
+ ],
+ "gumball": {
+  "base": 25.0,
+  "growth": 1.32,
+  "colors": [
+   {
+    "ball": 5,
+    "tp": 1,
+    "weight": 40.0,
+    "name": "white"
+   },
+   {
+    "ball": 3,
+    "tp": 2,
+    "weight": 28.0,
+    "name": "green"
+   },
+   {
+    "ball": 2,
+    "tp": 3,
+    "weight": 17.0,
+    "name": "blue"
+   },
+   {
+    "ball": 1,
+    "tp": 5,
+    "weight": 10.0,
+    "name": "yellow"
+   },
+   {
+    "ball": 4,
+    "tp": 8,
+    "weight": 4.0,
+    "name": "pink"
+   },
+   {
+    "ball": 0,
+    "tp": 13,
+    "weight": 1.0,
+    "name": "red"
+   }
+  ]
+ },
+ "lucky": {
+  "tiers": [
+   {
+    "base": 30.0,
+    "growth": 1.06,
+    "odds": [
+     100,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   {
+    "base": 5000.0,
+    "growth": 1.08,
+    "odds": [
+     50,
+     40,
+     10,
+     0,
+     0
+    ]
+   },
+   {
+    "base": 2000000.0,
+    "growth": 1.1,
+    "odds": [
+     15,
+     35,
+     35,
+     13,
+     2
+    ]
+   },
+   {
+    "base": 8000000000.0,
+    "growth": 1.12,
+    "odds": [
+     3,
+     12,
+     35,
+     38,
+     12
+    ]
+   },
+   {
+    "base": 20000000000000.0,
+    "growth": 1.15,
+    "odds": [
+     0,
+     3,
+     15,
+     37,
+     45
+    ]
+   }
+  ]
+ },
+ "tarot_draw": {
+  "base": 2000.0,
+  "growth": 1.33,
+  "choices": 3,
+  "max_copies": 4
+ },
+ "tarot_ranks": [
+  "common",
+  "rare",
+  "epic",
+  "legendary"
+ ],
+ "tarot": [
+  {
+   "id": "crystal_ball",
+   "effects": [
+    [
+     "money_pct",
+     [
+      20,
+      45,
+      80,
+      130
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "candle",
+   "effects": [
+    [
+     "auto_pct",
+     [
+      10,
+      20,
+      35,
+      50
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "raven",
+   "effects": [
+    [
+     "combo_pct",
+     [
+      10,
+      22,
+      36,
+      55
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "moon_moth",
+   "effects": [
+    [
+     "xp_pct",
+     [
+      15,
+      35,
+      60,
+      100
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "open_hand",
+   "effects": [
+    [
+     "manual_pct",
+     [
+      20,
+      45,
+      80,
+      130
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "third_eye",
+   "effects": [
+    [
+     "crit_chance",
+     [
+      1,
+      2,
+      3.5,
+      5
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "key",
+   "effects": [
+    [
+     "lucky_discount",
+     [
+      5,
+      10,
+      15,
+      20
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "hourglass",
+   "effects": [
+    [
+     "speed_pct",
+     [
+      4,
+      8,
+      13,
+      20
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "serpent",
+   "effects": [
+    [
+     "money_x",
+     [
+      1.05,
+      1.1,
+      1.17,
+      1.25
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mask",
+   "effects": [
+    [
+     "gumball_discount",
+     [
+      5,
+      10,
+      15,
+      20
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lantern",
+   "effects": [
+    [
+     "common_pct",
+     [
+      25,
+      55,
+      90,
+      140
+     ]
+    ],
+    [
+     "uncommon_pct",
+     [
+      25,
+      55,
+      90,
+      140
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "crown",
+   "effects": [
+    [
+     "legendary_pct",
+     [
+      15,
+      35,
+      60,
+      100
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "chalice",
+   "effects": [
+    [
+     "epic_pct",
+     [
+      20,
+      45,
+      75,
+      120
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "coin",
+   "effects": [
+    [
+     "coin_chance",
+     [
+      0.5,
+      1,
+      1.5,
+      2.5
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "star",
+   "effects": [
+    [
+     "rare_pct",
+     [
+      25,
+      55,
+      90,
+      140
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "comet",
+   "effects": [
+    [
+     "echo_chance",
+     [
+      0.5,
+      1,
+      2,
+      3
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "tower",
+   "effects": [
+    [
+     "crit_mult",
+     [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "wheel",
+   "effects": [
+    [
+     "lucky_odds",
+     [
+      8,
+      18,
+      30,
+      45
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "feather",
+   "effects": [
+    [
+     "catchup_x",
+     [
+      1.5,
+      2,
+      3,
+      4
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "anchor",
+   "effects": [
+    [
+     "money_x",
+     [
+      1.05,
+      1.12,
+      1.2,
+      1.3
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "mirror",
+   "effects": [
+    [
+     "best_pct",
+     [
+      10,
+      25,
+      45,
+      70
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "bell",
+   "effects": [
+    [
+     "bell_x",
+     [
+      1.5,
+      2,
+      3,
+      4
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "lotus",
+   "effects": [
+    [
+     "xp_need_pct",
+     [
+      3,
+      6,
+      10,
+      15
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "dagger",
+   "effects": [
+    [
+     "six_x",
+     [
+      1.15,
+      1.3,
+      1.5,
+      1.8
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "cauldron",
+   "effects": [
+    [
+     "tarot_discount",
+     [
+      5,
+      10,
+      15,
+      20
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "owl",
+   "effects": [
+    [
+     "talent_discount",
+     [
+      5,
+      10,
+      15,
+      25
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "sun",
+   "effects": [
+    [
+     "money_pct",
+     [
+      15,
+      35,
+      60,
+      100
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "spider",
+   "effects": [
+    [
+     "gumball_luck",
+     [
+      8,
+      16,
+      26,
+      40
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "fox",
+   "effects": [
+    [
+     "shop_discount",
+     [
+      4,
+      8,
+      12,
+      16
+     ]
+    ],
+    [
+     "black_discount",
+     [
+      4,
+      8,
+      12,
+      16
+     ]
+    ]
+   ]
+  },
+  {
+   "id": "phoenix",
+   "effects": [
+    [
+     "double_chance",
+     [
+      1,
+      2,
+      3.5,
+      5
+     ]
+    ]
+   ]
+  }
+ ],
+ "black": [
+  {
+   "id": "loaded_dice",
+   "price": 50000000000.0,
+   "growth": 30,
+   "cap": 3,
+   "effects": [
+    [
+     "min_face",
+     "copies+1"
+    ]
+   ]
+  },
+  {
+   "id": "counterfeit",
+   "price": 87500000000.0,
+   "growth": 12,
+   "cap": 5,
+   "effects": [
+    [
+     "money_x",
+     1.25
+    ]
+   ]
+  },
+  {
+   "id": "rigged_shaker",
+   "price": 153125000000.0,
+   "growth": 12,
+   "cap": 4,
+   "effects": [
+    [
+     "speed_pct",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "smuggled_gumballs",
+   "price": 267968750000.0,
+   "growth": 25,
+   "cap": 3,
+   "effects": [
+    [
+     "tp_extra",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "forged_diploma",
+   "price": 468945312500.0,
+   "growth": 12,
+   "cap": 4,
+   "effects": [
+    [
+     "xp_pct",
+     75
+    ]
+   ]
+  },
+  {
+   "id": "pickpocket",
+   "price": 820654296875.0,
+   "growth": 10,
+   "cap": 5,
+   "effects": [
+    [
+     "coin_chance",
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "insider_tip",
+   "price": 1436145019531.25,
+   "growth": 12,
+   "cap": 5,
+   "effects": [
+    [
+     "lucky_odds",
+     15
+    ]
+   ]
+  },
+  {
+   "id": "bribed_croupier",
+   "price": 2513253784179.6875,
+   "growth": 14,
+   "cap": 4,
+   "effects": [
+    [
+     "combo_pct",
+     25
+    ]
+   ]
+  },
+  {
+   "id": "cursed_idol",
+   "price": 4398194122314.453,
+   "growth": 25,
+   "cap": 3,
+   "effects": [
+    [
+     "money_x",
+     1.5
+    ],
+    [
+     "xp_pct",
+     -10
+    ]
+   ]
+  },
+  {
+   "id": "weighted_coin",
+   "price": 7696839714050.293,
+   "growth": 15,
+   "cap": 3,
+   "effects": [
+    [
+     "crit_chance",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "black_cat_bone",
+   "price": 13469469499588.012,
+   "growth": 15,
+   "cap": 5,
+   "effects": [
+    [
+     "echo_chance",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "snake_oil",
+   "price": 23571571624279.023,
+   "growth": 12,
+   "cap": 3,
+   "effects": [
+    [
+     "auto_pct",
+     25
+    ]
+   ]
+  },
+  {
+   "id": "fake_crown",
+   "price": 41250250342488.29,
+   "growth": 20,
+   "cap": 3,
+   "effects": [
+    [
+     "legendary_pct",
+     60
+    ]
+   ]
+  },
+  {
+   "id": "stolen_lantern",
+   "price": 72187938099354.5,
+   "growth": 15,
+   "cap": 3,
+   "effects": [
+    [
+     "common_pct",
+     80
+    ],
+    [
+     "uncommon_pct",
+     60
+    ]
+   ]
+  },
+  {
+   "id": "marked_cards",
+   "price": 126328891673870.39,
+   "growth": 40,
+   "cap": 2,
+   "effects": [
+    [
+     "tarot_choices",
+     1
+    ],
+    [
+     "tarot_discount",
+     10
+    ]
+   ]
+  },
+  {
+   "id": "hot_dice",
+   "price": 221075560429273.2,
+   "growth": 15,
+   "cap": 4,
+   "effects": [
+    [
+     "six_x",
+     1.25
+    ]
+   ]
+  },
+  {
+   "id": "ghost_hand",
+   "price": 386882230751228.06,
+   "growth": 15,
+   "cap": 3,
+   "effects": [
+    [
+     "auto_pct",
+     30
+    ]
+   ]
+  },
+  {
+   "id": "mirror_trick",
+   "price": 677043903814649.1,
+   "growth": 1,
+   "cap": 1,
+   "effects": [
+    [
+     "best_pct",
+     100
+    ]
+   ]
+  },
+  {
+   "id": "shadow_ledger",
+   "price": 1184826831675636.0,
+   "growth": 15,
+   "cap": 4,
+   "effects": [
+    [
+     "talent_discount",
+     10
+    ]
+   ]
+  },
+  {
+   "id": "silver_tongue",
+   "price": 2073446955432363.0,
+   "growth": 15,
+   "cap": 3,
+   "effects": [
+    [
+     "shop_discount",
+     8
+    ],
+    [
+     "black_discount",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "crooked_scale",
+   "price": 3628532172006635.0,
+   "growth": 20,
+   "cap": 3,
+   "effects": [
+    [
+     "gumball_slow",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "smoke_lamp",
+   "price": 6349931301011612.0,
+   "growth": 1,
+   "cap": 1,
+   "effects": [
+    [
+     "ones_as_six",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "grave_dust",
+   "price": 1.111237977677032e+16,
+   "growth": 15,
+   "cap": 4,
+   "effects": [
+    [
+     "xp_need_pct",
+     5
+    ]
+   ]
+  },
+  {
+   "id": "voodoo_doll",
+   "price": 1.944666460934806e+16,
+   "growth": 20,
+   "cap": 3,
+   "effects": [
+    [
+     "crit_mult",
+     0.5
+    ]
+   ]
+  },
+  {
+   "id": "smugglers_map",
+   "price": 3.4031663066359104e+16,
+   "growth": 15,
+   "cap": 4,
+   "effects": [
+    [
+     "treasure_n",
+     8
+    ]
+   ]
+  },
+  {
+   "id": "poisoned_ring",
+   "price": 5.955541036612843e+16,
+   "growth": 20,
+   "cap": 3,
+   "effects": [
+    [
+     "epic_pct",
+     60
+    ]
+   ]
+  },
+  {
+   "id": "phantom_coin",
+   "price": 1.0422196814072475e+17,
+   "growth": 15,
+   "cap": 5,
+   "effects": [
+    [
+     "double_chance",
+     2
+    ]
+   ]
+  },
+  {
+   "id": "underworld_pass",
+   "price": 1.8238844424626832e+17,
+   "growth": 20,
+   "cap": 5,
+   "effects": [
+    [
+     "reroll_levels",
+     1
+    ]
+   ]
+  },
+  {
+   "id": "devils_deal",
+   "price": 3.191797774309696e+17,
+   "growth": 100,
+   "cap": 2,
+   "effects": [
+    [
+     "money_x",
+     2.0
+    ]
+   ]
+  },
+  {
+   "id": "skeleton_key",
+   "price": 5.585646105041968e+17,
+   "growth": 20,
+   "cap": 4,
+   "effects": [
+    [
+     "lucky_discount",
+     8
+    ],
+    [
+     "rare_pct",
+     60
+    ]
+   ]
+  }
+ ],
+ "gauntlets": [
+  {
+   "index": 1,
+   "price": 200.0,
+   "effects": [
+    [
+     "manual_pct",
+     25
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "price": 700.0,
+   "effects": [
+    [
+     "xp_pct",
+     25
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "price": 2450.0,
+   "effects": [
+    [
+     "crit_chance",
+     2
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "price": 8575.0,
+   "effects": [
+    [
+     "combo_pct",
+     20
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "price": 30012.5,
+   "effects": [
+    [
+     "money_pct",
+     50
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "price": 105043.75,
+   "effects": [
+    [
+     "money_pct",
+     80
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "price": 367653.125,
+   "effects": [
+    [
+     "lucky_discount",
+     15
+    ],
+    [
+     "money_pct",
+     50
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "price": 1286785.9375,
+   "effects": [
+    [
+     "common_pct",
+     100
+    ],
+    [
+     "uncommon_pct",
+     100
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "price": 4503750.78125,
+   "effects": [
+    [
+     "xp_pct",
+     80
+    ],
+    [
+     "money_pct",
+     60
+    ]
+   ]
+  },
+  {
+   "index": 10,
+   "price": 15763127.734375,
+   "effects": [
+    [
+     "rare_pct",
+     120
+    ]
+   ]
+  },
+  {
+   "index": 11,
+   "price": 55170947.0703125,
+   "effects": [
+    [
+     "crit_chance",
+     4
+    ],
+    [
+     "crit_mult",
+     0.5
+    ]
+   ]
+  },
+  {
+   "index": 12,
+   "price": 193098314.74609375,
+   "effects": [
+    [
+     "tp_pct",
+     20
+    ],
+    [
+     "money_pct",
+     100
+    ]
+   ]
+  },
+  {
+   "index": 13,
+   "price": 675844101.6113281,
+   "effects": [
+    [
+     "shop_discount",
+     12
+    ],
+    [
+     "black_discount",
+     12
+    ],
+    [
+     "money_pct",
+     120
+    ]
+   ]
+  },
+  {
+   "index": 14,
+   "price": 2365454355.6396484,
+   "effects": [
+    [
+     "tarot_discount",
+     20
+    ],
+    [
+     "money_pct",
+     140
+    ]
+   ]
+  },
+  {
+   "index": 15,
+   "price": 8279090244.73877,
+   "effects": [
+    [
+     "combo_pct",
+     60
+    ],
+    [
+     "money_pct",
+     150
+    ]
+   ]
+  },
+  {
+   "index": 16,
+   "price": 28976815856.585693,
+   "effects": [
+    [
+     "money_pct",
+     300
+    ]
+   ]
+  },
+  {
+   "index": 17,
+   "price": 101418855498.04993,
+   "effects": [
+    [
+     "speed_pct",
+     25
+    ],
+    [
+     "money_pct",
+     250
+    ]
+   ]
+  },
+  {
+   "index": 18,
+   "price": 354965994243.17474,
+   "effects": [
+    [
+     "auto_pct",
+     60
+    ],
+    [
+     "money_pct",
+     250
+    ]
+   ]
+  },
+  {
+   "index": 19,
+   "price": 1242380979851.1116,
+   "effects": [
+    [
+     "six_x",
+     1.5
+    ],
+    [
+     "money_pct",
+     300
+    ]
+   ]
+  },
+  {
+   "index": 20,
+   "price": 4348333429478.891,
+   "effects": [
+    [
+     "echo_chance",
+     4
+    ],
+    [
+     "money_pct",
+     350
+    ]
+   ]
+  },
+  {
+   "index": 21,
+   "price": 15219167003176.117,
+   "effects": [
+    [
+     "xp_pct",
+     200
+    ],
+    [
+     "money_pct",
+     350
+    ]
+   ]
+  },
+  {
+   "index": 22,
+   "price": 53267084511116.414,
+   "effects": [
+    [
+     "epic_pct",
+     200
+    ],
+    [
+     "money_pct",
+     400
+    ]
+   ]
+  },
+  {
+   "index": 23,
+   "price": 186434795788907.44,
+   "effects": [
+    [
+     "crit_chance",
+     6
+    ],
+    [
+     "money_pct",
+     450
+    ]
+   ]
+  },
+  {
+   "index": 24,
+   "price": 652521785261176.0,
+   "effects": [
+    [
+     "legendary_pct",
+     200
+    ],
+    [
+     "money_pct",
+     450
+    ]
+   ]
+  },
+  {
+   "index": 25,
+   "price": 2283826248414116.0,
+   "effects": [
+    [
+     "auto_pct",
+     100
+    ],
+    [
+     "speed_pct",
+     15
+    ],
+    [
+     "money_pct",
+     500
+    ]
+   ]
+  },
+  {
+   "index": 26,
+   "price": 7993391869449406.0,
+   "effects": [
+    [
+     "treasure_n",
+     30
+    ],
+    [
+     "money_pct",
+     550
+    ]
+   ]
+  },
+  {
+   "index": 27,
+   "price": 2.797687154307292e+16,
+   "effects": [
+    [
+     "money_pct",
+     1000
+    ]
+   ]
+  },
+  {
+   "index": 28,
+   "price": 9.791905040075523e+16,
+   "effects": [
+    [
+     "xp_pct",
+     300
+    ],
+    [
+     "money_pct",
+     800
+    ]
+   ]
+  },
+  {
+   "index": 29,
+   "price": 3.427166764026433e+17,
+   "effects": [
+    [
+     "money_x",
+     2
+    ],
+    [
+     "xp_pct",
+     -50
+    ]
+   ]
+  },
+  {
+   "index": 30,
+   "price": 1.1995083674092516e+18,
+   "effects": [
+    [
+     "money_x",
+     1.5
+    ],
+    [
+     "money_pct",
+     1000
+    ],
+    [
+     "combo_pct",
+     50
+    ],
+    [
+     "crit_chance",
+     5
+    ]
+   ]
+  }
+ ],
+ "tables": [
+  {
+   "id": 0,
+   "price": 0.0
+  },
+  {
+   "id": 1,
+   "price": 1000.0
+  },
+  {
+   "id": 2,
+   "price": 6000.0
+  },
+  {
+   "id": 3,
+   "price": 36000.0
+  },
+  {
+   "id": 4,
+   "price": 216000.0
+  },
+  {
+   "id": 5,
+   "price": 1296000.0
+  },
+  {
+   "id": 6,
+   "price": 7776000.0
+  },
+  {
+   "id": 7,
+   "price": 46656000.0
+  },
+  {
+   "id": 8,
+   "price": 279936000.0
+  },
+  {
+   "id": 9,
+   "price": 1679616000.0
+  },
+  {
+   "id": 10,
+   "price": 10077696000.0
+  },
+  {
+   "id": 11,
+   "price": 60466176000.0
+  },
+  {
+   "id": 12,
+   "price": 362797056000.0
+  },
+  {
+   "id": 13,
+   "price": 2176782336000.0
+  },
+  {
+   "id": 14,
+   "price": 13060694016000.0
+  },
+  {
+   "id": 15,
+   "price": 78364164096000.0
+  },
+  {
+   "id": 16,
+   "price": 470184984576000.0
+  },
+  {
+   "id": 17,
+   "price": 2821109907456000.0
+  },
+  {
+   "id": 18,
+   "price": 1.6926659444736e+16
+  },
+  {
+   "id": 19,
+   "price": 1.01559956668416e+17
+  }
+ ],
+ "talents": [
+  {
+   "id": "shaker",
+   "col": 5,
+   "row": 0,
+   "parents": [],
+   "tp": 0,
+   "money": 0,
+   "effects": [],
+   "icon": "die:wood",
+   "slot": false
+  },
+  {
+   "id": "slot2",
+   "col": 5,
+   "row": 1,
+   "parents": [
+    "shaker"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:stone",
+   "slot": true
+  },
+  {
+   "id": "slot3",
+   "col": 5,
+   "row": 2,
+   "parents": [
+    "slot2"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:ruby",
+   "slot": true
+  },
+  {
+   "id": "slot4",
+   "col": 5,
+   "row": 3,
+   "parents": [
+    "slot3"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:sapphire",
+   "slot": true
+  },
+  {
+   "id": "slot5",
+   "col": 5,
+   "row": 4,
+   "parents": [
+    "slot4"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:emerald",
+   "slot": true
+  },
+  {
+   "id": "slot6",
+   "col": 5,
+   "row": 5,
+   "parents": [
+    "slot5"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:amethyst",
+   "slot": true
+  },
+  {
+   "id": "compact",
+   "col": 5,
+   "row": 6,
+   "parents": [
+    "slot6"
+   ],
+   "tp": 8,
+   "money": 50000000.0,
+   "effects": [
+    [
+     "compact",
+     1
+    ]
+   ],
+   "icon": "die:quantum",
+   "slot": false
+  },
+  {
+   "id": "extra1",
+   "col": 4,
+   "row": 6,
+   "parents": [
+    "compact"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:platinum",
+   "slot": true
+  },
+  {
+   "id": "extra2",
+   "col": 3,
+   "row": 6,
+   "parents": [
+    "extra1"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:obsidian",
+   "slot": true
+  },
+  {
+   "id": "extra3",
+   "col": 2,
+   "row": 6,
+   "parents": [
+    "extra2"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:mithril",
+   "slot": true
+  },
+  {
+   "id": "extra4",
+   "col": 6,
+   "row": 6,
+   "parents": [
+    "compact"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:galaxy",
+   "slot": true
+  },
+  {
+   "id": "extra5",
+   "col": 7,
+   "row": 6,
+   "parents": [
+    "extra4"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:divine",
+   "slot": true
+  },
+  {
+   "id": "extra6",
+   "col": 8,
+   "row": 6,
+   "parents": [
+    "extra5"
+   ],
+   "tp": 0,
+   "money": 0,
+   "effects": [
+    [
+     "slots",
+     1
+    ]
+   ],
+   "icon": "die:cosmic",
+   "slot": true
+  },
+  {
+   "id": "fortune1",
+   "col": 4,
+   "row": 1,
+   "parents": [
+    "shaker"
+   ],
+   "tp": 1,
+   "money": 0,
+   "effects": [
+    [
+     "money_pct",
+     25
+    ]
+   ],
+   "icon": "tarot:crystal_ball",
+   "slot": false
+  },
+  {
+   "id": "fortune2",
+   "col": 3,
+   "row": 1,
+   "parents": [
+    "fortune1"
+   ],
+   "tp": 3,
+   "money": 5000,
+   "effects": [
+    [
+     "money_pct",
+     50
+    ]
+   ],
+   "icon": "tarot:crystal_ball",
+   "slot": false
+  },
+  {
+   "id": "fortune3",
+   "col": 2,
+   "row": 1,
+   "parents": [
+    "fortune2"
+   ],
+   "tp": 6,
+   "money": 5000000.0,
+   "effects": [
+    [
+     "money_pct",
+     100
+    ]
+   ],
+   "icon": "tarot:crystal_ball",
+   "slot": false
+  },
+  {
+   "id": "fortune4",
+   "col": 1,
+   "row": 1,
+   "parents": [
+    "fortune3"
+   ],
+   "tp": 10,
+   "money": 160000000000.0,
+   "effects": [
+    [
+     "money_pct",
+     200
+    ]
+   ],
+   "icon": "tarot:coin",
+   "slot": false
+  },
+  {
+   "id": "fortune5",
+   "col": 0,
+   "row": 1,
+   "parents": [
+    "fortune4"
+   ],
+   "tp": 15,
+   "money": 3200000000000000.0,
+   "effects": [
+    [
+     "money_pct",
+     400
+    ]
+   ],
+   "icon": "tarot:coin",
+   "slot": false
+  },
+  {
+   "id": "touch",
+   "col": 4,
+   "row": 2,
+   "parents": [
+    "fortune1",
+    "slot3"
+   ],
+   "tp": 3,
+   "money": 2000,
+   "effects": [
+    [
+     "manual_pct",
+     50
+    ]
+   ],
+   "icon": "tarot:open_hand",
+   "slot": false
+  },
+  {
+   "id": "combo1",
+   "col": 3,
+   "row": 2,
+   "parents": [
+    "touch"
+   ],
+   "tp": 2,
+   "money": 0,
+   "effects": [
+    [
+     "combo_pct",
+     20
+    ]
+   ],
+   "icon": "tarot:raven",
+   "slot": false
+  },
+  {
+   "id": "combo2",
+   "col": 2,
+   "row": 2,
+   "parents": [
+    "combo1"
+   ],
+   "tp": 6,
+   "money": 5000000.0,
+   "effects": [
+    [
+     "combo_pct",
+     40
+    ]
+   ],
+   "icon": "tarot:serpent",
+   "slot": false
+  },
+  {
+   "id": "combo3",
+   "col": 1,
+   "row": 2,
+   "parents": [
+    "combo2"
+   ],
+   "tp": 12,
+   "money": 64000000000000.0,
+   "effects": [
+    [
+     "combo_pct",
+     80
+    ]
+   ],
+   "icon": "tarot:serpent",
+   "slot": false
+  },
+  {
+   "id": "crit1",
+   "col": 4,
+   "row": 3,
+   "parents": [
+    "touch",
+    "slot4"
+   ],
+   "tp": 3,
+   "money": 0,
+   "effects": [
+    [
+     "crit_chance",
+     3
+    ]
+   ],
+   "icon": "tarot:third_eye",
+   "slot": false
+  },
+  {
+   "id": "crit2",
+   "col": 3,
+   "row": 3,
+   "parents": [
+    "crit1"
+   ],
+   "tp": 6,
+   "money": 30000000.0,
+   "effects": [
+    [
+     "crit_chance",
+     4
+    ]
+   ],
+   "icon": "tarot:third_eye",
+   "slot": false
+  },
+  {
+   "id": "crit3",
+   "col": 2,
+   "row": 3,
+   "parents": [
+    "crit2"
+   ],
+   "tp": 8,
+   "money": 20000000000.0,
+   "effects": [
+    [
+     "crit_mult",
+     1
+    ]
+   ],
+   "icon": "tarot:dagger",
+   "slot": false
+  },
+  {
+   "id": "echo",
+   "col": 1,
+   "row": 3,
+   "parents": [
+    "crit3"
+   ],
+   "tp": 10,
+   "money": 400000000000.0,
+   "effects": [
+    [
+     "echo_chance",
+     2
+    ]
+   ],
+   "icon": "tarot:comet",
+   "slot": false
+  },
+  {
+   "id": "gum1",
+   "col": 4,
+   "row": 4,
+   "parents": [
+    "crit1",
+    "slot5"
+   ],
+   "tp": 1,
+   "money": 0,
+   "effects": [
+    [
+     "gumball_discount",
+     20
+    ]
+   ],
+   "icon": "gum",
+   "slot": false
+  },
+  {
+   "id": "gum2",
+   "col": 3,
+   "row": 4,
+   "parents": [
+    "gum1"
+   ],
+   "tp": 4,
+   "money": 500000,
+   "effects": [
+    [
+     "gumball_luck",
+     35
+    ]
+   ],
+   "icon": "gum",
+   "slot": false
+  },
+  {
+   "id": "gum3",
+   "col": 2,
+   "row": 4,
+   "parents": [
+    "gum2"
+   ],
+   "tp": 8,
+   "money": 100000000.0,
+   "effects": [
+    [
+     "double_ball",
+     15
+    ]
+   ],
+   "icon": "gum",
+   "slot": false
+  },
+  {
+   "id": "gum4",
+   "col": 1,
+   "row": 4,
+   "parents": [
+    "gum3"
+   ],
+   "tp": 12,
+   "money": 7900000000000.0,
+   "effects": [
+    [
+     "gumball_luck",
+     35
+    ]
+   ],
+   "icon": "gum",
+   "slot": false
+  },
+  {
+   "id": "gum5",
+   "col": 0,
+   "row": 4,
+   "parents": [
+    "gum4"
+   ],
+   "tp": 18,
+   "money": 7800000000000000.0,
+   "effects": [
+    [
+     "gumball_slow",
+     3
+    ]
+   ],
+   "icon": "gum",
+   "slot": false
+  },
+  {
+   "id": "black1",
+   "col": 4,
+   "row": 5,
+   "parents": [
+    "gum1",
+    "slot6"
+   ],
+   "tp": 15,
+   "money": 20000000000.0,
+   "effects": [
+    [
+     "black_market",
+     1
+    ]
+   ],
+   "icon": "black:skeleton_key",
+   "slot": false
+  },
+  {
+   "id": "black2",
+   "col": 3,
+   "row": 5,
+   "parents": [
+    "black1"
+   ],
+   "tp": 20,
+   "money": 2.6e+16,
+   "effects": [
+    [
+     "black_discount",
+     25
+    ]
+   ],
+   "icon": "black:shadow_ledger",
+   "slot": false
+  },
+  {
+   "id": "quick1",
+   "col": 6,
+   "row": 1,
+   "parents": [
+    "shaker"
+   ],
+   "tp": 1,
+   "money": 0,
+   "effects": [
+    [
+     "speed_pct",
+     12
+    ]
+   ],
+   "icon": "tarot:hourglass",
+   "slot": false
+  },
+  {
+   "id": "quick2",
+   "col": 7,
+   "row": 1,
+   "parents": [
+    "quick1"
+   ],
+   "tp": 4,
+   "money": 200000,
+   "effects": [
+    [
+     "speed_pct",
+     12
+    ]
+   ],
+   "icon": "tarot:hourglass",
+   "slot": false
+  },
+  {
+   "id": "quick3",
+   "col": 8,
+   "row": 1,
+   "parents": [
+    "quick2"
+   ],
+   "tp": 9,
+   "money": 2500000000.0,
+   "effects": [
+    [
+     "speed_pct",
+     16
+    ]
+   ],
+   "icon": "tarot:hourglass",
+   "slot": false
+  },
+  {
+   "id": "xp1",
+   "col": 6,
+   "row": 2,
+   "parents": [
+    "quick1",
+    "slot3"
+   ],
+   "tp": 1,
+   "money": 0,
+   "effects": [
+    [
+     "xp_pct",
+     30
+    ]
+   ],
+   "icon": "tarot:moon_moth",
+   "slot": false
+  },
+  {
+   "id": "xp2",
+   "col": 7,
+   "row": 2,
+   "parents": [
+    "xp1"
+   ],
+   "tp": 4,
+   "money": 100000,
+   "effects": [
+    [
+     "xp_pct",
+     60
+    ]
+   ],
+   "icon": "tarot:moon_moth",
+   "slot": false
+  },
+  {
+   "id": "mentor",
+   "col": 8,
+   "row": 2,
+   "parents": [
+    "xp2"
+   ],
+   "tp": 5,
+   "money": 0,
+   "effects": [
+    [
+     "catchup_x",
+     3
+    ]
+   ],
+   "icon": "tarot:feather",
+   "slot": false
+  },
+  {
+   "id": "xp3",
+   "col": 9,
+   "row": 2,
+   "parents": [
+    "mentor"
+   ],
+   "tp": 8,
+   "money": 200000000.0,
+   "effects": [
+    [
+     "xp_pct",
+     120
+    ]
+   ],
+   "icon": "tarot:lotus",
+   "slot": false
+  },
+  {
+   "id": "xp4",
+   "col": 10,
+   "row": 2,
+   "parents": [
+    "xp3"
+   ],
+   "tp": 14,
+   "money": 3200000000000.0,
+   "effects": [
+    [
+     "xp_pct",
+     250
+    ]
+   ],
+   "icon": "tarot:lotus",
+   "slot": false
+  },
+  {
+   "id": "auto1",
+   "col": 6,
+   "row": 3,
+   "parents": [
+    "xp1",
+    "slot4"
+   ],
+   "tp": 3,
+   "money": 10000,
+   "effects": [
+    [
+     "auto_every",
+     6
+    ]
+   ],
+   "icon": "tarot:candle",
+   "slot": false
+  },
+  {
+   "id": "auto2",
+   "col": 7,
+   "row": 3,
+   "parents": [
+    "auto1"
+   ],
+   "tp": 6,
+   "money": 2000000.0,
+   "effects": [
+    [
+     "auto_every",
+     4
+    ]
+   ],
+   "icon": "tarot:candle",
+   "slot": false
+  },
+  {
+   "id": "auto3",
+   "col": 8,
+   "row": 3,
+   "parents": [
+    "auto2"
+   ],
+   "tp": 10,
+   "money": 8100000000.0,
+   "effects": [
+    [
+     "auto_every",
+     2.5
+    ]
+   ],
+   "icon": "tarot:candle",
+   "slot": false
+  },
+  {
+   "id": "auto4",
+   "col": 9,
+   "row": 3,
+   "parents": [
+    "auto3"
+   ],
+   "tp": 15,
+   "money": 160000000000000.0,
+   "effects": [
+    [
+     "auto_every",
+     1.5
+    ]
+   ],
+   "icon": "tarot:candle",
+   "slot": false
+  },
+  {
+   "id": "lucky1",
+   "col": 6,
+   "row": 4,
+   "parents": [
+    "auto1",
+    "slot5"
+   ],
+   "tp": 2,
+   "money": 0,
+   "effects": [
+    [
+     "lucky_discount",
+     15
+    ]
+   ],
+   "icon": "cube",
+   "slot": false
+  },
+  {
+   "id": "lucky2",
+   "col": 7,
+   "row": 4,
+   "parents": [
+    "lucky1"
+   ],
+   "tp": 8,
+   "money": 500000000.0,
+   "effects": [
+    [
+     "lucky_odds",
+     30
+    ]
+   ],
+   "icon": "tarot:wheel",
+   "slot": false
+  },
+  {
+   "id": "lucky3",
+   "col": 8,
+   "row": 4,
+   "parents": [
+    "lucky2"
+   ],
+   "tp": 10,
+   "money": 3200000000000.0,
+   "effects": [
+    [
+     "lucky_discount",
+     20
+    ]
+   ],
+   "icon": "cube",
+   "slot": false
+  },
+  {
+   "id": "heirloom",
+   "col": 9,
+   "row": 4,
+   "parents": [
+    "lucky3"
+   ],
+   "tp": 12,
+   "money": 1300000000000000.0,
+   "effects": [
+    [
+     "reroll_levels",
+     1
+    ]
+   ],
+   "icon": "tarot:key",
+   "slot": false
+  },
+  {
+   "id": "tarot1",
+   "col": 6,
+   "row": 5,
+   "parents": [
+    "lucky1",
+    "slot6"
+   ],
+   "tp": 3,
+   "money": 0,
+   "effects": [
+    [
+     "tarot_discount",
+     15
+    ]
+   ],
+   "icon": "tarot:cauldron",
+   "slot": false
+  },
+  {
+   "id": "tarot2",
+   "col": 7,
+   "row": 5,
+   "parents": [
+    "tarot1"
+   ],
+   "tp": 8,
+   "money": 1000000000.0,
+   "effects": [
+    [
+     "tarot_choices",
+     1
+    ]
+   ],
+   "icon": "tarot:mirror",
+   "slot": false
+  },
+  {
+   "id": "tarot3",
+   "col": 8,
+   "row": 5,
+   "parents": [
+    "tarot2"
+   ],
+   "tp": 12,
+   "money": 7900000000000.0,
+   "effects": [
+    [
+     "tarot_discount",
+     20
+    ]
+   ],
+   "icon": "tarot:cauldron",
+   "slot": false
+  }
+ ],
+ "slot_costs": {
+  "2": [
+   1,
+   50
+  ],
+  "3": [
+   2,
+   1000
+  ],
+  "4": [
+   3,
+   15000
+  ],
+  "5": [
+   4,
+   150000
+  ],
+  "6": [
+   6,
+   2000000.0
+  ],
+  "7": [
+   8,
+   30000000.0
+  ],
+  "8": [
+   10,
+   3000000000.0
+  ],
+  "9": [
+   12,
+   300000000000.0
+  ],
+  "10": [
+   14,
+   30000000000000.0
+  ],
+  "11": [
+   17,
+   3000000000000000.0
+  ],
+  "12": [
+   20,
+   3e+17
+  ]
+ }
+}

@@ -1,7 +1,8 @@
 """Dice Rush Extended - brand image (195x195 px), pixel-art style.
 
-Built only from the mod's own dice art (build/generated/bdr/art/dice) and the free
-Press Start 2P font (OFL, the pixel font the game uses). The original DICE RUSH logo is not used.
+Built only from the mod's own art (dice from build/generated/bdr/art/dice, the fortune teller's
+hands of Dice Shaker from build/generated/shaker/art/scene) and the free Press Start 2P font
+(OFL, the pixel font the game uses). The original DICE RUSH logo is not used.
 
 Run:  tools/venv/Scripts/python.exe tools/art/gen_brand.py
 Output: docs/brand_195.png (+ docs/brand_780.png, the same picture 4x bigger)
@@ -13,6 +14,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 DICE = os.path.join(REPO, "build", "generated", "bdr", "art", "dice")
+SCENE = os.path.join(REPO, "build", "generated", "shaker", "art", "scene")
 FONT_CANDIDATES = [
     os.path.join(REPO, "work", "recovered", "assets", "fonts", "PressStart2P-Regular.ttf"),
     os.path.join(REPO, "tools", "art", "PressStart2P-Regular.ttf"),
@@ -34,9 +36,20 @@ def font(size):
 
 
 def dice_sprite(kind, size=64):
-    """The mod's dice are drawn on a 64x64 grid and stored 4x - scale back to the crisp original."""
+    """The mod's dice are drawn on a 64x64 grid and stored 4x. 64 = the crisp original; smaller sizes
+    are scaled smoothly and get hard alpha edges again."""
     image = Image.open(os.path.join(DICE, kind + ".png")).convert("RGBA")
-    return image.resize((size, size), Image.NEAREST)
+    if size == 64:
+        return image.resize((size, size), Image.NEAREST)
+    small = image.resize((size, size), Image.LANCZOS)
+    alpha = small.getchannel("A").point(lambda a: 255 if a >= 110 else 0)
+    small.putalpha(alpha)
+    return small
+
+
+def hand_sprite(side):
+    """The fortune teller's hand of Dice Shaker (native pixel size)."""
+    return Image.open(os.path.join(SCENE, "hand_%s.png" % side)).convert("RGBA")
 
 
 def text_mask(text, size):
@@ -149,19 +162,30 @@ def banner(image, text_image, center_x, top):
 
 def make() -> Image.Image:
     image = background()
-    # dice: pepe and 67 behind, the lucky block in front - every symbol stays fully visible
-    back_left, back_right, front = dice_sprite("pepe"), dice_sprite("sixseven"), dice_sprite("luckyblock")
-    back_y = 50
-    # soft pixel shadow under the dice group, so the dice stand on something
+    # the fortune teller's arms come in from both sides (like in Dice Shaker), the hands never touch the dice
+    left, right = hand_sprite("left"), hand_sprite("right")
+    image.alpha_composite(left, (-50, 72))
+    image.alpha_composite(right, (SIZE - right.width + 50, 72))
+    # dice (smaller): pepe and 67 behind, the lucky block in front - every symbol stays visible
+    size = 38
+    back_left, back_right, front = dice_sprite("pepe", size), dice_sprite("sixseven", size), dice_sprite("luckyblock", size)
+    back_y = 62
     shadow = ImageDraw.Draw(image)
-    shadow.ellipse((SIZE // 2 - 70, back_y + 82, SIZE // 2 + 70, back_y + 100), fill=hexc("#1b0f3e"))
-    shadow.ellipse((SIZE // 2 - 40, back_y + 86, SIZE // 2 + 40, back_y + 98), fill=hexc("#130a2e"))
-    image.alpha_composite(back_left, (SIZE // 2 - 66, back_y))
-    image.alpha_composite(back_right, (SIZE // 2 + 2, back_y))
-    image.alpha_composite(front, (SIZE // 2 - 32, back_y + 30))
-    # title
+    shadow.ellipse((SIZE // 2 - 46, back_y + 54, SIZE // 2 + 46, back_y + 66), fill=hexc("#1b0f3e"))
+    shadow.ellipse((SIZE // 2 - 26, back_y + 57, SIZE // 2 + 26, back_y + 64), fill=hexc("#130a2e"))
+    image.alpha_composite(back_left, (SIZE // 2 - size - 1, back_y))
+    image.alpha_composite(back_right, (SIZE // 2 + 1, back_y))
+    image.alpha_composite(front, (SIZE // 2 - size // 2, back_y + 20))
+    # title, and under RUSH in small letters: +DICE SHAKER / +COOP
     title = outlined(text_mask("DICE RUSH", 16), hexc("#ffffff"), hexc("#9fe3ff"), hexc("#10183a"), 2, shadow=hexc("#05060f"))
-    image.alpha_composite(title, ((SIZE - title.width) // 2, 13))
+    title_x = (SIZE - title.width) // 2
+    image.alpha_composite(title, (title_x, 10))
+    right_edge = title_x + title.width - 3
+    shaker = outlined(text_mask("+DICE SHAKER", 8), hexc("#ffd0ff"), hexc("#c46bff"), hexc("#1a0628"), 1)
+    coop = outlined(text_mask("+COOP", 8), hexc("#d8fbff"), hexc("#4fd6ff"), hexc("#06182a"), 1)
+    top = 10 + title.height - 1
+    image.alpha_composite(shaker, (right_edge - shaker.width, top))
+    image.alpha_composite(coop, (right_edge - coop.width, top + shaker.height - 1))
     # EXTENDED on a ribbon
     extended = outlined(text_mask("EXTENDED", 16), hexc("#fff0a8"), hexc("#f2a71b"), hexc("#3a1d05"), 2)
     banner(image, extended, SIZE // 2, 152)

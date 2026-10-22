@@ -77,6 +77,10 @@ func _try_autostart() -> void:
 		return
 	if scene.scene_file_path.ends_with("start_menu.tscn"):
 		autostart_done = true
+		if autostart == "shaker":
+			GameSession.set_meta(&"shaker_active_slot", autostart_slot)
+			get_tree().change_scene_to_file("res://shaker/scenes/shaker.tscn")
+			return
 		GameSession.set_active_save_slot(autostart_slot, false)
 		GameSession.launch_mode = "continue" if autostart == "continue" else "new"
 		get_tree().change_scene_to_file("res://scenes/main.tscn")
@@ -735,6 +739,13 @@ func _execute(request: Dictionary) -> Variant:
 			return true
 		"scene":
 			return get_tree().current_scene.scene_file_path if get_tree().current_scene else ""
+		"timescale":
+			Engine.time_scale = float(request.get("value", 1.0))
+			return Engine.time_scale
+		"start_shaker":
+			GameSession.set_meta(&"shaker_active_slot", int(request.get("slot", 1)))
+			get_tree().change_scene_to_file("res://shaker/scenes/shaker.tscn")
+			return true
 		"start_game":
 			GameSession.set_active_save_slot(int(request.get("slot", 1)), false)
 			GameSession.launch_mode = str(request.get("mode", "continue"))

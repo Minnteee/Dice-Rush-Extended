@@ -18,6 +18,10 @@ own copy of DICE RUSH v1.0.0 (Full).
   talents, lucky cubes, tarot, events, achievements, coop, effects).
 - Do not use a new `class_name` in mod scripts: global classes are registered from the game's own
   class list, so the mod uses `preload()` constants instead.
+- **Dice Shaker** lives in `src/shaker/` and is packed under `res://shaker/`. The pack also replaces the
+  start menu scene (`res://scenes/start_menu.tscn.remap` -> `res://shaker/menu/start_menu.tscn`): its
+  script extends the (patched) start menu script, adds the DICE SHAKER button and switches the save card
+  screen to the Dice Shaker save cards. The game mode itself is its own scene (`res://shaker/scenes/shaker.tscn`).
 
 ## Requirements
 
@@ -30,7 +34,7 @@ own copy of DICE RUSH v1.0.0 (Full).
 - `tools/packer/`: copy `Dice Rush.exe`, `libgodotsteam.windows.template_release.x86_64.dll` and
   `steam_api64.dll` from your game folder into this folder. The build packs the `.pck` file with the
   game's own engine, so the pack always matches the game's Godot version.
-- Only for the art generators: `pip install pillow` (a virtual environment in `tools/venv/` works well).
+- For the art and sound generators: `pip install pillow numpy` (a virtual environment in `tools/venv/` works well).
 
 ## Build
 
@@ -40,10 +44,13 @@ python tools\build.py --release
 
 1. `tools/apply_patches.py` applies `src/patches/<script>/` to the original scripts and writes the
    result to `src/game/scripts/` (generated, not in the repository).
-2. `tools/i18n/build_i18n.py` builds the English and German texts (`src/bdr/i18n/en.json`, `de.json`)
-   from `tools/i18n/strings*.py`. The other 29 languages are the JSON files in `src/bdr/i18n/`;
-   `tools/i18n/check_translations.py` checks that every language has every key.
-3. Everything is packed into `dist/DiceRushExtended/DiceRushExtended.pck`; `--release` also writes
+2. `tools/shaker/make_shaker_data.py` writes the Dice Shaker game data (`src/shaker/data/shaker_data.json`)
+   and its English and German texts from `tools/shaker/shaker_design.py` and `shaker_texts.py`.
+3. `tools/i18n/build_i18n.py` builds the English and German texts (`src/bdr/i18n/en.json`, `de.json`)
+   from `tools/i18n/strings*.py`. The other 29 languages are the JSON files in `src/bdr/i18n/` and
+   `src/shaker/i18n/`; `tools/i18n/check_translations.py` and `tools/shaker/check_i18n.py` check that every
+   language has every key and the same placeholders.
+4. Everything is packed into `dist/DiceRushExtended/DiceRushExtended.pck`; `--release` also writes
    `dist/Dice-Rush-Extended-<version>.zip`.
 
 Install options:
@@ -68,6 +75,9 @@ Every `*.gd` file in `src/patches/main/` (and the other script folders) contains
 | --- | --- |
 | `tools/catalog/make_dice_catalog.py` | the 100 dice (tiers, prices, payouts, effects, texts) -> `src/bdr/data/dice_catalog.json` |
 | `tools/art/build_all.py` | re-generates all pixel art into `build/generated/bdr/art/` and checks it |
+| `tools/shaker_art/gen_scene.py`, `gen_gauntlets.py`, `gen_tarot.py` | Dice Shaker pixel art (table, crystal ball, hands, gumball machine, 20 table designs, 30 gauntlets, 60 cards) -> `build/generated/shaker/art/` (needs Pillow and numpy) |
+| `tools/shaker/gen_sounds.py` | the synthesised Dice Shaker sounds -> `build/generated/shaker/audio/` |
+| `tools/shaker/econ_sim.py` | Dice Shaker balance simulation: when a player reaches 6 / 12 dice, the first legendary die, all tarot cards ... (`shaker_rules.py` is a 1:1 copy of the game's rules) |
 | `src/testing/bdr_test_harness.gd`, `tools/bdr.py` | test harness: a TCP/JSON remote control (port 47811) for a test copy of the game |
 | `tools/perf_move.py` | frame time measurement with many dice (needs the test harness) |
 | `tools/make_screenshot.py` | makes the README screenshot with two coop instances (needs the test harness) |

@@ -1,0 +1,242 @@
+{
+ "gauntlet_1": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Leather Glove",
+  "name_de": "Lederhandschuh"
+ },
+ "gauntlet_2": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Wool Mitten",
+  "name_de": "Wollfäustling"
+ },
+ "gauntlet_3": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Iron Gauntlet",
+  "name_de": "Eisenhandschuh"
+ },
+ "gauntlet_4": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Bronze Gauntlet",
+  "name_de": "Bronzehandschuh"
+ },
+ "gauntlet_5": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Silver Gauntlet",
+  "name_de": "Silberhandschuh"
+ },
+ "gauntlet_6": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Golden Gauntlet",
+  "name_de": "Goldhandschuh"
+ },
+ "gauntlet_7": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Crystal Gauntlet",
+  "name_de": "Kristallhandschuh"
+ },
+ "gauntlet_8": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Ruby Gauntlet",
+  "name_de": "Rubinhandschuh"
+ },
+ "gauntlet_9": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Emerald Gauntlet",
+  "name_de": "Smaragdhandschuh"
+ },
+ "gauntlet_10": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Sapphire Gauntlet",
+  "name_de": "Saphirhandschuh"
+ },
+ "gauntlet_11": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Obsidian Gauntlet",
+  "name_de": "Obsidianhandschuh"
+ },
+ "gauntlet_12": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Bone Hand",
+  "name_de": "Knochenhand"
+ },
+ "gauntlet_13": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Thief's Glove",
+  "name_de": "Diebeshandschuh"
+ },
+ "gauntlet_14": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Wizard's Glove",
+  "name_de": "Zaubererhandschuh"
+ },
+ "gauntlet_15": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Fortune Teller's Hand",
+  "name_de": "Hand der Wahrsagerin"
+ },
+ "gauntlet_16": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Knight's Gauntlet",
+  "name_de": "Ritterhandschuh"
+ },
+ "gauntlet_17": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Samurai Gauntlet",
+  "name_de": "Samurai-Handschuh"
+ },
+ "gauntlet_18": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Frost Gauntlet",
+  "name_de": "Frosthandschuh"
+ },
+ "gauntlet_19": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Flame Gauntlet",
+  "name_de": "Flammenhandschuh"
+ },
+ "gauntlet_20": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Storm Gauntlet",
+  "name_de": "Sturmhandschuh"
+ },
+ "gauntlet_21": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Nature Glove",
+  "name_de": "Naturhandschuh"
+ },
+ "gauntlet_22": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Cosmic Gauntlet",
+  "name_de": "Kosmischer Handschuh"
+ },
+ "gauntlet_23": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Shadow Glove",
+  "name_de": "Schattenhandschuh"
+ },
+ "gauntlet_24": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Royal Glove",
+  "name_de": "Königlicher Handschuh"
+ },
+ "gauntlet_25": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Clockwork Gauntlet",
+  "name_de": "Uhrwerkhandschuh"
+ },
+ "gauntlet_26": {
+  "hotspot": [
+   13,
+   7
+  ],
+  "name_en": "Pirate Glove",
+  "name_de": "Piratenhandschuh"
+ },
+ "gauntlet_27": {
+  "hotspot": [
+   13,
+   7
+  ],
+  "name_en": "Dragon Claw",
+  "name_de": "Drachenklaue"
+ },
+ "gauntlet_28": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Angel Gauntlet",
+  "name_de": "Engelshandschuh"
+ },
+ "gauntlet_29": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Demon Claw",
+  "name_de": "Dämonenklaue"
+ },
+ "gauntlet_30": {
+  "hotspot": [
+   15,
+   7
+  ],
+  "name_en": "Diamond Gauntlet",
+  "name_de": "Diamanthandschuh"
+ }
+}

@@ -10,7 +10,7 @@ const BDRCoop: = preload("res://bdr/net/coop.gd")
 const BDRSettings: = preload("res://bdr/core/settings.gd")
 
 
-const BDR_MOD_VERSION: = "1.1.1"
+const BDR_MOD_VERSION: = "1.2.0"
 const BDRGitHub: = preload("res://bdr/ui/github_button.gd")
 
 

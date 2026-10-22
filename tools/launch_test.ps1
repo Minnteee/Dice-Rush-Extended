@@ -4,7 +4,8 @@ param(
     [int]$Port = 47811,
     [string]$GameDir = (Join-Path $PSScriptRoot "..\testgame"),
     [string]$Resolution = "1600x900",
-    [switch]$Headless
+    [switch]$Headless,
+    [switch]$Log
 )
 # Starts the TEST copy of Dice Rush on a separate Windows virtual desktop ("BDR Test"),
 # so the user's visible desktop is never used. The game is driven through the test harness.
@@ -25,7 +26,11 @@ if ($list -notmatch "BDR Test") {
 }
 
 $argsLine = "--windowed --position -24000,-24000 --resolution $Resolution $EngineArgs -- --bdr-port=$Port $GameArgs"
-$p = Start-Process -FilePath $exe -WorkingDirectory $GameDir -ArgumentList $argsLine -PassThru
+if ($Log) {
+    $p = Start-Process -FilePath $exe -WorkingDirectory $GameDir -ArgumentList $argsLine -PassThru -RedirectStandardOutput (Join-Path $GameDir "stdout.log") -RedirectStandardError (Join-Path $GameDir "stderr.log")
+} else {
+    $p = Start-Process -FilePath $exe -WorkingDirectory $GameDir -ArgumentList $argsLine -PassThru
+}
 $hwnd = [IntPtr]::Zero
 for ($i = 0; $i -lt 200; $i++) {
     Start-Sleep -Milliseconds 50
